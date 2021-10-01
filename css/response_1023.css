@@ -783,6 +783,12 @@
     }
 
 
+    .trainer_info .prev_next
+    {
+        width: calc(100% - 48px);
+    }
+
+
 
     /*------------
         Groups

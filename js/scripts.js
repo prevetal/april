@@ -228,6 +228,40 @@ $(() => {
 	}
 
 
+	// Школа
+	if ($('.trainer_info .swiper-container').length) {
+		new Swiper('.trainer_info .swiper-container', {
+			loop: true,
+			speed: 750,
+			watchSlidesVisibility: true,
+			slideActiveClass: 'active',
+			slideVisibleClass: 'visible',
+			spaceBetween: 0,
+			slidesPerView: 1,
+			navigation: {
+				nextEl: '.trainer_info_next_btn',
+				prevEl: '.trainer_info_prev_btn'
+			},
+			on: {
+				slideChange: swiper => {
+					setTimeout(() => {
+						let prevName = $(swiper.$el).find('.swiper-slide-prev').data('name'),
+							prevThumb = $(swiper.$el).find('.swiper-slide-prev').data('thumb'),
+							nextName = $(swiper.$el).find('.swiper-slide-next').data('name'),
+							nextThumb = $(swiper.$el).find('.swiper-slide-next').data('thumb')
+
+						$('.trainer_info .trainer_info_prev_btn span').html(prevName)
+						$('.trainer_info .trainer_info_prev_btn .thumb img').attr('src', prevThumb)
+
+						$('.trainer_info .trainer_info_next_btn span').html(nextName)
+						$('.trainer_info .trainer_info_next_btn .thumb img').attr('src', nextThumb)
+					})
+				}
+			}
+		})
+	}
+
+
 	// Моб. меню
 	$('.mob_header .mob_menu_btn').click((e) => {
 		e.preventDefault()

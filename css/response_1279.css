@@ -884,6 +884,12 @@
     }
 
 
+    .trainer_info .prev_next
+    {
+        width: calc(50vw - 44px);
+    }
+
+
 
     /*------------
         Groups

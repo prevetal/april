@@ -372,6 +372,13 @@
 
 
 
+    .trainer_info .prev_next .link span
+    {
+        display: none;
+    }
+
+
+
     /*------------
         Groups
     ------------*/

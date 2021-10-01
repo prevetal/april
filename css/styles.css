@@ -4363,6 +4363,7 @@ header.no_border .logo img
 
     display: flex;
 
+    text-align: left;
     text-decoration: none;
 
     justify-content: flex-start;
@@ -5259,6 +5260,18 @@ header.no_border .logo img
 /*------------------
     Trainer info
 ------------------*/
+.trainer_info
+{
+    position: relative;
+}
+
+
+.trainer_info .slide
+{
+    overflow: hidden;
+}
+
+
 .trainer_info .cont
 {
     justify-content: space-between;
@@ -5514,13 +5527,15 @@ header.no_border .logo img
 }
 
 
-.trainer_info .data .prev_next
+.trainer_info .prev_next
 {
     position: absolute;
+    z-index: 9;
+    right: 50%;
     bottom: 0;
-    left: 0;
 
-    width: 100%;
+    width: calc((1328px / 2) - 100px);
+    margin-right: calc(1328px / -2 + 24px);
 }
 
 
@@ -6680,5 +6695,18 @@ footer.no_bg
     .rent .data:after
     {
         display: none;
+    }
+}
+
+
+
+@media print, (max-width: 1327px)
+{
+    .trainer_info .prev_next
+    {
+        right: 24px;
+
+        width: calc(50vw - 100px);
+        margin-right: 0;
     }
 }

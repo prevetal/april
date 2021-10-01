@@ -514,9 +514,13 @@
     /*------------------
         Trainer info
     ------------------*/
-    .trainer_info .data
+    .trainer_info .prev_next
     {
-        padding-bottom: 0;
+        right: 12px;
+
+        display: flex;
+
+        width: calc(100% - 24px);
     }
 
 
