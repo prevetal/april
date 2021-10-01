@@ -1,0 +1,752 @@
+@media print, (max-width: 767px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+    :root
+    {
+        --font_size: 15px;
+        --font_size_title: 28px;
+    }
+
+
+    .block
+    {
+        margin-bottom: 60px;
+    }
+
+    .block.border_bottom,
+    .block.border_bottom.big_padding
+    {
+        padding-bottom: 60px;
+    }
+
+
+    .swiper-container-horizontal > .swiper-pagination-bullets,
+    .swiper-pagination-custom,
+    .swiper-pagination-fraction
+    {
+        height: 52px;
+    }
+
+
+
+    /*--------------
+        Fancybox
+    --------------*/
+    .fancybox__slide
+    {
+        padding: 20px;
+    }
+
+
+
+    /*-----------------
+        Mob. header
+    -----------------*/
+    .mob_header
+    {
+        padding: 12px 0;
+    }
+
+
+    .mob_header .logo img
+    {
+        width: 124px;
+    }
+
+
+    .mob_header .contacts
+    {
+        width: 100%;
+        margin-top: 12px;
+
+        order: 2;
+        justify-content: center;
+    }
+
+    .mob_header .contacts .phone
+    {
+        font-size: 18px;
+    }
+
+    .mob_header .contacts .messengers
+    {
+        margin-left: 20px;
+    }
+
+
+    .mob_header .search .mini_modal,
+    .mob_header .search .mini_modal.active
+    {
+        top: calc(100% - 50px);
+    }
+
+    .mob_header .search form .input,
+    .mob_header .search form .submit_btn
+    {
+        height: 44px;
+    }
+
+
+
+    /*---------------
+        Page head
+    ---------------*/
+    .page_head
+    {
+        margin-bottom: 28px;
+        padding-top: 12px;
+    }
+
+
+    .breadcrumbs + .page_title
+    {
+        margin-top: 12px;
+    }
+
+
+
+    /*----------------
+        Block head
+    ----------------*/
+    .block_head
+    {
+        margin-bottom: 28px;
+    }
+
+    .block_head.padding_right
+    {
+        padding-right: 124px;
+    }
+
+
+    .block_head .all_link
+    {
+        width: 100%;
+        margin-top: 8px;
+        margin-left: 0;
+        padding-left: 0;
+
+        border: none;
+    }
+
+
+
+    /*------------------
+        Form elements
+    ------------------*/
+
+
+
+    /*----------------
+        Typography
+    ----------------*/
+    .text_block h2
+    {
+        font-size: 24px;
+    }
+
+    .text_block h3
+    {
+        font-size: 22px;
+    }
+
+    .text_block h4
+    {
+        font-size: 20px;
+    }
+
+
+    .text_block .cols .col
+    {
+        width: 100%;
+    }
+
+    .text_block .cols + .cols
+    {
+        margin-top: 40px;
+    }
+
+    .text_block .cols .col + .col
+    {
+        margin-top: 40px;
+    }
+
+    .text_block .cols .col.padding_left,
+    .text_block .cols .col.padding_right
+    {
+        padding: 0;
+    }
+
+
+    .text_block blockquote,
+    .text_block q
+    {
+        font-size: 15px;
+        line-height: 23px;
+
+        padding: 12px 18px;
+    }
+
+
+    .text_block .swiper-container .slide .zoom
+    {
+        width: 44px;
+        height: 44px;
+    }
+
+    .text_block .swiper-container .slide .zoom .icon
+    {
+        width: 20px;
+        height: 20px;
+    }
+
+
+
+    /*-----------------
+        Main slider
+    -----------------*/
+    .main_slider
+    {
+        padding-bottom: 52px;
+    }
+
+
+    .main_slider .slide .cont
+    {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+
+    .main_slider .slide .title
+    {
+        font-size: 44px;
+    }
+
+
+    .main_slider .slide .sub_title
+    {
+        font-size: 19px;
+    }
+
+    .main_slider .slide .desc
+    {
+        font-size: 17px;
+        line-height: 25px;
+    }
+
+
+
+    /*------------
+        Pluses
+    ------------*/
+    .pluses
+    {
+        padding: 60px 0;
+    }
+
+
+    .pluses .row > *
+    {
+        width: calc(33.333% - 24px);
+    }
+
+
+
+    /*---------------
+        Get trial
+    ---------------*/
+    .get_trial
+    {
+        padding: 60px 0;
+    }
+
+
+    .get_trial .block_head
+    {
+        width: 100%;
+        margin-bottom: 24px !important;
+        margin-left: 28px !important;
+    }
+
+
+    .get_trial .arrow
+    {
+        display: none;
+    }
+
+
+    .get_trial .form
+    {
+        width: 100%;
+        margin: 0 0 0 28px;
+    }
+
+
+
+    /*--------------
+        Services
+    --------------*/
+    .services .carousel.swiper-container .slider_arrows
+    {
+        margin-bottom: 28px;
+    }
+
+
+
+    /*----------------
+        About info
+    ----------------*/
+    .about_info .row
+    {
+        margin-bottom: -16px;
+        margin-left: -16px;
+    }
+
+    .about_info .row > *,
+    .about_info .row > *.middle_w
+    {
+        width: calc(50% - 16px);
+        margin-bottom: 16px;
+        margin-left: 16px;
+    }
+
+    .about_info .row > *.big_w
+    {
+        width: calc(100% - 16px);
+    }
+
+
+    .about_info .link .thumb
+    {
+        height: 220px;
+    }
+
+    .about_info .link .thumb.big_h
+    {
+        height: 280px;
+    }
+
+
+    .about_info .link .info .name
+    {
+        font-size: 23px;
+        line-height: 29px;
+    }
+
+
+    .about_info .link .info:before
+    {
+        top: 26px;
+    }
+
+
+    .about_info .link .info.bottom
+    {
+        min-height: 88px;
+    }
+
+    .about_info .link .info.bottom:before
+    {
+        top: 20px;
+    }
+
+    .about_info .link .info.bottom .name
+    {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+
+
+    /*----------
+        Rent
+    ----------*/
+    .rent .data .stats .row > *
+    {
+        width: calc(50% - 24px);
+    }
+
+
+    .rent .data .stats .item
+    {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .rent .data .stats .item .val
+    {
+        font-size: 92px;
+        line-height: 58px;
+
+        width: 60px;
+        min-width: 60px;
+        height: 58px;
+    }
+
+
+    .rent .data .features .row > *
+    {
+        width: calc(50% - 24px);
+    }
+
+    .rent .data .features .item
+    {
+        font-size: 17px;
+        line-height: 23px;
+    }
+
+
+    .rent .data .bg
+    {
+        margin-left: -12px;
+    }
+
+
+
+    /*---------------
+        Advantages
+    ---------------*/
+    .advantages .row > *
+    {
+        width: 100%;
+    }
+
+
+    .advantages .item
+    {
+        padding-right: 0;
+    }
+
+
+
+    /*---------------
+        Prev/Next
+    ---------------*/
+    .prev_next
+    {
+        display: none;
+    }
+
+
+
+    /*-----------------
+        Action form
+    -----------------*/
+    .action_form.mob_margin
+    {
+        margin-bottom: 60px;
+    }
+
+
+    .action_form .data
+    {
+        padding: 0 8px 0 30px;
+    }
+
+    .action_form .data:before
+    {
+        height: 100%;
+        max-height: 100%;
+    }
+
+
+    .action_form .block_head
+    {
+        width: 100%;
+        margin-bottom: 32px;
+    }
+
+    .action_form .block_head .title br
+    {
+        display: none;
+    }
+
+
+    .action_form .form
+    {
+        width: 100%;
+    }
+
+
+
+    /*--------------------
+        Contacts block
+    --------------------*/
+    .contacts_block
+    {
+        padding: 60px 0 0;
+    }
+
+
+    .contacts_block .data
+    {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+
+    .contacts_block .map
+    {
+        position: relative;
+
+        height: 400px;
+    }
+
+
+
+    /*------------
+        Prices
+    ------------*/
+    .prices .order_btn
+    {
+        font-size: 16px;
+        line-height: 24px;
+
+        margin-top: 28px;
+        padding: 12px 24px;
+    }
+
+
+
+    /*------------------
+        Trainer info
+    ------------------*/
+    .trainer_info .data
+    {
+        padding-bottom: 0;
+    }
+
+
+
+    /*-------------
+        Service
+    -------------*/
+    .service .data .info
+    {
+        width: 100%;
+        padding: 32px 24px;
+
+        border-radius: 12px;
+    }
+
+    .service .data .name
+    {
+        font-size: 26px;
+        line-height: 30px;
+    }
+
+
+    .service .data .thumb
+    {
+        min-height: 272px;
+    }
+
+
+
+    /*---------
+        FAQ
+    ---------*/
+    .faq .accordion
+    {
+        padding: 0;
+
+        border: none;
+        border-radius: 0;
+    }
+
+    .faq .accordion:before,
+    .faq .accordion:after
+    {
+        display: none;
+    }
+
+
+
+    /*--------------
+        Articles
+    --------------*/
+    .articles .row > *
+    {
+        width: calc(50% - 20px);
+    }
+
+
+    .articles .article .name,
+    .articles .article:hover .name
+    {
+        font-size: 16px;
+        line-height: 22px;
+
+        min-height: 66px;
+    }
+
+
+
+    /*-----------
+        Enter
+    -----------*/
+    .enter .cont > .logo img
+    {
+        width: 124px;
+    }
+
+
+    .enter .row
+    {
+        margin-bottom: -64px;
+        margin-left: 0;
+    }
+
+    .enter .row:before
+    {
+        display: none;
+    }
+
+
+    .enter .row > *
+    {
+        width: 100%;
+        margin-bottom: 64px;
+        margin-left: 0;
+    }
+
+
+
+    /*------------
+        Footer
+    ------------*/
+    footer
+    {
+        padding: 60px 0 32px;
+    }
+
+
+
+    footer .col_left
+    {
+        display: flex;
+
+        width: 100%;
+
+        justify-content: space-between;
+        align-items: center;
+        align-content: center;
+        flex-wrap: wrap;
+    }
+
+
+    footer .logo img
+    {
+        width: 132px;
+    }
+
+
+    footer .reserv_btn
+    {
+        font-size: 16px;
+        line-height: 22px;
+
+        width: 180px;
+        height: 48px;
+        margin-top: 0;
+    }
+
+
+    footer .links
+    {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+
+    footer .col_right
+    {
+        width: 100%;
+        margin-top: 32px;
+    }
+
+
+    footer .contacts .location
+    {
+        width: 100%;
+    }
+
+    footer .contacts .location span
+    {
+        width: calc(100% - 29px);
+
+        white-space: normal;
+    }
+
+
+    footer .contacts .sep
+    {
+        display: none;
+    }
+
+
+    footer .contacts .time
+    {
+        width: calc(100% - 29px);
+        margin-top: 4px;
+        margin-left: 29px;
+    }
+
+
+
+    footer .socials
+    {
+        margin-top: 40px;
+    }
+
+    footer .socials a
+    {
+        width: 40px;
+        height: 40px;
+    }
+
+    footer .socials .instagram_link .icon,
+    footer .socials .facebook_link .icon
+    {
+        width: 17px;
+        height: 17px;
+    }
+
+    footer .socials .youtube_link .icon
+    {
+        width: 21px;
+        height: 15px;
+    }
+
+    footer .socials .vkontakte_link .icon
+    {
+        width: 22px;
+        height: 13px;
+    }
+
+
+
+    footer .creator
+    {
+        margin-top: 40px;
+    }
+
+
+
+    /*-----------
+        PopUp
+    -----------*/
+    .modal
+    {
+        padding: 52px 48px;
+    }
+
+
+    .modal_title
+    {
+        font-size: 26px;
+    }
+}
