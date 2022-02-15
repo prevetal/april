@@ -322,7 +322,7 @@
     -----------------*/
     .action_form .data
     {
-        padding: 0 0 0 22px;
+        padding: 50px 0 50px 22px;
     }
 
 
@@ -338,6 +338,12 @@
     .contacts_block .messengers
     {
         margin-top: 8px;
+    }
+
+
+    .contacts_block .map
+    {
+        height: 360px;
     }
 
 
@@ -434,6 +440,7 @@
         line-height: 23px;
 
         min-height: 69px;
+        padding: 16px 20px;
     }
 
 

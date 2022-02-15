@@ -725,7 +725,7 @@
     -----------------*/
     .action_form .data
     {
-        padding-top: 0;
+        padding: 50px 0 50px 32px;
     }
 
 
@@ -865,13 +865,6 @@
 
 
 
-    .articles .article .info
-    {
-        bottom: 0;
-
-        padding: 44px 20px 20px;
-    }
-
     .articles .article .name,
     .articles .article:hover .name
     {
@@ -879,6 +872,7 @@
         line-height: 23px;
 
         min-height: 69px;
+        padding: 12px 16px;
     }
 
 
@@ -937,6 +931,68 @@
     {
         width: 100px;
         height: 43px;
+    }
+
+
+
+    /*-----------------
+        About block
+    -----------------*/
+    .about_block .thumb
+    {
+        width: calc(50% - 12px);
+        height: 244px;
+    }
+
+
+
+    .about_block .data
+    {
+        width: calc(50% - 12px);
+    }
+
+    .about_block .data .title
+    {
+        font-size: 26px;
+        line-height: 32px;
+
+        margin-bottom: 16px;
+    }
+
+
+
+    /*--------------------
+        Contacts block
+    --------------------*/
+    .contacts_block .row
+    {
+        margin-bottom: 0;
+        margin-left: 0;
+    }
+
+
+    .contacts_block .map_wrap
+    {
+        padding-top: 60px;
+        padding-right: 40px;
+        padding-bottom: 60px;
+    }
+
+
+    .contacts_block .map_wrap
+    {
+        width: 100%;
+        margin-bottom: 0;
+        margin-left: 0;
+    }
+
+
+    .contacts_block .text_block
+    {
+        width: 100%;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        margin-left: 0;
     }
 
 

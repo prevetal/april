@@ -728,7 +728,7 @@
     -----------------*/
     .action_form .data
     {
-        padding: 32px 0 60px 32px;
+        padding: 60px 0 60px 32px;
     }
 
     .action_form .data:after
@@ -747,8 +747,7 @@
 
     .action_form .img
     {
-        width: 440px;
-        margin-left: -332px;
+        margin-left: -220px;
     }
 
 
@@ -756,9 +755,19 @@
     /*--------------------
         Contacts block
     --------------------*/
-    .contacts_block
+    .contacts_block .row
     {
-        padding: 92px 0;
+        margin-bottom: -24px;
+        margin-left: -24px;
+    }
+
+
+    .contacts_block .map_wrap
+    {
+        width: calc(66.666% - 24px);
+        margin-bottom: 24px;
+        margin-left: 24px;
+        padding-right: 60px;
     }
 
 
@@ -784,6 +793,20 @@
     .contacts_block .socials a + a
     {
         margin-left: 40px;
+    }
+
+
+    .contacts_block .map
+    {
+        width: calc(100% + 24px);
+    }
+
+
+    .contacts_block .text_block
+    {
+        width: calc(33.333% - 24px);
+        margin-bottom: 24px;
+        margin-left: 24px;
     }
 
 
@@ -971,6 +994,11 @@
         margin-left: -24px;
     }
 
+    .articles .row.bg:before
+    {
+        height: 240px;
+    }
+
     .articles .row > *
     {
         width: calc(33.333% - 24px);
@@ -979,20 +1007,12 @@
     }
 
 
-    .articles .article .info
-    {
-        bottom: 32px;
-
-        width: 100%;
-        padding: 24px 40px;
-    }
-
     .articles .article .date
     {
         font-size: 14px;
         line-height: 20px;
 
-        padding: 8px 12px;
+        padding: 8px 16px;
     }
 
     .articles .article .name
@@ -1001,12 +1021,7 @@
         line-height: 27px;
 
         min-height: 92px;
-    }
-
-
-    .articles .article:hover .name
-    {
-        min-height: 124px;
+        padding: 16px 24px;
     }
 
 
@@ -1014,6 +1029,12 @@
     /*-----------
         Enter
     -----------*/
+    .enter
+    {
+        padding-top: 20px;
+    }
+
+
     .enter .row
     {
         padding-top: 72px;
@@ -1073,6 +1094,31 @@
     {
         margin-top: 16px;
         padding: 0;
+    }
+
+
+
+    /*-----------------
+        About block
+    -----------------*/
+    .about_block .thumb
+    {
+        width: calc(50% - 15px);
+        height: 296px;
+    }
+
+
+    .about_block .data
+    {
+        width: calc(50% - 15px);
+    }
+
+    .about_block .data .title
+    {
+        font-size: 30px;
+        line-height: 36px;
+
+        margin-bottom: 20px;
     }
 
 

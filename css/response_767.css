@@ -435,15 +435,9 @@
     /*-----------------
         Action form
     -----------------*/
-    .action_form.mob_margin
-    {
-        margin-bottom: 60px;
-    }
-
-
     .action_form .data
     {
-        padding: 0 8px 0 30px;
+        padding: 50px 8px 50px 30px;
     }
 
     .action_form .data:before
@@ -475,9 +469,9 @@
     /*--------------------
         Contacts block
     --------------------*/
-    .contacts_block
+    .contacts_block .map_wrap
     {
-        padding: 60px 0 0;
+        padding: 0;
     }
 
 
@@ -492,7 +486,12 @@
     {
         position: relative;
 
+        width: calc(100% + 48px);
         height: 400px;
+        margin-right: -24px;
+        margin-left: -24px;
+
+        border-radius: 0;
     }
 
 
@@ -578,6 +577,15 @@
     }
 
 
+    .articles .article .date
+    {
+        font-size: 12px;
+        line-height: 18px;
+
+        padding: 6px 12px 7px;
+    }
+
+
     .articles .article .name,
     .articles .article:hover .name
     {
@@ -615,6 +623,35 @@
         width: 100%;
         margin-bottom: 64px;
         margin-left: 0;
+    }
+
+
+
+    /*-----------------
+        About block
+    -----------------*/
+    .about_block .thumb
+    {
+        width: 100%;
+        height: auto;
+        padding-bottom: 45%;
+
+        border-radius: 10px;
+    }
+
+
+    .about_block .data
+    {
+        width: 100%;
+        margin-top: 24px;
+    }
+
+    .about_block .data .title
+    {
+        font-size: 24px;
+        line-height: 30px;
+
+        margin-bottom: 12px;
     }
 
 

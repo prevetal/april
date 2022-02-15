@@ -859,6 +859,11 @@ header
     border-bottom: 1px solid #e8e8e8;
 }
 
+header.border_trans
+{
+    border-color: transparent;
+}
+
 
 header > .close
 {
@@ -2914,6 +2919,12 @@ header.no_border .logo img
 /*-----------
     Enter
 -----------*/
+.enter
+{
+    padding: 24px 0 50px;
+}
+
+
 .enter .cont > .logo
 {
     width: 100%;
@@ -2954,7 +2965,7 @@ header.no_border .logo img
 
     width: 100vw;
     height: 229px;
-    margin-left: -50vw;
+    margin-left: -50%;
 
     content: '';
 
@@ -3118,6 +3129,73 @@ header.no_border .logo img
 .enter .item .link a:hover
 {
     color: #1a1a1a;
+}
+
+
+
+/*-----------------
+    About block
+-----------------*/
+.about_block
+{
+    padding: 50px 0;
+
+    background: #f9f9f9;
+}
+
+
+.about_block .thumb
+{
+    position: relative;
+
+    overflow: hidden;
+
+    width: calc(50% - 12px);
+    height: 285px;
+
+    border-radius: 14px;
+    background: #ddd;
+}
+
+.about_block .thumb img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    border-radius: inherit;
+
+    object-fit: cover;
+}
+
+
+.about_block .data
+{
+    width: calc(50% - 33px);
+    margin-left: auto;
+}
+
+.about_block .data .title
+{
+    color: #ec6608;
+    font-family: var(--font_family2);
+    font-size: 36px;
+    line-height: 45px;
+
+    margin-bottom: 29px;
+
+    text-transform: uppercase;
+}
+
+.about_block .data .text_block
+{
+    color: #000;
+    line-height: 22px;
 }
 
 
@@ -4462,12 +4540,18 @@ header.no_border .logo img
 /*-----------------
     Action form
 -----------------*/
+.action_form
+{
+    background: #f9f9f9;
+}
+
+
 .action_form .data
 {
     position: relative;
     z-index: 3;
 
-    padding: 132px 50px 68px;
+    padding: 102px 93px 65px 50px;
 }
 
 .action_form .data:before
@@ -4538,8 +4622,9 @@ header.no_border .logo img
 
     display: block;
 
-    width: 511px;
-    margin-left: -376px;
+    height: 610px;
+    max-height: 100%;
+    margin-left: -280px;
 
     pointer-events: none;
 }
@@ -4549,35 +4634,49 @@ header.no_border .logo img
 /*--------------------
     Contacts block
 --------------------*/
-.contacts_block
+.contacts_block .row
 {
-    position: relative;
-    z-index: 3;
+    margin-bottom: -40px;
+    margin-left: -40px;
 
-    padding: 96px 0;
+    align-items: stretch;
+    align-content: stretch;
 }
 
 
-.contacts_block .cont
+.contacts_block .map_wrap
 {
     position: relative;
     z-index: 3;
 
-    pointer-events: none;
+    display: flex;
+
+    width: calc(66.666% - 40px);
+    margin-bottom: 40px;
+    margin-left: 40px;
+    padding: 80px 80px 80px 0;
+
+    border-radius: 0 24px 24px 0;
+
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
 }
 
 
 .contacts_block .data
 {
-    width: 432px;
+    position: relative;
+    z-index: 3;
+
+    width: 443px;
     max-width: 100%;
     padding: 30px;
 
-    pointer-events: auto;
-
-    border-radius: 12px;
+    border-radius: 9px;
     background: #fff;
-    box-shadow: 0 0 20px 0 rgba(0, 0, 0, .2);
+    box-shadow: 0 4px 25px rgba(0, 0, 0, .16);
 }
 
 
@@ -4848,14 +4947,29 @@ header.no_border .logo img
 {
     position: absolute;
     top: 0;
-    left: 0;
+    right: 0;
 
     overflow: hidden;
 
-    width: 100%;
+    width: calc(100% + (100vw - 1280px) / 2 + 24px);
     height: 100%;
 
+    border-radius: 0 24px 24px 0;
     background: #ddd;
+}
+
+
+
+.contacts_block .text_block
+{
+    color: #000;
+    line-height: 22px;
+
+    width: calc(33.333% - 40px);
+    margin-bottom: 40px;
+    margin-left: 40px;
+
+    align-self: center;
 }
 
 
@@ -4967,12 +5081,6 @@ header.no_border .logo img
 /*--------------
     Articles
 --------------*/
-.articles
-{
-    padding-bottom: 16px;
-}
-
-
 .articles .row
 {
     margin-bottom: -40px;
@@ -5001,15 +5109,15 @@ header.no_border .logo img
     position: absolute;
     z-index: -1;
     top: 0;
-    bottom: 0;
+    bottom: 40px;
     left: 50%;
 
     display: block;
 
     width: 100vw;
-    height: 641px;
+    height: 316px;
     margin: auto;
-    margin-left: -50vw;
+    margin-left: -50%;
 
     content: '';
 
@@ -5019,11 +5127,13 @@ header.no_border .logo img
 
 .articles .article
 {
+    color: #fff;
+
     position: relative;
 
     overflow: hidden;
 
-    border-radius: 12px;
+    border-radius: 14px;
 }
 
 
@@ -5036,7 +5146,7 @@ header.no_border .logo img
     display: block;
     overflow: hidden;
 
-    padding-bottom: 150%;
+    padding-bottom: 128.97%;
 
     text-decoration: none;
 
@@ -5061,84 +5171,58 @@ header.no_border .logo img
 }
 
 
-.articles .article .info
+.articles .article .date
 {
-    color: #fff;
+    font-size: 18px;
+    line-height: 24px;
 
     position: absolute;
     z-index: 3;
-    bottom: 40px;
-    left: 0;
-
-    width: 100%;
-    padding: 24px 44px;
-
-    transition: .2s linear;
-    pointer-events: none;
-
-    background: rgba(0,0,0,.3);
-}
-
-
-.articles .article .date
-{
-    font-size: 14px;
-    line-height: 22px;
-
-    position: absolute;
     top: 0;
     left: 0;
 
-    padding: 9px 15px;
+    padding: 11px 27px 10px;
 
     white-space: nowrap;
 
-    border-radius: 0 0 12px 0;
-    background: #ec6707;
+    border-radius: 0 11px;
+    background: #ec6608;
 }
 
 
 .articles .article .name
 {
     font-size: 25px;
-    font-weight: 500;
-    line-height: 33px;
+    line-height: 34px;
+
+    position: absolute;
+    z-index: 3;
+    bottom: 0;
+    left: 0;
 
     display: flex;
 
     width: 100%;
-    min-height: 102px;
+    min-height: 105px;
+    padding: 19px 35px 18px;
 
-    transition: min-height .2s linear;
-    text-align: center;
+    transition: .2s linear;
+    pointer-events: none;
 
-    justify-content: center;
+    border-radius: 0 0 14px 14px;
+    background: rgba(0, 0, 0, .24);
+
+    justify-content: flex-start;
     align-items: center;
     align-content: center;
     flex-wrap: wrap;
+    backdrop-filter: blur(18px);
 }
 
-.articles .article .name a
-{
-    color: currentColor;
-
-    display: inline-block;
-
-    vertical-align: top;
-    text-decoration: none;
-}
-
-
-.articles .article:hover .info
-{
-    bottom: 0;
-
-    background: #ec6707;
-}
 
 .articles .article:hover .name
 {
-    min-height: 142px;
+    background: #ec6707;
 }
 
 
