@@ -8,7 +8,8 @@
 }
 
 /* For IE */
-@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none)
+@media screen and (-ms-high-contrast: active),
+(-ms-high-contrast: none)
 {
     .supports_error
     {
@@ -150,7 +151,7 @@ input[type=number]
 :hover,
 :active
 {
-    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     -webkit-touch-callout: none;
 }
 
@@ -404,7 +405,7 @@ button
 --------------*/
 .fancybox__backdrop
 {
-    background: rgba(0,0,0,.6);
+    background: rgba(0, 0, 0, .6);
 }
 
 
@@ -1244,7 +1245,7 @@ header .socials a
     transition: color .2s linear;
     text-decoration: none;
 
-    border: 1px dashed ;
+    border: 1px dashed;
     border-radius: 50%;
 
     justify-content: center;
@@ -2946,12 +2947,13 @@ header.no_border .logo img
     position: relative;
     z-index: 3;
 
-    margin-bottom: -40px;
+    margin-bottom: -76px;
     margin-left: -26px;
     padding-top: 114px;
 
     align-items: stretch;
     align-content: stretch;
+    justify-content: center;
 }
 
 .enter .row:before
@@ -2975,7 +2977,7 @@ header.no_border .logo img
 .enter .row > *
 {
     width: calc(50% - 26px);
-    margin-bottom: 40px;
+    margin-bottom: 76px;
     margin-left: 26px;
 }
 
@@ -3017,7 +3019,7 @@ header.no_border .logo img
     margin: auto;
 }
 
-.enter .item + .item .thumb > img
+.enter .item .thumb2 > img
 {
     left: -132px;
 }
@@ -3239,7 +3241,7 @@ header.no_border .logo img
 
     content: '';
 
-    background: rgba(0,0,0,.3);
+    background: rgba(0, 0, 0, .3);
 }
 
 
@@ -3872,7 +3874,7 @@ header.no_border .logo img
 
     transition: background .2s linear;
 
-    background: rgba(0,0,0,.3);
+    background: rgba(0, 0, 0, .3);
 }
 
 .about_info .link .info:before
@@ -4089,7 +4091,7 @@ header.no_border .logo img
 
 .about_info .link:hover .info
 {
-    background: rgba(236,103,7,.7);
+    background: rgba(236, 103, 7, .7);
 }
 
 
@@ -5407,7 +5409,7 @@ header.no_border .logo img
     padding: 48px;
 
     border-radius: 0 12px 0 0;
-    background: rgba(0,0,0,.3);
+    background: rgba(0, 0, 0, .3);
 }
 
 .trainer_info .image .info:before
@@ -6026,7 +6028,7 @@ header.no_border .logo img
     pointer-events: none;
 
     border-radius: 12px 0 0 12px;
-    background: rgba(0,0,0,.3);
+    background: rgba(0, 0, 0, .3);
 }
 
 
@@ -6120,6 +6122,211 @@ header.no_border .logo img
     content: '';
 
     background: #e8e8e8;
+}
+
+
+
+/*-------------------------
+    Additional services
+-------------------------*/
+.additional_services .block_head
+{
+    margin-bottom: 45px;
+}
+
+.additional_services .block_head .desc
+{
+    font-size: 22px;
+    line-height: 30px;
+}
+
+
+.additional_services .swiper-container
+{
+    overflow: visible !important;
+}
+
+.additional_services .swiper-container .slide
+{
+    visibility: hidden;
+
+    transition: opacity .2s linear, visibility .2s linear;
+    pointer-events: none;
+
+    opacity: 0;
+}
+
+.additional_services .swiper-container .slide.visible
+{
+    visibility: visible;
+
+    pointer-events: auto;
+
+    opacity: 1;
+}
+
+
+.additional_services .swiper-button-next,
+.additional_services .swiper-button-prev
+{
+    top: 0;
+    bottom: auto;
+
+    margin-top: -35px;
+}
+
+
+.additional_services .item
+{
+    overflow: hidden;
+
+    border: 1px solid #e8e8e8;
+    border-radius: 14px;
+    background: #fff;
+}
+
+
+.additional_services .item .thumb
+{
+    position: relative;
+
+    display: block;
+    overflow: hidden;
+
+    padding-bottom: 57.68%;
+
+    background: #ddd;
+}
+
+.additional_services .item .thumb img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+
+.additional_services .item .info
+{
+    padding: 25px 36px 33px;
+}
+
+
+.additional_services .item .name
+{
+    color: #000;
+    font-size: 19px;
+    font-weight: 700;
+    line-height: 26px;
+}
+
+.additional_services .item .name a
+{
+    color: currentColor;
+
+    display: inline-block;
+
+    transition: color .2s linear;
+    vertical-align: top;
+    text-decoration: none;
+}
+
+.additional_services .item .thumb:hover ~ .info .name a,
+.additional_services .item .name a:hover
+{
+    color: #ec6608;
+}
+
+
+.additional_services .item .desc
+{
+    font-size: 14px;
+    line-height: 19px;
+
+    width: 276px;
+    max-width: 100%;
+    margin-top: 16px;
+}
+
+
+.additional_services .item .price
+{
+    color: #000;
+    font-family: var(--font_family2);
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 33px;
+
+    margin-top: 22px;
+}
+
+.additional_services .item .price span
+{
+    color: #ec6608;
+}
+
+
+
+/*----------------------
+    Advantages block
+----------------------*/
+.advantages_block
+{
+    padding: 76px 0 100px;
+
+    background: #f9f9f9;
+}
+
+
+.advantages_block .row
+{
+    margin-bottom: -32px;
+    margin-left: -24px;
+}
+
+.advantages_block .row > *
+{
+    width: calc(20% - 24px);
+    margin-bottom: 32px;
+    margin-left: 24px;
+}
+
+
+.advantages_block .item
+{
+    font-size: 19px;
+    line-height: 26px;
+
+    text-align: center;
+}
+
+
+.advantages_block .icon
+{
+    display: flex;
+
+    height: 68px;
+    margin-bottom: 21px;
+
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.advantages_block .icon img
+{
+    display: block;
+
+    max-width: 100%;
+    max-height: 100%;
 }
 
 
@@ -6494,7 +6701,7 @@ footer .socials a
     transition: color .2s linear;
     text-decoration: none;
 
-    border: 1px dashed ;
+    border: 1px dashed;
     border-radius: 50%;
 
     justify-content: center;
@@ -6654,7 +6861,8 @@ footer.no_bg
 
 
 
-@media print, (max-width: 1439px)
+@media print,
+(max-width: 1439px)
 {
     .trainer_info .image .photo
     {
@@ -6784,7 +6992,8 @@ footer.no_bg
 
 
 
-@media print, (max-width: 1327px)
+@media print,
+(max-width: 1327px)
 {
     .trainer_info .prev_next
     {

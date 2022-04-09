@@ -1,4 +1,5 @@
-@media print, (max-width: 1023px)
+@media print,
+(max-width: 1023px)
 {
     /*-------------------
         Global styles
@@ -888,7 +889,13 @@
 
     .enter .row
     {
+        margin-bottom: -40px;
         padding-top: 52px;
+    }
+
+    .enter .row > *
+    {
+        margin-bottom: 40px;
     }
 
     .enter .row:before
@@ -902,16 +909,21 @@
         height: 280px;
     }
 
-    .enter .item .thumb > img
+    .enter .item .thumb1 > img
     {
         width: 272px;
     }
 
-    .enter .item + .item .thumb > img
+    .enter .item .thumb2 > img
     {
         left: -72px;
 
         width: 220px;
+    }
+
+    .enter .item .thumb3 > img
+    {
+        width: 360px;
     }
 
 
@@ -993,6 +1005,75 @@
         margin-top: 40px;
         margin-bottom: 40px;
         margin-left: 0;
+    }
+
+
+
+    /*------------
+        Stocks
+    ------------*/
+    .stocks .swiper-button-next,
+    .stocks .swiper-button-prev
+    {
+        margin-top: -28px;
+    }
+
+
+
+    /*----------------------
+        Advantages block
+    ----------------------*/
+    .advantages_block
+    {
+        padding: 60px 0;
+    }
+
+
+    .advantages_block .row
+    {
+        justify-content: center;
+    }
+
+    .advantages_block .row > *
+    {
+        width: calc(33.333% - 24px);
+    }
+
+
+    .advantages_block .item
+    {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+
+
+    /*-------------------------
+        Additional services
+    -------------------------*/
+    .additional_services .block_head
+    {
+        margin-bottom: 32px;
+    }
+
+    .additional_services .block_head .desc
+    {
+        font-size: 17px;
+        line-height: 25px;
+    }
+
+
+    .additional_services .swiper-button-next,
+    .additional_services .swiper-button-prev
+    {
+        margin-top: -28px;
+    }
+
+
+    .additional_services .item .price
+    {
+        font-size: 22px;
+        line-height: 28px;
     }
 
 

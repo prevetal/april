@@ -176,6 +176,16 @@
 
 
 
+    /*-----------
+        Enter
+    -----------*/
+    .enter .item .thumb3 > img
+    {
+        width: 324px;
+    }
+
+
+
     /*-----------------
         Main slider
     -----------------*/
@@ -443,6 +453,58 @@
         padding: 16px 20px;
     }
 
+
+
+    /*----------------------
+        Advantages block
+    ----------------------*/
+    .advantages_block
+    {
+        padding: 52px 0;
+    }
+
+
+    .advantages_block .row
+    {
+        margin-bottom: -20px;
+        margin-left: 0;
+    }
+
+    .advantages_block .row > *
+    {
+        width: 100%;
+        margin-bottom: 20px;
+        margin-left: 0;
+    }
+
+
+    .advantages_block .item
+    {
+        font-size: 15px;
+        line-height: 21px;
+
+        display: flex;
+
+        text-align: left;
+
+        justify-content: space-between;
+        align-items: center;
+        align-content: center;
+        flex-wrap: wrap;
+    }
+
+
+    .advantages_block .item .icon
+    {
+        width: 52px;
+        height: 48px;
+        margin: 0;
+    }
+
+    .advantages_block .item .icon + div
+    {
+        width: calc(100% - 76px);
+    }
 
 
 

@@ -1,4 +1,5 @@
-@media print, (max-width: 1279px)
+@media print,
+(max-width: 1279px)
 {
     /*-------------------
         Global styles
@@ -1037,7 +1038,13 @@
 
     .enter .row
     {
+        margin-bottom: -52px;
         padding-top: 72px;
+    }
+
+    .enter .row > *
+    {
+        margin-bottom: 52px;
     }
 
     .enter .row:before
@@ -1070,16 +1077,21 @@
         height: 360px;
     }
 
-    .enter .item .thumb > img
+    .enter .item .thumb1 > img
     {
         width: 360px;
     }
 
-    .enter .item + .item .thumb > img
+    .enter .item .thumb2 > img
     {
         left: -100px;
 
         width: 300px;
+    }
+
+    .enter .item .thumb3 > img
+    {
+        width: 472px;
     }
 
 
@@ -1119,6 +1131,60 @@
         line-height: 36px;
 
         margin-bottom: 20px;
+    }
+
+
+
+    /*----------------------
+        Advantages block
+    ----------------------*/
+    .advantages_block
+    {
+        padding: 64px 0;
+    }
+
+
+    .advantages_block .item
+    {
+        font-size: 17px;
+        line-height: 23px;
+    }
+
+
+    .advantages_block .icon
+    {
+        height: 60px;
+        margin-bottom: 16px;
+    }
+
+
+
+    /*-------------------------
+        Additional services
+    -------------------------*/
+    .additional_services .block_head
+    {
+        margin-bottom: 40px;
+    }
+
+    .additional_services .block_head .desc
+    {
+        font-size: 19px;
+        line-height: 27px;
+    }
+
+
+    .additional_services .item .info
+    {
+        padding: 19px 23px 23px;
+    }
+
+    .additional_services .item .price
+    {
+        font-size: 23px;
+        line-height: 29px;
+
+        margin-top: 20px;
     }
 
 

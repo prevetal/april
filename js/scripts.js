@@ -262,6 +262,80 @@ $(() => {
 	}
 
 
+	// Дополнительные услуги
+	const additionalServicesSliders = []
+
+	$('.additional_services .swiper-container').each(function (i) {
+		$(this).addClass('additional_services_s' + i)
+
+		let slides = $(this).find('.slide').length,
+			options = {
+				loop: false,
+				speed: 500,
+				simulateTouch: false,
+				allowTouchMove: true,
+				noSwiping: true,
+				watchSlidesVisibility: true,
+				slideActiveClass: 'active',
+				slideVisibleClass: 'visible',
+				navigation: {
+					nextEl: '.swiper-button-next',
+					prevEl: '.swiper-button-prev'
+				},
+				breakpoints: {
+					0: {
+						spaceBetween: 24,
+						slidesPerView: 1
+					},
+					768: {
+						spaceBetween: 24,
+						slidesPerView: 2
+					},
+					1024: {
+						spaceBetween: 24,
+						slidesPerView: 3
+					},
+					1280: {
+						spaceBetween: 40,
+						slidesPerView: 3
+					}
+				},
+				on: {
+					init: swiper => {
+						setTimeout(() => {
+							let thumbH = $(swiper.$el).find('.thumb').outerHeight()
+
+							$(swiper.$el).find('.swiper-button-prev, .swiper-button-next').css('top', thumbH / 2)
+							setHeight($(swiper.$el).find('.item'))
+						})
+					},
+					resize: swiper => {
+						setTimeout(() => {
+							let thumbH = $(swiper.$el).find('.thumb').outerHeight()
+
+							$(swiper.$el).find('.swiper-button-prev, .swiper-button-next').css('top', thumbH / 2)
+
+							$(swiper.$el).find('.item').height('auto')
+							setHeight($(swiper.$el).find('.item'))
+						})
+					}
+				}
+			}
+
+		additionalServicesSliders.push(new Swiper('.additional_services_s' + i, options))
+
+		if (slides > additionalServicesSliders[i].params.slidesPerView) {
+			options.loop = true
+			options.simulateTouch = true
+			options.allowTouchMove = true
+			options.noSwiping = false
+
+			additionalServicesSliders[i].destroy(true, true)
+			additionalServicesSliders[i] = new Swiper('.additional_services_s' + i, options)
+		}
+	})
+
+
 	// Моб. меню
 	$('.mob_header .mob_menu_btn').click((e) => {
 		e.preventDefault()
