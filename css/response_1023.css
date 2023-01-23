@@ -1078,6 +1078,133 @@
 
 
 
+    /*---------------
+        Cafe menu
+    ---------------*/
+    .cafe_menu
+    {
+        padding-top: 52px;
+        padding-bottom: 172px;
+    }
+
+
+    .cafe_menu .section.alignright
+    {
+        width: 100%;
+    }
+
+
+    .cafe_menu .col
+    {
+        width: 100%;
+    }
+
+    .cafe_menu .col + .col
+    {
+        margin-top: 64px;
+    }
+
+
+    .cafe_menu .section .title
+    {
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+
+    .cafe_menu .section .sub_title
+    {
+        font-size: 22px;
+        line-height: 26px;
+    }
+
+
+    .cafe_menu .dish .name
+    {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+
+    .cafe_menu .col .dish .desc
+    {
+        width: 364px;
+    }
+
+
+    .cafe_menu .col .dish .weight
+    {
+        margin-left: 40px;
+    }
+
+
+    .cafe_menu .col .dish .price
+    {
+        margin-left: 28px;
+    }
+
+
+    .cafe_menu .drinks .item .name,
+    .cafe_menu .drinks .item .type,
+    .cafe_menu .drinks .item .volume
+    {
+        font-size: 16px;
+    }
+
+
+    .cafe_menu .img1
+    {
+        top: -20px;
+
+        width: auto;
+        height: 120px;
+    }
+
+    .cafe_menu .img2
+    {
+        top: 280px;
+        right: -68px;
+
+        width: 220px;
+    }
+
+    .cafe_menu .img5
+    {
+        top: -16px;
+        right: -40px;
+
+        width: 200px;
+    }
+
+    .cafe_menu .img6
+    {
+        top: -64px;
+        right: -48px;
+        left: auto;
+
+        width: 200px;
+        margin-top: 0;
+    }
+
+    .cafe_menu .img7
+    {
+        top: -40px;
+        right: -40px;
+
+        width: 200px;
+    }
+
+
+    .cafe_menu .cat
+    {
+        bottom: -40px;
+        left: 100px;
+
+        height: 200px;
+    }
+
+
+
     /*------------
         Footer
     ------------*/
@@ -1091,10 +1218,4 @@
     {
         display: none;
     }
-
-
-
-    /*-----------
-        PopUp
-    -----------*/
 }

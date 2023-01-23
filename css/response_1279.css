@@ -1189,6 +1189,177 @@
 
 
 
+    /*---------------
+        Cafe menu
+    ---------------*/
+    .cafe_menu
+    {
+        padding-top: 60px;
+        padding-bottom: 212px;
+    }
+
+
+    .cafe_menu .col
+    {
+        width: calc(50% - 24px);
+    }
+
+
+    .cafe_menu .section + .section,
+    .cafe_menu .section.big_m_t
+    {
+        margin-top: 60px;
+    }
+
+
+    .cafe_menu .section .title
+    {
+        font-size: 36px;
+        line-height: 40px;
+
+        margin-bottom: 24px;
+    }
+
+
+    .cafe_menu .section .sub_title
+    {
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+
+    .cafe_menu .dish .name
+    {
+        font-size: 19px;
+        line-height: 23px;
+    }
+
+
+    .cafe_menu .dish .desc
+    {
+        font-size: 13px;
+        line-height: 21px;
+
+        width: 364px;
+    }
+
+
+    .cafe_menu .dish .weight
+    {
+        font-size: 16px;
+        line-height: 28px;
+
+        margin-left: 40px;
+    }
+
+
+    .cafe_menu .dish .price
+    {
+        font-size: 20px;
+        line-height: 28px;
+
+        min-width: 68px;
+        margin-left: 28px;
+    }
+
+
+    .cafe_menu .col .dish .desc
+    {
+        width: 300px;
+    }
+
+    .cafe_menu .col .dish .weight,
+    .cafe_menu .col .dish .price
+    {
+        margin-left: 24px;
+    }
+
+
+    .cafe_menu .section.alignright
+    {
+        width: 560px;
+        margin-right: 0;
+    }
+
+
+    .cafe_menu .drinks
+    {
+        width: 560px;
+    }
+
+    .cafe_menu .drinks * + .sub_title
+    {
+        margin-top: 32px;
+    }
+
+
+    .cafe_menu .drinks .item .name,
+    .cafe_menu .drinks .item .type,
+    .cafe_menu .drinks .item .volume
+    {
+        font-size: 17px;
+    }
+
+    .cafe_menu .drinks .item .price
+    {
+        font-size: 20px;
+        line-height: 28px;
+
+        min-width: 68px;
+        margin-left: 28px;
+    }
+
+
+    .cafe_menu .img1
+    {
+        top: 40px;
+
+        width: 360px;
+    }
+
+    .cafe_menu .img2
+    {
+        top: 304px;
+        right: -24px;
+
+        width: 420px;
+    }
+
+    .cafe_menu .img5
+    {
+        top: -36px;
+        right: 48px;
+
+        width: 400px;
+    }
+
+    .cafe_menu .img6
+    {
+        top: 72px;
+
+        width: 500px;
+        margin-right: 24px;
+    }
+
+    .cafe_menu .img7
+    {
+        top: 40px;
+        right: -80px;
+
+        width: 464px;
+    }
+
+
+    .cafe_menu .cat
+    {
+        bottom: -48px;
+        left: 140px;
+
+        height: 240px;
+    }
+
+
+
     /*------------
         Footer
     ------------*/

@@ -9,6 +9,12 @@
     }
 
 
+    .cont
+    {
+        padding: 0 20px;
+    }
+
+
     .swiper-container-horizontal > .swiper-pagination-bullets,
     .swiper-pagination-custom,
     .swiper-pagination-fraction
@@ -504,6 +510,114 @@
     .advantages_block .item .icon + div
     {
         width: calc(100% - 76px);
+    }
+
+
+
+    /*---------------
+        Cafe menu
+    ---------------*/
+    .cafe_menu
+    {
+        padding-top: 40px;
+        padding-bottom: 148px;
+    }
+
+
+    .cafe_menu .section + .section,
+    .cafe_menu .section.big_m_t
+    {
+        margin-top: 48px;
+    }
+
+
+    .cafe_menu .section .title
+    {
+        font-size: 24px;
+    }
+
+
+    .cafe_menu .section .sub_title
+    {
+        font-size: 18px;
+    }
+
+
+    .cafe_menu .dish .name
+    {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+
+    .cafe_menu .dish .desc,
+    .cafe_menu .col .dish .desc
+    {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+
+    .cafe_menu .drinks .item + .item
+    {
+        margin-top: 8px;
+    }
+
+
+    .cafe_menu .drinks .item .name
+    {
+        width: 100%;
+        margin-bottom: -4px;
+    }
+
+    .cafe_menu .drinks .item .name.mob_small
+    {
+        width: calc(100% - 163px);
+        margin-bottom: 0;
+    }
+
+
+    .cafe_menu .drinks .item .type
+    {
+        margin-right: auto;
+        margin-left: 0;
+    }
+
+
+    .cafe_menu .img1
+    {
+        top: -32px;
+
+        height: 100px;
+    }
+
+    .cafe_menu .img5
+    {
+        width: 132px;
+    }
+
+    .cafe_menu .img6
+    {
+        top: -48px;
+        right: -48px;
+
+        width: 124px;
+    }
+
+    .cafe_menu .img7
+    {
+        top: -12px;
+        right: -56px;
+
+        width: 124px;
+    }
+
+
+    .cafe_menu .cat
+    {
+        bottom: -28px;
+
+        height: 140px;
     }
 
 

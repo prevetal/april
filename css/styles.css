@@ -6331,6 +6331,466 @@ header.no_border .logo img
 
 
 
+/*---------------
+    Cafe menu
+---------------*/
+.cafe_menu
+{
+    position: relative;
+    z-index: 3;
+
+    overflow: hidden;
+
+    padding: 42px 0 232px;
+
+    background: #fdf1e3;
+}
+
+
+.cafe_menu .cont
+{
+    position: relative;
+    z-index: 3;
+}
+
+
+.cafe_menu .section
+{
+    position: relative;
+}
+
+.cafe_menu .section.alignright
+{
+    width: 592px;
+    max-width: 100%;
+    margin-right: 48px;
+    margin-left: auto;
+}
+
+
+.cafe_menu .section + .section
+{
+    margin-top: 68px;
+}
+
+.cafe_menu .section.big_m_t
+{
+    margin-top: 100px;
+}
+
+.cafe_menu .section.middle_m_t
+{
+    margin-top: 100px;
+}
+
+
+.cafe_menu .section .title
+{
+    color: #ec6707;
+    font-family: var(--font_family2);
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 50px;
+
+    margin-bottom: 20px;
+}
+
+
+.cafe_menu .section .sub_title
+{
+    font-family: var(--font_family2);
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 33px;
+
+    margin-bottom: 20px;
+}
+
+
+.cafe_menu .cols
+{
+    display: flex;
+
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.cafe_menu .col
+{
+    position: relative;
+
+    width: calc(50% - 48px);
+}
+
+
+.cafe_menu .dishes
+{
+    position: relative;
+
+    width: 962px;
+    max-width: 100%;
+}
+
+
+.cafe_menu .dish
+{
+    font-family: var(--font_family2);
+
+    position: relative;
+    z-index: 3;
+
+    display: flex;
+
+    padding: 16px 0;
+
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.cafe_menu .dish:nth-child(odd):before
+{
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 0;
+
+    display: block;
+
+    width: calc(100% + 318px);
+    height: 100%;
+
+    content: '';
+
+    background: linear-gradient(90deg, #fdf1e3 0%, #fff7ed 16.15%, #fff7ed 83.33%, #fdf1e3 100%);
+}
+
+.cafe_menu .col .dish:nth-child(odd):before
+{
+    right: -48px;
+}
+
+.cafe_menu .col + .col .dish:nth-child(odd):before
+{
+    right: auto;
+    left: -48px;
+}
+
+.cafe_menu .dish > *
+{
+    position: relative;
+    z-index: 3;
+}
+
+
+.cafe_menu .dish .name
+{
+    color: #1a1a1a;
+    font-size: 20px;
+    line-height: 25px;
+
+    width: 100%;
+}
+
+
+.cafe_menu .dish .desc
+{
+    color: #5d5d5d;
+    font-size: 14px;
+    line-height: 22px;
+
+    width: 412px;
+    max-width: 100%;
+    margin-top: 12px;
+}
+
+
+.cafe_menu .dish .weight
+{
+    color: #5d5d5d;
+    font-size: 18px;
+    line-height: 30px;
+
+    min-width: 48px;
+    margin-top: 6px;
+    margin-left: 44px;
+
+    white-space: nowrap;
+}
+
+
+.cafe_menu .dish .price
+{
+    font-size: 24px;
+    line-height: 30px;
+
+    min-width: 72px;
+    margin-top: 6px;
+    margin-left: 32px;
+
+    white-space: nowrap;
+}
+
+
+.cafe_menu .col .dish .weight,
+.cafe_menu .col .dish .price
+{
+    margin-left: 30px;
+}
+
+
+
+.cafe_menu .drinks
+{
+    width: 592px;
+    max-width: 100%;
+}
+
+
+.cafe_menu .drinks .sub_title
+{
+    margin-bottom: 12px;
+}
+
+.cafe_menu .drinks * + .sub_title
+{
+    margin-top: 36px;
+}
+
+
+.cafe_menu .drinks .item
+{
+    font-family: var(--font_family2);
+
+    display: flex;
+
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.cafe_menu .drinks .item + .item
+{
+    margin-top: 8px;
+}
+
+
+.cafe_menu .drinks .item .name
+{
+    font-size: 18px;
+    line-height: 23px;
+
+    margin-right: auto;
+}
+
+
+.cafe_menu .drinks .item .type
+{
+    color: #5d5d5d;
+    font-size: 18px;
+    line-height: 23px;
+
+    min-width: 76px;
+
+    white-space: nowrap;
+}
+
+
+.cafe_menu .drinks .item .volume
+{
+    color: #5d5d5d;
+    font-size: 18px;
+    line-height: 23px;
+
+    margin-left: 35px;
+
+    text-align: right;
+    white-space: nowrap;
+}
+
+
+.cafe_menu .drinks .item .price
+{
+    font-size: 24px;
+    line-height: 30px;
+
+    min-width: 72px;
+    margin-left: 26px;
+
+    white-space: nowrap;
+}
+
+
+.cafe_menu .img1
+{
+    position: absolute;
+    z-index: 9;
+    top: -42px;
+    right: 0;
+
+    display: block;
+
+    pointer-events: none;
+}
+
+.cafe_menu .img2
+{
+    position: absolute;
+    z-index: 9;
+    top: 284px;
+    right: 0;
+
+    display: block;
+
+    pointer-events: none;
+}
+
+.cafe_menu .img5
+{
+    position: absolute;
+    z-index: 9;
+    top: -48px;
+    right: 80px;
+
+    display: block;
+
+    pointer-events: none;
+}
+
+.cafe_menu .img6
+{
+    position: absolute;
+    z-index: 9;
+    top: 40px;
+    right: 100%;
+
+    display: block;
+
+    margin-right: 124px;
+
+    pointer-events: none;
+}
+
+.cafe_menu .img7
+{
+    position: absolute;
+    z-index: 9;
+    top: -20px;
+    right: 0;
+
+    display: block;
+
+    pointer-events: none;
+}
+
+
+
+.cafe_menu .cat
+{
+    position: absolute;
+    z-index: 9;
+    right: 0;
+    bottom: -68px;
+    left: 176px;
+
+    display: block;
+
+    height: 301px;
+    margin: auto;
+
+    pointer-events: none;
+}
+
+
+.cafe_menu .ball
+{
+    position: absolute;
+    z-index: 10;
+    top: 429px;
+    left: 50%;
+
+    display: block;
+
+    width: 58px;
+    height: 58px;
+    margin-left: -898px;
+
+    pointer-events: none;
+}
+
+
+.cafe_menu .fruits1
+{
+    position: absolute;
+    z-index: 10;
+    right: 50%;
+    bottom: 935px;
+
+    display: block;
+
+    width: 267px;
+    height: 432px;
+    margin-right: -924px;
+
+    pointer-events: none;
+}
+
+.cafe_menu .fruits2
+{
+    position: absolute;
+    z-index: 10;
+    bottom: 579px;
+    left: 50%;
+
+    display: block;
+
+    width: 110px;
+    height: 106px;
+    margin-left: -868px;
+
+    pointer-events: none;
+}
+
+.cafe_menu .fruits3
+{
+    position: absolute;
+    z-index: 10;
+    right: 50%;
+    bottom: 40px;
+
+    display: block;
+
+    width: 113px;
+    height: 114px;
+    margin-right: -724px;
+
+    pointer-events: none;
+}
+
+
+.cafe_menu .bg
+{
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+
+    display: block;
+
+    width: 100%;
+    height: calc(100% + 105px);
+
+    pointer-events: none;
+
+    object-fit: cover;
+}
+
+
+
 /*------------
     Footer
 ------------*/

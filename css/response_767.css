@@ -689,6 +689,151 @@
 
 
 
+    /*---------------
+        Cafe menu
+    ---------------*/
+    .cafe_menu
+    {
+        padding-top: 48px;
+        padding-bottom: 160px;
+    }
+
+
+    .cafe_menu .section + .section,
+    .cafe_menu .section.big_m_t
+    {
+        margin-top: 52px;
+    }
+
+
+    .cafe_menu .section .title
+    {
+        font-size: 26px;
+        line-height: 40px;
+    }
+
+
+    .cafe_menu .section .sub_title
+    {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+
+    .cafe_menu .dish .name
+    {
+        font-size: 17px;
+        line-height: 23px;
+
+        width: auto;
+
+        align-self: center;
+    }
+
+
+    .cafe_menu .dish .desc,
+    .cafe_menu .col .dish .desc
+    {
+        width: 100%;
+        margin-top: 8px;
+
+        order: 3;
+    }
+
+
+    .cafe_menu .dish .weight,
+    .cafe_menu .col .dish .weight
+    {
+        margin-top: 0;
+        margin-left: auto;
+
+        align-self: center;
+    }
+
+
+    .cafe_menu .dish .price,
+    .cafe_menu .col .dish .price
+    {
+        margin-top: 0;
+        margin-left: 24px;
+
+        align-self: center;
+    }
+
+
+    .cafe_menu .drinks .item + .item
+    {
+        margin-top: 4px;
+    }
+
+
+    .cafe_menu .drinks .item .name,
+    .cafe_menu .drinks .item .type,
+    .cafe_menu .drinks .item .volume
+    {
+        font-size: 14px;
+    }
+
+    .cafe_menu .drinks .item .type,
+    .cafe_menu .drinks .item .volume,
+    .cafe_menu .drinks .item .price
+    {
+        margin-left: 24px;
+    }
+
+    .cafe_menu .drinks .item .type,
+    .cafe_menu .drinks .item .price
+    {
+        min-width: 64px;
+    }
+
+
+    .cafe_menu .img1
+    {
+        top: -32px;
+
+        height: 100px;
+    }
+
+    .cafe_menu .img2
+    {
+        display: none;
+    }
+
+    .cafe_menu .img5
+    {
+        top: -24px;
+        right: 0;
+
+        width: 152px;
+    }
+
+    .cafe_menu .img6
+    {
+        top: -64px;
+        right: -32px;
+
+        width: 152px;
+    }
+
+    .cafe_menu .img7
+    {
+        right: -32px;
+
+        width: 152px;
+    }
+
+
+    .cafe_menu .cat
+    {
+        bottom: -32px;
+        left: 0;
+
+        height: 160px;
+    }
+
+
+
     /*------------
         Footer
     ------------*/
