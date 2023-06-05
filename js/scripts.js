@@ -1,10 +1,10 @@
 $(() => {
 	// Основной слайдер на главной
-	if ($('.main_slider .swiper-container').length) {
-		new Swiper('.main_slider .swiper-container', {
+	if ($('.main_slider .swiper').length) {
+		new Swiper('.main_slider .swiper', {
 			loop: true,
 			speed: 750,
-			watchSlidesVisibility: true,
+			watchSlidesProgress: true,
 			slideActiveClass: 'active',
 			slideVisibleClass: 'visible',
 			spaceBetween: 0,
@@ -20,11 +20,11 @@ $(() => {
 
 
 	// Слайдер в тексте
-	if ($('.text_block .swiper-container').length) {
-		new Swiper('.text_block .swiper-container', {
+	if ($('.text_block .swiper').length) {
+		new Swiper('.text_block .swiper', {
 			loop: true,
 			speed: 500,
-			watchSlidesVisibility: true,
+			watchSlidesProgress: true,
 			slideActiveClass: 'active',
 			slideVisibleClass: 'visible',
 			spaceBetween: 24,
@@ -49,16 +49,16 @@ $(() => {
 		}], {
 			on: {
 				reveal: () => {
-					if ($('.stocks .swiper-container').length) {
+					if ($('.stocks .swiper').length) {
 						let sliders = []
 
-						$('.stocks .swiper-container').each(function (i) {
+						$('.stocks .swiper').each(function (i) {
 							let slides = $(this).find('.slide').length,
 								this_ID = $(this).attr('id'),
 								options = {
 									loop: false,
 									speed: 500,
-									watchSlidesVisibility: true,
+									watchSlidesProgress: true,
 									slideActiveClass: 'active',
 									slideVisibleClass: 'visible',
 									navigation: {
@@ -115,16 +115,16 @@ $(() => {
 
 
 	// ГРУППЫ И РАСПИСАНИЕ
-	if ($('.groups .swiper-container').length) {
+	if ($('.groups .swiper').length) {
 		let sliders = []
 
-		$('.groups .swiper-container').each(function (i) {
+		$('.groups .swiper').each(function (i) {
 			let slides = $(this).find('.slide').length,
 				this_ID = $(this).attr('id'),
 				options = {
 					loop: false,
 					speed: 500,
-					watchSlidesVisibility: true,
+					watchSlidesProgress: true,
 					slideActiveClass: 'active',
 					slideVisibleClass: 'visible',
 					navigation: {
@@ -181,16 +181,16 @@ $(() => {
 
 
 	// Услуги
-	if ($('.services .swiper-container').length) {
+	if ($('.services .swiper').length) {
 		let sliders = []
 
-		$('.services .swiper-container').each(function (i) {
+		$('.services .swiper').each(function (i) {
 			let slides = $(this).find('.slide').length,
 				this_ID = $(this).attr('id'),
 				options = {
 					loop: false,
 					speed: 500,
-					watchSlidesVisibility: true,
+					watchSlidesProgress: true,
 					slideActiveClass: 'active',
 					slideVisibleClass: 'visible',
 					navigation: {
@@ -229,11 +229,11 @@ $(() => {
 
 
 	// Школа
-	if ($('.trainer_info .swiper-container').length) {
-		new Swiper('.trainer_info .swiper-container', {
+	if ($('.trainer_info .swiper').length) {
+		new Swiper('.trainer_info .swiper', {
 			loop: true,
 			speed: 750,
-			watchSlidesVisibility: true,
+			watchSlidesProgress: true,
 			slideActiveClass: 'active',
 			slideVisibleClass: 'visible',
 			spaceBetween: 0,
@@ -265,7 +265,7 @@ $(() => {
 	// Дополнительные услуги
 	const additionalServicesSliders = []
 
-	$('.additional_services .swiper-container').each(function (i) {
+	$('.additional_services .swiper').each(function (i) {
 		$(this).addClass('additional_services_s' + i)
 
 		let slides = $(this).find('.slide').length,
@@ -275,7 +275,7 @@ $(() => {
 				simulateTouch: false,
 				allowTouchMove: true,
 				noSwiping: true,
-				watchSlidesVisibility: true,
+				watchSlidesProgress: true,
 				slideActiveClass: 'active',
 				slideVisibleClass: 'visible',
 				navigation: {
@@ -354,4 +354,84 @@ $(() => {
 		$('header').removeClass('show')
 		$('.overlay').fadeOut(300)
 	})
+
+
+	// Кастомный select
+	var selectsArr = [],
+		selects = document.querySelectorAll('select')
+
+	if (selects) {
+		selects.forEach(el => selectsArr.push(NiceSelect.bind(el)))
+	}
+
+
+	// Фильтр
+	$('.catalog .filter .mob_btn').click(function (e) {
+		e.preventDefault()
+
+		$(this).toggleClass('active')
+		$('.catalog .filter form').slideToggle(300)
+	})
+
+
+	// Страница товара
+	$('.product_data .head').click(function (e) {
+		e.preventDefault()
+
+		let parent = $(this).closest('.item')
+
+		$(this).toggleClass('active')
+		parent.find('.data').slideToggle(300)
+	})
+
+
+	if ($('.product_info .images').length) {
+		const productThumbs = new Swiper('.product_info .thumbs .swiper', {
+			loop: false,
+			speed: 500,
+			watchSlidesProgress: true,
+			slideActiveClass: 'active',
+			slideVisibleClass: 'visible',
+			spaceBetween: 10,
+			preloadImages: false,
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev'
+			},
+			lazy: {
+				enabled: true,
+				checkInView: true,
+				loadOnTransitionStart: true,
+				loadPrevNext: true
+			},
+			breakpoints: {
+				0: {
+					slidesPerView: 3
+				},
+				1024: {
+					slidesPerView: 4
+				}
+			}
+		})
+
+		new Swiper('.product_info .big .swiper', {
+			loop: false,
+			speed: 500,
+			watchSlidesProgress: true,
+			slideActiveClass: 'active',
+			slideVisibleClass: 'visible',
+			spaceBetween: 24,
+			slidesPerView: 1,
+			preloadImages: false,
+			lazy: {
+				enabled: true,
+				checkInView: true,
+				loadOnTransitionStart: true,
+				loadPrevNext: true
+			},
+			thumbs: {
+				swiper: productThumbs
+			}
+		})
+	}
 })

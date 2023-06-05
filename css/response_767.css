@@ -834,6 +834,76 @@
 
 
 
+    /*-------------
+        Catalog
+    -------------*/
+    .catalog .head > * + *
+    {
+        margin-top: 12px;
+    }
+
+
+    .catalog .filter_selected
+    {
+        width: 100%;
+    }
+
+    .catalog .filter_selected .btn
+    {
+        line-height: 15px;
+    }
+
+
+    .catalog .sort
+    {
+        width: 100%;
+        margin-left: 0;
+    }
+
+
+
+    .catalog .items .row > *
+    {
+        width: calc(50% - 24px);
+    }
+
+
+    .catalog .items .item .data
+    {
+        bottom: 12px;
+
+        width: calc(100% - 24px);
+        padding: 12px;
+    }
+
+
+    .catalog .items .item .name
+    {
+        font-size: 15px;
+    }
+
+
+    .catalog .items .item .btn
+    {
+        font-size: 14px;
+        line-height: 20px;
+
+        margin-top: 16px;
+    }
+
+
+
+    /*------------------
+        Product info
+    ------------------*/
+    .product_info .data .price
+    {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+
+
     /*------------
         Footer
     ------------*/

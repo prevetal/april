@@ -622,6 +622,84 @@
 
 
 
+    /*-------------
+        Catalog
+    -------------*/
+    .catalog .head > * + *
+    {
+        margin-top: 12px;
+    }
+
+
+    .catalog .filter_selected
+    {
+        width: 100%;
+    }
+
+    .catalog .filter_selected .btn
+    {
+        line-height: 15px;
+    }
+
+
+    .catalog .sort
+    {
+        width: 100%;
+        margin-left: 0;
+    }
+
+
+    .catalog .items .row
+    {
+        margin-left: 0;
+    }
+
+    .catalog .items .row > *
+    {
+        width: 100%;
+        margin-left: 0;
+    }
+
+
+    .catalog .items .item .data
+    {
+        bottom: 20px;
+
+        width: calc(100% - 40px);
+        padding: 20px;
+    }
+
+
+
+    /*------------------
+        Product info
+    ------------------*/
+    .product_info .images .thumbs
+    {
+        margin-top: 12px;
+        padding: 0 32px;
+    }
+
+
+    .product_info .images .thumbs .swiper-button-prev
+    {
+        left: -32px;
+    }
+
+    .product_info .images .thumbs .swiper-button-next
+    {
+        right: -32px;
+    }
+
+
+    .product_info .data .btn
+    {
+        width: 100%;
+        margin-top: 24px;
+    }
+
+
+
     /*------------
         Footer
     ------------*/

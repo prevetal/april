@@ -1205,6 +1205,58 @@
 
 
 
+    /*-------------
+        Catalog
+    -------------*/
+    .catalog aside
+    {
+        width: 100%;
+        margin-bottom: 24px;
+    }
+
+
+    .catalog .filter .mob_btn
+    {
+        display: block;
+    }
+
+    .catalog .filter form
+    {
+        display: none;
+
+        margin-top: 10px;
+    }
+
+
+    .catalog .content
+    {
+        width: 100%;
+    }
+
+
+    .catalog .items .item .btn
+    {
+        display: inline-block;
+    }
+
+
+
+    /*------------------
+        Product info
+    ------------------*/
+    .product_info .images
+    {
+        margin-bottom: 24px;
+    }
+
+    .product_info .images,
+    .product_info .data
+    {
+        width: 100%;
+    }
+
+
+
     /*------------
         Footer
     ------------*/
