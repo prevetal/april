@@ -661,6 +661,15 @@
     }
 
 
+    .catalog .items .item .sticker
+    {
+        font-size: 12px;
+
+        top: 20px;
+        left: 20px;
+    }
+
+
     .catalog .items .item .data
     {
         bottom: 20px;

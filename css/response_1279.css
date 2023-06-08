@@ -1395,6 +1395,15 @@
     }
 
 
+    .catalog .items .item .sticker
+    {
+        font-size: 11px;
+
+        top: 12px;
+        left: 12px;
+    }
+
+
     .catalog .items .item .data
     {
         bottom: 20px;

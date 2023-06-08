@@ -7213,6 +7213,72 @@ header.no_border .logo img
 }
 
 
+.catalog .items .item .sticker
+{
+    color: #fff;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+
+    position: absolute;
+    z-index: 3;
+    top: 19px;
+    left: 27px;
+
+    padding: 5px 12px;
+
+    white-space: nowrap;
+    text-transform: uppercase;
+
+    border-radius: 6px;
+}
+
+.catalog .items .item .sticker.color1
+{
+    background: #ec6608;
+}
+
+.catalog .items .item .sticker.color2
+{
+    background: #00b897;
+}
+
+.catalog .items .item .sticker.color3
+{
+    background: #0856ec;
+}
+
+.catalog .items .item .sticker.color4
+{
+    background: #00a510;
+}
+
+.catalog .items .item .sticker.color5
+{
+    background: #5601e0;
+}
+
+.catalog .items .item .sticker.color6
+{
+    background: #ec0883;
+}
+
+.catalog .items .item .sticker.color7
+{
+    background: #08b5ec;
+}
+
+.catalog .items .item .sticker.color8
+{
+    background: #9e00b8;
+}
+
+.catalog .items .item .sticker.color9
+{
+    background: #ec0808;
+}
+
+
 .catalog .items .item .thumb
 {
     position: relative;
@@ -7268,13 +7334,25 @@ header.no_border .logo img
 }
 
 
+.catalog .items .item .age
+{
+    font-size: 14px;
+    line-height: 19px;
+
+    margin-top: 1px;
+
+    opacity: .5;
+}
+
+
 .catalog .items .item .price
 {
     font-family: var(--font_family2);
     font-weight: 700;
 
-    margin-top: 9px;
+    margin-top: 16px;
 }
+
 
 .catalog .items .item .btn
 {
