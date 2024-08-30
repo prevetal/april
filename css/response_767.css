@@ -59,11 +59,11 @@
 
     .mob_header .contacts
     {
+        justify-content: center;
+        order: 2;
+
         width: 100%;
         margin-top: 12px;
-
-        order: 2;
-        justify-content: center;
     }
 
     .mob_header .contacts .phone
@@ -694,142 +694,403 @@
     ---------------*/
     .cafe_menu
     {
-        padding-top: 48px;
-        padding-bottom: 160px;
+        padding: 48px 0 68px;
     }
 
 
-    .cafe_menu .section + .section,
-    .cafe_menu .section.big_m_t
+    .cafe_menu .block_title
     {
-        margin-top: 52px;
+        font-size: 30px;
     }
 
-
-    .cafe_menu .section .title
+    .cafe_menu .block_title img
     {
-        font-size: 26px;
-        line-height: 40px;
+        height: 8px;
     }
 
 
-    .cafe_menu .section .sub_title
-    {
-        font-size: 20px;
-        line-height: 24px;
-    }
 
-
-    .cafe_menu .dish .name
-    {
-        font-size: 17px;
-        line-height: 23px;
-
-        width: auto;
-
-        align-self: center;
-    }
-
-
-    .cafe_menu .dish .desc,
-    .cafe_menu .col .dish .desc
-    {
-        width: 100%;
-        margin-top: 8px;
-
-        order: 3;
-    }
-
-
-    .cafe_menu .dish .weight,
-    .cafe_menu .col .dish .weight
-    {
-        margin-top: 0;
-        margin-left: auto;
-
-        align-self: center;
-    }
-
-
-    .cafe_menu .dish .price,
-    .cafe_menu .col .dish .price
-    {
-        margin-top: 0;
-        margin-left: 24px;
-
-        align-self: center;
-    }
-
-
-    .cafe_menu .drinks .item + .item
-    {
-        margin-top: 4px;
-    }
-
-
-    .cafe_menu .drinks .item .name,
-    .cafe_menu .drinks .item .type,
-    .cafe_menu .drinks .item .volume
+    .cafe_menu .anchors
     {
         font-size: 14px;
+
+        margin-bottom: 40px;
     }
 
-    .cafe_menu .drinks .item .type,
-    .cafe_menu .drinks .item .volume,
-    .cafe_menu .drinks .item .price
+
+
+    .cafe_menu .about .logo
     {
-        margin-left: 24px;
+        height: 112px;
     }
 
-    .cafe_menu .drinks .item .type,
-    .cafe_menu .drinks .item .price
+    .cafe_menu .about .logo img
     {
-        min-width: 64px;
+        top: -40px;
+        left: -40px;
+
+        height: 192px;
     }
 
 
-    .cafe_menu .img1
-    {
-        top: -32px;
-
-        height: 100px;
-    }
-
-    .cafe_menu .img2
+    .cafe_menu .about .img2
     {
         display: none;
     }
 
-    .cafe_menu .img5
+
+
+    .cafe_menu .section .title,
+    .cafe_menu .section .title.small_m,
+    .cafe_menu .section .title.big_m
+    {
+        font-size: 26px;
+
+        margin-bottom: 32px;
+    }
+
+
+    .cafe_menu .section .title img
+    {
+        width: 26px;
+    }
+
+
+    .cafe_menu .section .title .size
+    {
+        right: 116px;
+
+        width: 68px;
+        height: 68px;
+    }
+
+    .cafe_menu .section .title .size + .size
+    {
+        width: 80px;
+        height: 80px;
+    }
+
+
+    .cafe_menu .section .title .size .val
+    {
+        font-size: 32px;
+    }
+
+    .cafe_menu .section .title .size .unit
+    {
+        font-size: 20px;
+
+        margin-top: -8px;
+    }
+
+
+
+    .cafe_menu .dish .name,
+    .cafe_menu .dish .name.small
+    {
+        font-size: 18px;
+    }
+
+
+    .cafe_menu .dish .name small
+    {
+        font-size: 14px;
+    }
+
+    .cafe_menu .dish .name small.big
+    {
+        font-size: 16px;
+    }
+
+
+    .cafe_menu .dish .dots
+    {
+        margin-top: 22px;
+
+        opacity: .5;
+    }
+
+
+    .cafe_menu .dish .desc
+    {
+        font-size: 15px;
+    }
+
+    .cafe_menu .col.big .dish .desc
+    {
+        max-width: calc(100% - 212px);
+    }
+
+    .cafe_menu .dish .desc ul li:before
+    {
+        top: 10px;
+    }
+
+
+    .cafe_menu .dish .price
+    {
+        font-size: 24px;
+
+        width: 80px;
+        min-width: 80px;
+    }
+
+    .cafe_menu .dish .price + .price
+    {
+        width: 80px;
+        min-width: 80px;
+        margin-left: 24px;
+    }
+
+
+    .cafe_menu .dish .price span
+    {
+        font-size: 20px;
+    }
+
+
+    .cafe_menu .dish .weight
+    {
+        font-size: 16px;
+
+        margin-top: 12px;
+    }
+
+
+    .cafe_menu .dish .fillers .title
+    {
+        font-size: 16px;
+
+        margin-bottom: 12px;
+    }
+
+
+
+    .cafe_menu .breakfasts_img2
+    {
+        top: 568px;
+        right: 24px;
+
+        width: 188px;
+    }
+
+    .cafe_menu .breakfasts_img5
+    {
+        top: 852px;
+
+        width: 200px;
+    }
+
+    .cafe_menu .breakfasts_img6
+    {
+        width: 400px;
+    }
+
+
+
+    .cafe_menu .salads_img2
+    {
+        width: 124px;
+        height: auto;
+    }
+
+    .cafe_menu .salads_img6
+    {
+        right: 0;
+        bottom: -68px;
+
+        width: 140px;
+        height: auto;
+    }
+
+
+    .cafe_menu .soups_img4
+    {
+        top: -48px;
+        left: 0;
+
+        width: 100px;
+    }
+
+    .cafe_menu .soups_img6
+    {
+        top: -40px;
+
+        width: 128px;
+    }
+
+
+
+    .cafe_menu .hot_dogs_img1
+    {
+        top: -68px;
+        left: 50%;
+
+        width: 88px;
+        margin-left: -24px;
+    }
+
+    .cafe_menu .hot_dogs_img2
+    {
+        top: -51px;
+        right: 0;
+
+        width: 52px;
+    }
+
+
+
+    .cafe_menu .burgers_img1
+    {
+        left: 0;
+
+        width: 40px;
+        height: auto;
+    }
+
+    .cafe_menu .burgers_img2
+    {
+        right: 0;
+        left: auto;
+
+        width: 60px;
+        margin-left: 0;
+    }
+
+    .cafe_menu .burgers_img3
+    {
+        top: -123px;
+
+        width: 80px;
+        margin-right: -8px;
+    }
+
+    .cafe_menu .burgers_img4
+    {
+        top: -92px;
+        right: 64px;
+
+        width: 60px;
+    }
+
+    .cafe_menu .burgers_img9
+    {
+        right: 124px;
+        bottom: 508px;
+
+        width: 80px;
+    }
+
+    .cafe_menu .burgers_img10
+    {
+        right: 144px;
+        bottom: 340px;
+
+        width: 92px;
+    }
+
+
+
+    .cafe_menu .mains_img2
+    {
+        top: -60px;
+
+        width: 80px;
+        height: auto;
+    }
+
+    .cafe_menu .mains_img3
+    {
+        right: 24px;
+        bottom: -20px;
+
+        width: 68px;
+    }
+
+
+
+    .cafe_menu .pastes_img1
+    {
+        top: -64px;
+        left: 156px;
+
+        width: 132px;
+    }
+
+    .cafe_menu .pastes_img2
+    {
+        width: 40px;
+        height: auto;
+    }
+
+    .cafe_menu .pastes_img3
+    {
+        display: none;
+    }
+
+
+
+    .cafe_menu .pizzas_img1
+    {
+        display: none;
+    }
+
+    .cafe_menu .pizzas_img4
+    {
+        top: -84px;
+
+        width: 80px;
+        margin-right: -24px;
+    }
+
+    .cafe_menu .pizzas_img7
+    {
+        right: 0;
+        bottom: -44px;
+    }
+
+    .cafe_menu .pizzas_img8
+    {
+        right: 80px;
+        bottom: -24px;
+
+        width: 124px;
+    }
+
+
+
+    .cafe_menu .kids_img1
+    {
+        top: -32px;
+        left: 0;
+
+        width: 80px;
+    }
+
+    .cafe_menu .kids_img3
     {
         top: -24px;
         right: 0;
 
-        width: 152px;
-    }
-
-    .cafe_menu .img6
-    {
-        top: -64px;
-        right: -32px;
-
-        width: 152px;
-    }
-
-    .cafe_menu .img7
-    {
-        right: -32px;
-
-        width: 152px;
+        width: 52px;
     }
 
 
-    .cafe_menu .cat
+
+    .cafe_menu .desserts_img6
     {
-        bottom: -32px;
+        top: -20px;
         left: 0;
 
-        height: 160px;
+        width: 68px;
+    }
+
+    .cafe_menu .desserts_img7
+    {
+        top: -39px;
+        right: 0;
+
+        width: 80px;
     }
 
 
@@ -917,13 +1178,12 @@
     footer .col_left
     {
         display: flex;
+        align-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-between;
 
         width: 100%;
-
-        justify-content: space-between;
-        align-items: center;
-        align-content: center;
-        flex-wrap: wrap;
     }
 
 

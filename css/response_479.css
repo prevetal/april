@@ -299,8 +299,8 @@
         font-size: 15px;
         line-height: 23px;
 
-        align-items: center;
         align-content: center;
+        align-items: center;
     }
 
     .rent .data .stats .item .val
@@ -490,13 +490,12 @@
         line-height: 21px;
 
         display: flex;
+        align-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-between;
 
         text-align: left;
-
-        justify-content: space-between;
-        align-items: center;
-        align-content: center;
-        flex-wrap: wrap;
     }
 
 
@@ -517,107 +516,316 @@
     /*---------------
         Cafe menu
     ---------------*/
-    .cafe_menu
+    .cafe_menu .block_title
     {
-        padding-top: 40px;
-        padding-bottom: 148px;
+        font-size: 28px;
     }
 
 
-    .cafe_menu .section + .section,
-    .cafe_menu .section.big_m_t
+
+    .cafe_menu .about .logo
     {
-        margin-top: 48px;
+        height: 100px;
+    }
+
+    .cafe_menu .about .logo img
+    {
+        top: -32px;
+        left: -32px;
+
+        height: 164px;
     }
 
 
-    .cafe_menu .section .title
+
+    .cafe_menu .section .title,
+    .cafe_menu .section .title.small_m,
+    .cafe_menu .section .title.big_m
     {
-        font-size: 24px;
+        font-size: 22px;
+
+        margin-bottom: 28px;
+
+        gap: 16px;
     }
 
 
-    .cafe_menu .section .sub_title
+    .cafe_menu .section .title img
+    {
+        width: 24px;
+    }
+
+
+    .cafe_menu .section .title .size
+    {
+        right: 92px;
+
+        width: 60px;
+        height: 60px;
+    }
+
+
+    .cafe_menu .section .title .size + .size
+    {
+        width: 68px;
+        height: 68px;
+    }
+
+
+    .cafe_menu .section .title .size .val
+    {
+        font-size: 28px;
+    }
+
+
+    .cafe_menu .section .title .size .unit
     {
         font-size: 18px;
     }
 
 
-    .cafe_menu .dish .name
+
+    .cafe_menu .dish
+    {
+        min-height: 58px;
+    }
+
+
+    .cafe_menu .dish.m_top2
+    {
+        margin-top: 216px;
+    }
+
+
+
+    .cafe_menu .dish .name,
+    .cafe_menu .dish .name.small
     {
         font-size: 16px;
-        line-height: 22px;
+
+        width: calc(100% - 96px);
+
+        white-space: normal;
     }
 
 
-    .cafe_menu .dish .desc,
-    .cafe_menu .col .dish .desc
+    .cafe_menu .dish .dots
     {
-        font-size: 12px;
-        line-height: 18px;
+        display: none;
     }
 
 
-    .cafe_menu .drinks .item + .item
+    .cafe_menu .dish .desc
     {
-        margin-top: 8px;
+        font-size: 14px;
+
+        max-width: calc(100% - 96px);
     }
 
-
-    .cafe_menu .drinks .item .name
+    .cafe_menu .col.big .dish .desc
     {
-        width: 100%;
-        margin-bottom: -4px;
+        max-width: calc(100% - 160px);
     }
 
-    .cafe_menu .drinks .item .name.mob_small
+
+    .cafe_menu .dish .price
     {
-        width: calc(100% - 163px);
-        margin-bottom: 0;
+        font-size: 22px;
+
+        width: 68px;
+        min-width: 68px;
     }
 
-
-    .cafe_menu .drinks .item .type
+    .cafe_menu .dish .price span
     {
-        margin-right: auto;
-        margin-left: 0;
+        font-size: 18px;
     }
 
 
-    .cafe_menu .img1
+    .cafe_menu .dish .weight
+    {
+        font-size: 15px;
+    }
+
+
+
+    .cafe_menu .dish .fillers
+    {
+        width: calc(100% - 96px);
+    }
+
+
+    .cafe_menu .dish .fillers .title
+    {
+        font-size: 14px;
+    }
+
+
+    .cafe_menu .dish .fillers .items
+    {
+        font-size: 14px;
+    }
+
+
+
+    .cafe_menu .dish .price + .price
+    {
+        width: 68px;
+        min-width: 68px;
+        margin-left: 16px;
+    }
+
+
+
+    .cafe_menu .breakfasts_img2
+    {
+        top: 592px;
+        right: 0;
+
+        width: 144px;
+    }
+
+    .cafe_menu .breakfasts_img5
+    {
+        top: 852px;
+
+        width: 220px;
+    }
+
+    .cafe_menu .breakfasts_img6
+    {
+        bottom: 252px;
+
+        width: 328px;
+    }
+
+
+
+    .cafe_menu .salads_img2
+    {
+        width: 100px;
+    }
+
+    .cafe_menu .salads_img6
+    {
+        bottom: -56px;
+
+        width: 124px;
+    }
+
+
+
+    .cafe_menu .soups_img4
+    {
+        top: -36px;
+        left: -8px;
+
+        width: 80px;
+    }
+
+    .cafe_menu .soups_img6
+    {
+        top: -44px;
+
+        width: 100px;
+    }
+
+
+
+    .cafe_menu .hot_dogs_img1
+    {
+        top: -56px;
+
+        width: 80px;
+    }
+
+    .cafe_menu .hot_dogs_img2
+    {
+        top: -48px;
+
+        width: 40px;
+    }
+
+
+
+    .cafe_menu .burgers_img9
+    {
+        right: 100px;
+        bottom: 550px;
+
+        width: 60px;
+    }
+
+    .cafe_menu .burgers_img10
+    {
+        right: 108px;
+        bottom: 392px;
+
+        width: 80px;
+    }
+
+
+
+    .cafe_menu .mains_img3
+    {
+        right: 16px;
+        bottom: -8px;
+
+        width: 52px;
+    }
+
+
+
+    .cafe_menu .pastes_img1
+    {
+        top: -60px;
+        left: 116px;
+
+        width: 124px;
+    }
+
+    .cafe_menu .pastes_img2
+    {
+        right: 0;
+
+        width: 36px;
+    }
+
+
+
+    .cafe_menu .pizzas_img6
+    {
+        top: -44px;
+        left: 24px;
+
+        width: 48px;
+    }
+
+    .cafe_menu .pizzas_img7
+    {
+        right: -24px;
+    }
+
+    .cafe_menu .pizzas_img8
+    {
+        right: 36px;
+        bottom: -28px;
+
+        width: 108px;
+    }
+
+
+
+    .cafe_menu .desserts_img6
+    {
+        width: 56px;
+    }
+
+    .cafe_menu .desserts_img7
     {
         top: -32px;
 
-        height: 100px;
-    }
-
-    .cafe_menu .img5
-    {
-        width: 132px;
-    }
-
-    .cafe_menu .img6
-    {
-        top: -48px;
-        right: -48px;
-
-        width: 124px;
-    }
-
-    .cafe_menu .img7
-    {
-        top: -12px;
-        right: -56px;
-
-        width: 124px;
-    }
-
-
-    .cafe_menu .cat
-    {
-        bottom: -28px;
-
-        height: 140px;
+        width: 64px;
     }
 
 
