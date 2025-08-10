@@ -8717,6 +8717,289 @@ header.no_border .logo img
 
 
 
+/*-------------------
+    Video reviews
+-------------------*/
+.video_reviews .swiper
+{
+    position: relative;
+
+    overflow: visible !important;
+}
+
+
+.video_reviews .swiper-slide
+{
+    visibility: hidden;
+
+    transition: opacity .2s linear, visibility .2s linear;
+    pointer-events: none;
+
+    opacity: 0;
+}
+
+
+.video_reviews .swiper-slide.visible
+{
+    visibility: visible;
+
+    pointer-events: auto;
+
+    opacity: 1;
+}
+
+
+.video_reviews .swiper-button-next,
+.video_reviews .swiper-button-prev
+{
+    top: 290px;
+    bottom: auto;
+
+    margin: 0;
+
+    border-radius: 12px;
+}
+
+
+.video_reviews .swiper-button-prev
+{
+    left: -24px;
+}
+
+.video_reviews .swiper-button-next
+{
+    right: -24px;
+}
+
+
+.video_reviews .swiper-horizontal > .swiper-pagination-bullets,
+.video_reviews .swiper-pagination-bullets.swiper-pagination-horizontal,
+.video_reviews .swiper-pagination-custom,
+.video_reviews .swiper-pagination-fraction
+{
+    height: 23px;
+    margin-top: 32px;
+}
+
+
+.video_reviews .swiper-pagination-bullet
+{
+    width: 23px;
+    height: 23px;
+
+    transition: background .2s linear;
+
+    border-radius: 50%;
+    background: #ccc;
+}
+
+
+.video_reviews .swiper-pagination-bullet + .swiper-pagination-bullet
+{
+    margin-left: 13px !important;
+}
+
+
+.video_reviews .swiper-pagination-bullet:before
+{
+    display: none;
+}
+
+
+.video_reviews .swiper-pagination-bullet:hover,
+.video_reviews .swiper-pagination-bullet.active
+{
+    background: #ec6706;
+}
+
+
+.video_reviews .review
+{
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 39px 31px;
+
+    transition: border-color .2s linear;
+    text-decoration: none;
+
+    color: currentColor;
+    border: 1px solid rgba(188, 188, 188, .14);
+    border-radius: 20px;
+}
+
+
+.video_reviews .review:hover
+{
+    border-color: #ec6707;
+}
+
+
+.video_reviews .review .icon
+{
+    position: absolute;
+    z-index: 3;
+    top: 34px;
+    left: 24px;
+
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    width: 108px;
+    height: 108px;
+    padding-left: 4px;
+
+    color: #fff;
+    border-radius: 50%;
+    background: rgba(236, 103, 7, .70);
+
+            backdrop-filter: blur(5.28px);
+    -webkit-backdrop-filter: blur(5.28px);
+}
+
+
+.video_reviews .review .icon svg
+{
+    display: block;
+
+    width: 21px;
+    height: 31px;
+}
+
+
+.video_reviews .review .photo
+{
+    display: block;
+
+    width: 285px;
+    max-width: 100%;
+    height: 279px;
+    margin: 0 auto 32px;
+
+    border-radius: 50%;
+}
+
+
+.video_reviews .review .photo img
+{
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    border-radius: inherit;
+
+    object-fit: cover;
+}
+
+
+.video_reviews .review .author
+{
+    font-family: var(--font_family2);
+    font-size: 20px;
+    line-height: 150%;
+
+    text-align: center;
+
+    color: rgba(28, 28, 28, .9);
+}
+
+
+.video_reviews .review .desc
+{
+    margin-top: 20px;
+
+    line-height: 150%;
+
+    color: rgba(78, 78, 78, .9);
+}
+
+
+.video_reviews .review .awards
+{
+    margin-top: 24px;
+
+    line-height: 150%;
+
+    color: rgba(78, 78, 78, .9);
+}
+
+
+.video_reviews .review .awards .hide
+{
+    display: none;
+
+    gap: 16px;
+}
+
+
+.video_reviews .review .awards > *,
+.video_reviews .review .awards .hide > *
+{
+    display: flex;
+    align-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+.video_reviews .review .awards > * + *,
+.video_reviews .review .awards .hide > * + *
+{
+    margin-top: 16px;
+}
+
+
+.video_reviews .review .awards img
+{
+    display: block;
+
+    width: 22px;
+    height: 18px;
+    margin-block: 2px;
+}
+
+
+.video_reviews .review .awards span
+{
+    align-self: center;
+
+    width: calc(100% - 32px);
+}
+
+
+.video_reviews .review .spoler_btn
+{
+    margin-top: 8px;
+    margin-left: auto;
+
+    line-height: 150%;
+
+    color: rgba(0, 0, 0, .9);
+    border-bottom: 1px dashed;
+}
+
+
+.video_reviews .review .spoler_btn span + span,
+.video_reviews .review .spoler_btn.active span
+{
+    display: none;
+}
+
+
+.video_reviews .review .spoler_btn.active span + span
+{
+    display: inline;
+}
+
+
+
 /*------------
     Footer
 ------------*/

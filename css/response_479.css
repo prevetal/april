@@ -917,6 +917,48 @@
 
 
 
+    /*-------------------
+        Video reviews
+    -------------------*/
+    .video_reviews .swiper-button-next,
+    .video_reviews .swiper-button-prev
+    {
+        top: 264px;
+    }
+
+
+    .video_reviews .review .icon
+    {
+        top: 19px;
+        left: 19px;
+    }
+
+
+    .video_reviews .review .photo
+    {
+        width: 240px;
+        height: 240px;
+        margin-bottom: 20px;
+    }
+
+
+    .video_reviews .review .author
+    {
+        font-size: 18px;
+        line-height: 130%;
+    }
+
+
+    .video_reviews .review .desc
+    {
+        margin-top: 16px;
+
+        font-size: 14px;
+        line-height: 130%;
+    }
+
+
+
     /*------------
         Footer
     ------------*/
