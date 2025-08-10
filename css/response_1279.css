@@ -1874,6 +1874,63 @@
 
 
 
+    /*-------------------
+        Video reviews
+    -------------------*/
+    .video_reviews .swiper-horizontal > .swiper-pagination-bullets,
+    .video_reviews .swiper-pagination-bullets.swiper-pagination-horizontal,
+    .video_reviews .swiper-pagination-custom,
+    .video_reviews .swiper-pagination-fraction
+    {
+        height: 20px;
+        margin-top: 24px;
+    }
+
+
+    .video_reviews .swiper-pagination-bullet
+    {
+        width: 20px;
+        height: 20px;
+    }
+
+
+    .video_reviews .swiper-pagination-bullet + .swiper-pagination-bullet
+    {
+        margin-left: 12px !important;
+    }
+
+
+    .video_reviews .review
+    {
+        padding: 23px;
+    }
+
+
+    .video_reviews .review .icon
+    {
+        top: 23px;
+        left: 23px;
+
+        width: 92px;
+        height: 92px;
+    }
+
+
+    .video_reviews .review .photo
+    {
+        width: 260px;
+        height: 260px;
+        margin-bottom: 24px;
+    }
+
+
+    .video_reviews .review .awards
+    {
+        line-height: 130%;
+    }
+
+
+
     /*------------
         Footer
     ------------*/

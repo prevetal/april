@@ -459,4 +459,79 @@ $(() => {
 			})
 		})
 	}
+
+
+	// Video reviews
+	const videoReviewsSliders = [],
+		videoReviews = document.querySelectorAll('.video_reviews .swiper')
+
+	videoReviews.forEach((el, i) => {
+		el.classList.add('video_reviews_s' + i)
+		el.setAttribute('data-slider-index', i)
+
+		let options = {
+			loop: true,
+			speed: 500,
+			watchSlidesProgress: true,
+			slideActiveClass: 'active',
+			slideVisibleClass: 'visible',
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev'
+			},
+			pagination: {
+				el: '.swiper-pagination',
+				type: 'bullets',
+				clickable: true,
+				bulletActiveClass: 'active'
+			},
+			breakpoints: {
+				0: {
+					spaceBetween: 20,
+					slidesPerView: 1,
+					slidesPerGroup: 1
+				},
+				768: {
+					spaceBetween: 20,
+					slidesPerView: 2,
+					slidesPerGroup: 2
+				},
+				1024: {
+					spaceBetween: 20,
+					slidesPerView: 3,
+					slidesPerGroup: 3
+				},
+				1280: {
+					spaceBetween: 40,
+					slidesPerView: 3,
+					slidesPerGroup: 3
+				}
+			},
+			on: {
+				init: swiper => setHeight($(swiper.$el).find('.review')),
+				resize: swiper => setHeight($(swiper.$el).find('.review')),
+				changed: swiper => setHeight($(swiper.$el).find('.review'))
+			}
+		}
+
+		videoReviewsSliders.push(new Swiper('.video_reviews_s' + i, options))
+	})
+
+
+	$('.video_reviews .spoler_btn').click(function(e) {
+		e.preventDefault()
+
+		let review = $(this).closest('.review'),
+			swiperEl = $(this).closest('.swiper'),
+			sliderIndex = swiperEl.data('slider-index')
+
+		$(this).toggleClass('active')
+		review.find('.awards .hide').slideToggle(300)
+
+		setTimeout(() => {
+			swiperEl.find('.review').css('min-height', '0px')
+
+			videoReviewsSliders[sliderIndex].emit('changed')
+		}, 300)
+	})
 })

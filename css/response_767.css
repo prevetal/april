@@ -1165,6 +1165,47 @@
 
 
 
+    /*-------------------
+        Video reviews
+    -------------------*/
+    .video_reviews .block_head .title br
+    {
+        display: none;
+    }
+
+
+    .video_reviews .swiper-horizontal > .swiper-pagination-bullets,
+    .video_reviews .swiper-pagination-bullets.swiper-pagination-horizontal,
+    .video_reviews .swiper-pagination-custom,
+    .video_reviews .swiper-pagination-fraction
+    {
+        height: 16px;
+        margin-top: 20px;
+    }
+
+
+    .video_reviews .swiper-pagination-bullet
+    {
+        width: 16px;
+        height: 16px;
+    }
+
+
+    .video_reviews .review .icon
+    {
+        width: 80px;
+        height: 80px;
+    }
+
+
+    .video_reviews .review .icon svg
+    {
+        width: 18px;
+        height: 27px;
+    }
+
+
+
     /*------------
         Footer
     ------------*/

@@ -211,7 +211,7 @@ const setHeight = (className) => {
 		if (elHeight > maxheight) maxheight = elHeight
 	})
 
-	className.outerHeight(maxheight)
+	className.css('min-height', maxheight + 'px')
 }
 
 
