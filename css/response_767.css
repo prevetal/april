@@ -184,10 +184,10 @@
     .text_block blockquote,
     .text_block q
     {
+        padding: 12px 18px;
+
         font-size: 15px;
         line-height: 23px;
-
-        padding: 12px 18px;
     }
 
 
@@ -379,12 +379,12 @@
 
     .rent .data .stats .item .val
     {
-        font-size: 92px;
-        line-height: 58px;
-
         width: 60px;
         min-width: 60px;
         height: 58px;
+
+        font-size: 92px;
+        line-height: 58px;
     }
 
 
@@ -502,11 +502,11 @@
     ------------*/
     .prices .order_btn
     {
-        font-size: 16px;
-        line-height: 24px;
-
         margin-top: 28px;
         padding: 12px 24px;
+
+        font-size: 16px;
+        line-height: 24px;
     }
 
 
@@ -580,20 +580,20 @@
 
     .articles .article .date
     {
+        padding: 6px 12px 7px;
+
         font-size: 12px;
         line-height: 18px;
-
-        padding: 6px 12px 7px;
     }
 
 
     .articles .article .name,
     .articles .article:hover .name
     {
+        min-height: 66px;
+
         font-size: 16px;
         line-height: 22px;
-
-        min-height: 66px;
     }
 
 
@@ -649,10 +649,10 @@
 
     .about_block .data .title
     {
+        margin-bottom: 12px;
+
         font-size: 24px;
         line-height: 30px;
-
-        margin-bottom: 12px;
     }
 
 
@@ -712,9 +712,9 @@
 
     .cafe_menu .anchors
     {
-        font-size: 14px;
-
         margin-bottom: 40px;
+
+        font-size: 14px;
     }
 
 
@@ -744,9 +744,9 @@
     .cafe_menu .section .title.small_m,
     .cafe_menu .section .title.big_m
     {
-        font-size: 26px;
-
         margin-bottom: 32px;
+
+        font-size: 26px;
     }
 
 
@@ -778,9 +778,9 @@
 
     .cafe_menu .section .title .size .unit
     {
-        font-size: 20px;
-
         margin-top: -8px;
+
+        font-size: 20px;
     }
 
 
@@ -829,10 +829,10 @@
 
     .cafe_menu .dish .price
     {
-        font-size: 24px;
-
         width: 80px;
         min-width: 80px;
+
+        font-size: 24px;
     }
 
     .cafe_menu .dish .price + .price
@@ -851,17 +851,17 @@
 
     .cafe_menu .dish .weight
     {
-        font-size: 16px;
-
         margin-top: 12px;
+
+        font-size: 16px;
     }
 
 
     .cafe_menu .dish .fillers .title
     {
-        font-size: 16px;
-
         margin-bottom: 12px;
+
+        font-size: 16px;
     }
 
 
@@ -1146,10 +1146,10 @@
 
     .catalog .items .item .btn
     {
+        margin-top: 16px;
+
         font-size: 14px;
         line-height: 20px;
-
-        margin-top: 16px;
     }
 
 
@@ -1195,12 +1195,12 @@
 
     footer .reserv_btn
     {
-        font-size: 16px;
-        line-height: 22px;
-
         width: 180px;
         height: 48px;
         margin-top: 0;
+
+        font-size: 16px;
+        line-height: 22px;
     }
 
 

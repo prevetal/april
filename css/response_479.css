@@ -130,10 +130,10 @@
 
     .mob_header .contacts .messengers .callback_btn
     {
+        margin-left: 8px;
+
         font-size: 11px;
         line-height: 19px;
-
-        margin-left: 8px;
     }
 
 
@@ -217,10 +217,10 @@
 
     .main_slider .slide .sub_title
     {
+        margin-top: 16px;
+
         font-size: 18px;
         line-height: 22px;
-
-        margin-top: 16px;
     }
 
     .main_slider .slide .desc
@@ -296,21 +296,21 @@
 
     .rent .data .stats .item
     {
-        font-size: 15px;
-        line-height: 23px;
-
         align-content: center;
         align-items: center;
+
+        font-size: 15px;
+        line-height: 23px;
     }
 
     .rent .data .stats .item .val
     {
-        font-size: 52px;
-        line-height: 38px;
-
         width: 38px;
         min-width: 38px;
         height: 38px;
+
+        font-size: 52px;
+        line-height: 38px;
     }
 
     .rent .data .stats .item br
@@ -369,10 +369,10 @@
     ------------------*/
     .trainer_info .image .info
     {
+        padding: 20px 28px;
+
         font-size: 14px;
         line-height: 22px;
-
-        padding: 20px 28px;
     }
 
     .trainer_info .image .info:before
@@ -452,11 +452,11 @@
     .articles .article .name,
     .articles .article:hover .name
     {
-        font-size: 17px;
-        line-height: 23px;
-
         min-height: 69px;
         padding: 16px 20px;
+
+        font-size: 17px;
+        line-height: 23px;
     }
 
 
@@ -486,14 +486,14 @@
 
     .advantages_block .item
     {
-        font-size: 15px;
-        line-height: 21px;
-
         display: flex;
         align-content: center;
         align-items: center;
         flex-wrap: wrap;
         justify-content: space-between;
+
+        font-size: 15px;
+        line-height: 21px;
 
         text-align: left;
     }
@@ -542,9 +542,9 @@
     .cafe_menu .section .title.small_m,
     .cafe_menu .section .title.big_m
     {
-        font-size: 22px;
-
         margin-bottom: 28px;
+
+        font-size: 22px;
 
         gap: 16px;
     }
@@ -601,9 +601,9 @@
     .cafe_menu .dish .name,
     .cafe_menu .dish .name.small
     {
-        font-size: 16px;
-
         width: calc(100% - 96px);
+
+        font-size: 16px;
 
         white-space: normal;
     }
@@ -617,9 +617,9 @@
 
     .cafe_menu .dish .desc
     {
-        font-size: 14px;
-
         max-width: calc(100% - 96px);
+
+        font-size: 14px;
     }
 
     .cafe_menu .col.big .dish .desc
@@ -630,10 +630,10 @@
 
     .cafe_menu .dish .price
     {
-        font-size: 22px;
-
         width: 68px;
         min-width: 68px;
+
+        font-size: 22px;
     }
 
     .cafe_menu .dish .price span
@@ -871,10 +871,10 @@
 
     .catalog .items .item .sticker
     {
-        font-size: 12px;
-
         top: 20px;
         left: 20px;
+
+        font-size: 12px;
     }
 
 
@@ -928,11 +928,11 @@
 
     footer .reserv_btn
     {
-        font-size: 15px;
-        line-height: 21px;
-
         width: 160px;
         height: 48px;
+
+        font-size: 15px;
+        line-height: 21px;
     }
 
 
@@ -974,8 +974,8 @@
 
     .modal_title
     {
-        font-size: 24px;
-
         margin-bottom: 20px;
+
+        font-size: 24px;
     }
 }

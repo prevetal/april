@@ -75,10 +75,10 @@
 
     .accordion .accordion_item .data
     {
-        line-height: 23px;
-
         margin-top: 16px;
         padding-left: 22px;
+
+        line-height: 23px;
     }
 
 
@@ -123,9 +123,9 @@
 
     header .contacts .phone
     {
-        font-size: 22px;
-
         margin-top: 8px;
+
+        font-size: 22px;
     }
 
 
@@ -144,10 +144,10 @@
 
     header .reserv_btn
     {
+        height: 48px;
+
         font-size: 17px;
         line-height: 21px;
-
-        height: 48px;
     }
 
 
@@ -198,9 +198,9 @@
     header .menu .item > a,
     header .menu .item > button
     {
-        font-size: 17px;
-
         min-height: 48px;
+
+        font-size: 17px;
     }
 
 
@@ -266,10 +266,10 @@
 
     .form .submit_btn
     {
+        padding: 14px 24px;
+
         font-size: 17px;
         line-height: 21px;
-
-        padding: 14px 24px;
     }
 
 
@@ -288,26 +288,26 @@
 
     .text_block h2
     {
+        margin-bottom: 20px;
+
         font-size: 32px;
         line-height: calc(100% + 6px);
-
-        margin-bottom: 20px;
     }
 
     .text_block h3
     {
+        margin-bottom: 20px;
+
         font-size: 27px;
         line-height: calc(100% + 6px);
-
-        margin-bottom: 20px;
     }
 
     .text_block h4
     {
+        margin-bottom: 16px;
+
         font-size: 24px;
         line-height: calc(100% + 6px);
-
-        margin-bottom: 16px;
     }
 
 
@@ -356,10 +356,10 @@
     .text_block blockquote,
     .text_block q
     {
+        padding: 18px 30px;
+
         font-size: 17px;
         line-height: 25px;
-
-        padding: 18px 30px;
     }
 
 
@@ -390,10 +390,10 @@
 
     .main_slider .slide .sub_title
     {
+        margin-top: 4px;
+
         font-size: 24px;
         line-height: calc(var(--font_size_title) + 8px);
-
-        margin-top: 4px;
     }
 
 
@@ -405,19 +405,19 @@
 
     .main_slider .slide .desc
     {
+        margin-top: 32px;
+
         font-size: 19px;
         line-height: 27px;
-
-        margin-top: 32px;
     }
 
 
     .main_slider .slide .links .order_btn
     {
+        padding: 16px 28px;
+
         font-size: 17px;
         line-height: 21px;
-
-        padding: 16px 28px;
     }
 
 
@@ -637,12 +637,12 @@
 
     .rent .data .stats .item .val
     {
-        font-size: 100px;
-        line-height: 64px;
-
         width: 64px;
         min-width: 64px;
         height: 64px;
+
+        font-size: 100px;
+        line-height: 64px;
     }
 
 
@@ -667,11 +667,11 @@
 
     .rent .data .rent_btn
     {
-        font-size: 17px;
-        line-height: 21px;
-
         margin-top: 32px;
         padding: 15px 28px;
+
+        font-size: 17px;
+        line-height: 21px;
     }
 
 
@@ -693,10 +693,10 @@
     ---------------*/
     .advantages .item
     {
-        line-height: 23px;
-
         padding-right: 23px;
         padding-left: 51px;
+
+        line-height: 23px;
     }
 
     .advantages .item:before
@@ -835,20 +835,20 @@
 
     .prices table td
     {
-        line-height: 23px;
-
         height: 56px;
         padding: 8px 16px;
+
+        line-height: 23px;
     }
 
 
     .prices .order_btn
     {
-        font-size: 17px;
-        line-height: 21px;
-
         margin-top: 32px;
         padding: 16px 28px;
+
+        font-size: 17px;
+        line-height: 21px;
     }
 
 
@@ -865,10 +865,10 @@
 
     .trainer_info .image .info
     {
+        padding: 28px 32px;
+
         font-size: 16px;
         line-height: 24px;
-
-        padding: 28px 32px;
     }
 
     .trainer_info .image .info:before
@@ -892,19 +892,19 @@
 
     .trainer_info .data .details
     {
-        line-height: 20px;
-
         margin-top: 20px;
+
+        line-height: 20px;
     }
 
 
     .trainer_info .data .order_btn
     {
-        font-size: 17px;
-        line-height: 21px;
-
         margin-top: 20px;
         padding: 16px 28px;
+
+        font-size: 17px;
+        line-height: 21px;
     }
 
 
@@ -932,10 +932,10 @@
 
     .groups .category .title
     {
+        margin-bottom: 24px;
+
         font-size: 24px;
         line-height: 30px;
-
-        margin-bottom: 24px;
     }
 
 
@@ -961,11 +961,11 @@
 
     .service .data .order_btn
     {
-        font-size: 17px;
-        line-height: 21px;
-
         margin-top: 28px;
         padding: 16px 28px;
+
+        font-size: 17px;
+        line-height: 21px;
     }
 
 
@@ -1010,19 +1010,19 @@
 
     .articles .article .date
     {
+        padding: 8px 16px;
+
         font-size: 14px;
         line-height: 20px;
-
-        padding: 8px 16px;
     }
 
     .articles .article .name
     {
-        font-size: 21px;
-        line-height: 27px;
-
         min-height: 92px;
         padding: 16px 24px;
+
+        font-size: 21px;
+        line-height: 27px;
     }
 
 
@@ -1127,10 +1127,10 @@
 
     .about_block .data .title
     {
+        margin-bottom: 20px;
+
         font-size: 30px;
         line-height: 36px;
-
-        margin-bottom: 20px;
     }
 
 
@@ -1181,10 +1181,10 @@
 
     .additional_services .item .price
     {
+        margin-top: 20px;
+
         font-size: 23px;
         line-height: 29px;
-
-        margin-top: 20px;
     }
 
 
@@ -1206,10 +1206,10 @@
 
     .cafe_menu .anchors
     {
-        font-size: 15px;
-
         margin-bottom: 48px;
         padding: 11px 12px;
+
+        font-size: 15px;
     }
 
 
@@ -1230,9 +1230,9 @@
 
     .cafe_menu .about .desc
     {
-        font-size: 16px;
-
         margin-top: 24px;
+
+        font-size: 16px;
     }
 
 
@@ -1273,9 +1273,9 @@
 
     .cafe_menu .section .title
     {
-        font-size: 32px;
-
         margin-bottom: 40px;
+
+        font-size: 32px;
 
         gap: 20px;
     }
@@ -1311,9 +1311,9 @@
 
     .cafe_menu .section .title .size .unit
     {
-        font-size: 24px;
-
         margin-top: -10px;
+
+        font-size: 24px;
     }
 
 
@@ -1373,10 +1373,10 @@
 
     .cafe_menu .dish .desc
     {
-        font-size: 16px;
-
         width: 424px;
         max-width: calc(100% - 124px);
+
+        font-size: 16px;
     }
 
 
@@ -1780,10 +1780,10 @@
 
     .catalog .items .item .sticker
     {
-        font-size: 11px;
-
         top: 12px;
         left: 12px;
+
+        font-size: 11px;
     }
 
 
@@ -1811,11 +1811,11 @@
 
     .catalog .items .item .btn
     {
-        font-size: 15px;
-        line-height: 21px;
-
         margin-top: 20px;
         padding: 12px 24px;
+
+        font-size: 15px;
+        line-height: 21px;
     }
 
 
@@ -1850,10 +1850,10 @@
 
     .product_info .data .price
     {
+        margin-top: 28px;
+
         font-size: 20px;
         line-height: 26px;
-
-        margin-top: 28px;
     }
 
     .product_info .data .price span
@@ -1865,11 +1865,11 @@
 
     .product_info .data .btn
     {
-        font-size: 15px;
-        line-height: 21px;
-
         margin-top: 28px;
         padding: 16px 28px;
+
+        font-size: 15px;
+        line-height: 21px;
     }
 
 
@@ -1885,22 +1885,22 @@
 
     footer .reserv_btn
     {
-        font-size: 17px;
-        line-height: 21px;
-
         width: 180px;
         height: 52px;
         margin-top: 32px;
+
+        font-size: 17px;
+        line-height: 21px;
     }
 
 
 
     footer .menu
     {
+        padding-left: 23px;
+
         font-size: 14px;
         line-height: 22px;
-
-        padding-left: 23px;
     }
 
 
@@ -1969,9 +1969,9 @@
     -----------*/
     .modal_title
     {
+        margin-bottom: 24px;
+
         font-size: 28px;
         line-height: calc(100% + 8px);
-
-        margin-bottom: 24px;
     }
 }

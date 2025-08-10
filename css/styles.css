@@ -234,12 +234,12 @@ html.custom_scroll ::-webkit-scrollbar-thumb
 
 body
 {
-    font: var(--font_size) var(--font_family);
-
     height: 100%;
     min-height: -moz-available;
     min-height: -webkit-fill-available;
     min-height:         fill-available;
+
+    font: var(--font_size) var(--font_family);
 
     color: var(--text_color);
 }
@@ -247,12 +247,12 @@ body
 
 button
 {
+    display: inline-block;
+
     font-family: inherit;
     font-size: inherit;
     font-weight: inherit;
     line-height: inherit;
-
-    display: inline-block;
 
     cursor: pointer;
     vertical-align: top;
@@ -362,10 +362,6 @@ button
 
 .supports_error
 {
-    font-family: 'Arial', sans-serif;
-    font-size: 20px;
-    line-height: 30px;
-
     position: fixed;
     z-index: 1000;
     top: 0;
@@ -380,6 +376,10 @@ button
     width: 100%;
     height: 100%;
     padding: 20px;
+
+    font-family: 'Arial', sans-serif;
+    font-size: 20px;
+    line-height: 30px;
 
     text-align: center;
 
@@ -492,8 +492,6 @@ button
 ----------------*/
 .pagination
 {
-    line-height: 30px;
-
     display: flex;
     align-content: center;
     align-items: center;
@@ -501,6 +499,8 @@ button
     justify-content: flex-start;
 
     margin-top: 80px;
+
+    line-height: 30px;
 
     color: #5d5d5d;
 }
@@ -650,14 +650,14 @@ button
 
 .accordion .accordion_item .data
 {
-    font-weight: 300;
-    line-height: 24px;
-
     display: none;
 
     margin-top: 20px;
     margin-left: 24px;
     padding-left: 30px;
+
+    font-weight: 300;
+    line-height: 24px;
 
     color: #5d5d5d;
     border-left: 2px solid #ec6707;
@@ -952,15 +952,15 @@ header .contacts
 
 header .contacts .email
 {
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 22px;
-
     display: flex;
     align-content: center;
     align-items: center;
     flex-wrap: wrap;
     justify-content: flex-start;
+
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
 
     color: #5d5d5d;
 }
@@ -988,10 +988,6 @@ header .contacts .email a
 
 header .contacts .phone
 {
-    font-size: 25px;
-    font-weight: 300;
-    line-height: 100%;
-
     display: flex;
     align-content: center;
     align-items: center;
@@ -999,6 +995,10 @@ header .contacts .phone
     justify-content: flex-start;
 
     margin-top: 12px;
+
+    font-size: 25px;
+    font-weight: 300;
+    line-height: 100%;
 }
 
 header .contacts .phone .icon
@@ -1023,10 +1023,6 @@ header .contacts .phone a
 
 header .contacts .messengers
 {
-    font-size: 12px;
-    font-weight: 500;
-    line-height: 22px;
-
     display: flex;
     align-content: center;
     align-items: center;
@@ -1036,6 +1032,10 @@ header .contacts .messengers
     width: 180px;
     margin: 10px -5px 0;
     padding: 4px;
+
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 22px;
 
     transition: .2s linear;
     text-transform: uppercase;
@@ -1075,11 +1075,11 @@ header .contacts .messengers a + a
 
 header .contacts .messengers .callback_btn
 {
+    margin-left: 12px;
+
     font-size: 12px;
     font-weight: 500;
     line-height: 22px;
-
-    margin-left: 12px;
 
     transition: color .2s linear;
 }
@@ -1146,14 +1146,14 @@ header .time
 
 header .reserv_btn
 {
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 22px;
-
     display: block;
 
     width: 100%;
     height: 60px;
+
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22px;
 
     transition: background .2s linear;
     text-transform: uppercase;
@@ -1172,10 +1172,6 @@ header .reserv_btn:hover
 
 header .location
 {
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 22px;
-
     display: flex;
     align-content: center;
     align-items: center;
@@ -1183,6 +1179,10 @@ header .location
     justify-content: space-between;
 
     width: 100%;
+
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
 
     color: #5d5d5d;
 }
@@ -1336,11 +1336,6 @@ header .menu .item
 header .menu .item > a,
 header .menu .item > button
 {
-    font-family: var(--font_family2);
-    font-size: 20px;
-    font-weight: 700;
-    line-height: normal;
-
     display: flex;
     align-content: center;
     align-items: center;
@@ -1348,6 +1343,11 @@ header .menu .item > button
     justify-content: center;
 
     min-height: 56px;
+
+    font-family: var(--font_family2);
+    font-size: 20px;
+    font-weight: 700;
+    line-height: normal;
 
     transition: color .2s linear;
     text-align: center;
@@ -1450,9 +1450,6 @@ header .menu .sub_menu > * + *
 
 header .menu .sub_menu a
 {
-    font-size: inherit;
-    line-height: 20px;
-
     position: relative;
 
     display: flex;
@@ -1463,6 +1460,9 @@ header .menu .sub_menu a
 
     min-height: 50px;
     padding: 12px 20px 12px 35px;
+
+    font-size: inherit;
+    line-height: 20px;
 
     transition: background .2s linear;
     text-decoration: none;
@@ -1596,15 +1596,15 @@ header .search form :-ms-input-placeholder
 
 header .search form .input
 {
-    font-family: var(--font_family);
-    font-size: var(--font_size);
-    font-weight: 300;
-
     display: block;
 
     width: 100%;
     height: 50px;
     padding: 0 60px 0 20px;
+
+    font-family: var(--font_family);
+    font-size: var(--font_size);
+    font-weight: 300;
 
     color: var(--text_color);
     border: 1px solid #d5d5d5;
@@ -1718,15 +1718,15 @@ header.no_border .logo img
 
 .mob_header .contacts .phone
 {
-    font-size: 19px;
-    font-weight: 300;
-    line-height: 100%;
-
     display: flex;
     align-content: center;
     align-items: center;
     flex-wrap: wrap;
     justify-content: flex-start;
+
+    font-size: 19px;
+    font-weight: 300;
+    line-height: 100%;
 }
 
 .mob_header .contacts .phone .icon
@@ -1751,10 +1751,6 @@ header.no_border .logo img
 
 .mob_header .contacts .messengers
 {
-    font-size: 12px;
-    font-weight: 500;
-    line-height: 22px;
-
     display: flex;
     align-content: center;
     align-items: center;
@@ -1764,6 +1760,10 @@ header.no_border .logo img
     width: 180px;
     margin-left: 16px;
     padding: 4px;
+
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 22px;
 
     transition: .2s linear;
     text-transform: uppercase;
@@ -1803,11 +1803,11 @@ header.no_border .logo img
 
 .mob_header .contacts .messengers .callback_btn
 {
+    margin-left: 12px;
+
     font-size: 12px;
     font-weight: 500;
     line-height: 22px;
-
-    margin-left: 12px;
 
     transition: color .2s linear;
 }
@@ -1910,15 +1910,15 @@ header.no_border .logo img
 
 .mob_header .search form .input
 {
-    font-family: var(--font_family);
-    font-size: var(--font_size);
-    font-weight: 300;
-
     display: block;
 
     width: 100%;
     height: 50px;
     padding: 0 60px 0 20px;
+
+    font-family: var(--font_family);
+    font-size: var(--font_size);
+    font-weight: 300;
 
     color: var(--text_color);
     border: 1px solid #d5d5d5;
@@ -2065,12 +2065,12 @@ header.no_border .logo img
 
 .page_title
 {
+    display: block;
+
     font-family: var(--font_family2);
     font-size: var(--font_size_title);
     font-weight: 700;
     line-height: calc(var(--font_size_title) + 15px);
-
-    display: block;
 
     letter-spacing: .1em;
     text-transform: uppercase;
@@ -2106,12 +2106,12 @@ header.no_border .logo img
 
 .block_head .title
 {
+    display: block;
+
     font-family: var(--font_family2);
     font-size: var(--font_size_title);
     font-weight: 700;
     line-height: calc(var(--font_size_title) + 15px);
-
-    display: block;
 
     letter-spacing: .1em;
     text-transform: uppercase;
@@ -2120,20 +2120,17 @@ header.no_border .logo img
 
 .block_head .desc
 {
-    font-weight: 300;
-    line-height: 24px;
-
     width: 100%;
     max-width: 100%;
     margin-top: 12px;
+
+    font-weight: 300;
+    line-height: 24px;
 }
 
 
 .block_head .all_link
 {
-    font-weight: 500;
-    line-height: 22px;
-
     display: flex;
     align-content: center;
     align-items: center;
@@ -2143,6 +2140,9 @@ header.no_border .logo img
     min-height: 30px;
     margin-left: 30px;
     padding-left: 29px;
+
+    font-weight: 500;
+    line-height: 22px;
 
     color: #ec6707;
     border-left: 1px solid #ececec;
@@ -2255,15 +2255,15 @@ header.no_border .logo img
 
 .form .input
 {
-    font-family: var(--font_family);
-    font-size: var(--font_size);
-    font-weight: 300;
-
     display: block;
 
     width: 100%;
     height: 50px;
     padding: 0 20px;
+
+    font-family: var(--font_family);
+    font-size: var(--font_size);
+    font-weight: 300;
 
     transition: border-color .2s linear;
 
@@ -2281,15 +2281,15 @@ header.no_border .logo img
 
 .form textarea
 {
-    font-family: var(--font_family);
-    font-size: var(--font_size);
-    font-weight: 300;
-
     display: block;
 
     width: 100%;
     height: 100px;
     padding: 12px 20px;
+
+    font-family: var(--font_family);
+    font-size: var(--font_size);
+    font-weight: 300;
 
     resize: none;
     transition: border-color .2s linear;
@@ -2331,10 +2331,10 @@ header.no_border .logo img
 
 .form .error_text
 {
+    margin-top: 4px;
+
     font-size: 13px;
     line-height: 19px;
-
-    margin-top: 4px;
 
     color: var(--form_error_color);
 }
@@ -2347,16 +2347,16 @@ header.no_border .logo img
 
 .form input[type=checkbox] + label
 {
-    font-size: 13px;
-    font-weight: 300;
-    line-height: 18px;
-
     position: relative;
 
     display: table-cell;
 
     height: 20px;
     padding-left: 30px;
+
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 18px;
 
     cursor: pointer;
     text-align: left;
@@ -2422,11 +2422,11 @@ header.no_border .logo img
 
 .form .submit_btn
 {
+    padding: 19px 24px;
+
     font-size: 18px;
     font-weight: 500;
     line-height: 22px;
-
-    padding: 19px 24px;
 
     transition: background .2s linear;
     text-transform: uppercase;
@@ -2484,12 +2484,12 @@ header.no_border .logo img
 
 .text_block h2
 {
+    margin-bottom: 24px;
+
     font-family: var(--font_family2);
     font-size: 35px;
     font-weight: 700;
     line-height: calc(100% + 10px);
-
-    margin-bottom: 24px;
 
     letter-spacing: .1em;
     text-transform: uppercase;
@@ -2499,12 +2499,12 @@ header.no_border .logo img
 
 .text_block h3
 {
+    margin-bottom: 24px;
+
     font-family: var(--font_family2);
     font-size: 30px;
     font-weight: 700;
     line-height: calc(100% + 10px);
-
-    margin-bottom: 24px;
 
     letter-spacing: .1em;
     text-transform: uppercase;
@@ -2514,12 +2514,12 @@ header.no_border .logo img
 
 .text_block h4
 {
+    margin-bottom: 20px;
+
     font-family: var(--font_family2);
     font-size: 25px;
     font-weight: 700;
     line-height: calc(100% + 10px);
-
-    margin-bottom: 20px;
 
     letter-spacing: .1em;
     text-transform: uppercase;
@@ -2559,16 +2559,16 @@ header.no_border .logo img
 .text_block blockquote,
 .text_block q
 {
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 26px;
-
     display: block;
 
     width: 100%;
     margin-top: 40px;
     margin-bottom: 40px;
     padding: 29px 49px;
+
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 26px;
 
     color: var(--text_color);
     border: 3px solid #ec6707;
@@ -2791,8 +2791,6 @@ header.no_border .logo img
 
 .text_block ul li
 {
-    font-weight: 500;
-
     position: relative;
 
     display: block;
@@ -2801,6 +2799,8 @@ header.no_border .logo img
     padding-left: 24px;
 
     list-style-type: none;
+
+    font-weight: 500;
 }
 
 .text_block ul li + li
@@ -2835,8 +2835,6 @@ header.no_border .logo img
 
 .text_block ol li
 {
-    font-weight: 500;
-
     position: relative;
 
     display: block;
@@ -2845,6 +2843,8 @@ header.no_border .logo img
     padding-left: 28px;
 
     list-style-type: none;
+
+    font-weight: 500;
 }
 
 .text_block ol li + li
@@ -2854,11 +2854,11 @@ header.no_border .logo img
 
 .text_block ol li:before
 {
-    font-weight: 700;
-
     position: absolute;
     top: 0;
     left: 0;
+
+    font-weight: 700;
 
     content: counter(li) '.';
     counter-increment: li;
@@ -3037,13 +3037,13 @@ header.no_border .logo img
 
 .enter .item .desc
 {
-    font-size: 14px;
-    line-height: 22px;
-
     flex: 1 0 auto;
 
     margin-top: 32px;
     padding: 0 31px;
+
+    font-size: 14px;
+    line-height: 22px;
 
     color: #1a1a1a;
 }
@@ -3051,11 +3051,11 @@ header.no_border .logo img
 
 .enter .item .link
 {
-    font-weight: 500;
-    line-height: 22px;
-
     margin-top: 20px;
     padding: 0 31px;
+
+    font-weight: 500;
+    line-height: 22px;
 
     color: #ec6707;
 }
@@ -3152,11 +3152,11 @@ header.no_border .logo img
 
 .about_block .data .title
 {
+    margin-bottom: 29px;
+
     font-family: var(--font_family2);
     font-size: 36px;
     line-height: 45px;
-
-    margin-bottom: 29px;
 
     text-transform: uppercase;
 
@@ -3266,11 +3266,11 @@ header.no_border .logo img
 
 .main_slider .slide .sub_title
 {
+    margin-top: 12px;
+
     font-size: 30px;
     font-weight: 700;
     line-height: calc(var(--font_size_title) + 15px);
-
-    margin-top: 12px;
 
     letter-spacing: .1em;
     text-transform: uppercase;
@@ -3305,11 +3305,11 @@ header.no_border .logo img
 
 .main_slider .slide .desc
 {
+    margin-top: 40px;
+
     font-size: 25px;
     font-weight: 300;
     line-height: 33px;
-
-    margin-top: 40px;
 }
 
 .main_slider .slide .desc b
@@ -3337,11 +3337,11 @@ header.no_border .logo img
 
 .main_slider .slide .links .order_btn
 {
+    padding: 19px 24px;
+
     font-size: 18px;
     font-weight: 500;
     line-height: 22px;
-
-    padding: 19px 24px;
 
     transition: background .2s linear;
     text-transform: uppercase;
@@ -3360,15 +3360,15 @@ header.no_border .logo img
 
 .main_slider .slide .links .details_link
 {
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 22px;
-
     position: relative;
 
     display: inline-block;
 
     padding-right: 15px;
+
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22px;
 
     transition: color .2s linear;
     vertical-align: top;
@@ -3730,13 +3730,13 @@ header.no_border .logo img
 
 .services .item .price
 {
-    font-family: var(--font_family2);
-    line-height: 35px;
-
     display: none;
 
     margin-top: 20px;
     padding-top: 16px;
+
+    font-family: var(--font_family2);
+    line-height: 35px;
 
     vertical-align: top;
 
@@ -3751,14 +3751,14 @@ header.no_border .logo img
 
 .services .item .order_btn
 {
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 22px;
-
     display: none;
 
     margin-top: 16px;
     padding: 14px 19px;
+
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
 
     transition: background .2s linear;
     text-transform: uppercase;
@@ -3912,10 +3912,10 @@ header.no_border .logo img
 
 .about_info .link .info.bottom .name
 {
+    width: 100%;
+
     font-size: 25px;
     line-height: 30px;
-
-    width: 100%;
 }
 
 
@@ -3993,10 +3993,10 @@ header.no_border .logo img
 
 .about_info .data .details
 {
+    margin-top: 32px;
+
     font-weight: 500;
     line-height: 22px;
-
-    margin-top: 32px;
 
     color: #ec6707;
 }
@@ -4158,29 +4158,29 @@ header.no_border .logo img
 
 .rent .data .stats .item
 {
-    font-size: 22px;
-    font-weight: 500;
-    line-height: 26px;
-
     display: flex;
     align-content: flex-start;
     align-items: flex-start;
     flex-wrap: nowrap;
     justify-content: space-between;
 
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 26px;
+
     color: #1a1a1a;
 }
 
 .rent .data .stats .item .val
 {
-    font-size: 120px;
-    font-weight: 300;
-    line-height: 72px;
-
     width: 76px;
     min-width: 76px;
     height: 72px;
     margin-right: 8px;
+
+    font-size: 120px;
+    font-weight: 300;
+    line-height: 72px;
 
     letter-spacing: .1em;
 
@@ -4251,12 +4251,12 @@ header.no_border .logo img
 
 .rent .data .rent_btn
 {
+    margin-top: 40px;
+    padding: 19px 24px;
+
     font-size: 18px;
     font-weight: 500;
     line-height: 22px;
-
-    margin-top: 40px;
-    padding: 19px 24px;
 
     transition: background .2s linear;
     text-transform: uppercase;
@@ -4335,13 +4335,13 @@ header.no_border .logo img
 
 .advantages .item
 {
-    font-weight: 300;
-    line-height: 24px;
-
     position: relative;
 
     padding-right: 31px;
     padding-left: 61px;
+
+    font-weight: 300;
+    line-height: 24px;
 
     color: #5d5d5d;
     border-left: 1px solid #e8e8e8;
@@ -4410,14 +4410,14 @@ header.no_border .logo img
 
 .prev_next .link
 {
-    font-size: 18px;
-    line-height: 26px;
-
     display: flex;
     align-content: center;
     align-items: center;
     flex-wrap: wrap;
     justify-content: flex-start;
+
+    font-size: 18px;
+    line-height: 26px;
 
     text-align: left;
     text-decoration: none;
@@ -4673,9 +4673,6 @@ header.no_border .logo img
 
 .contacts_block .location
 {
-    font-weight: 300;
-    line-height: 24px;
-
     display: flex;
     align-content: flex-start;
     align-items: flex-start;
@@ -4683,6 +4680,9 @@ header.no_border .logo img
     justify-content: space-between;
 
     width: 100%;
+
+    font-weight: 300;
+    line-height: 24px;
 }
 
 .contacts_block .location .icon
@@ -4704,25 +4704,25 @@ header.no_border .logo img
 
 .contacts_block .time
 {
+    width: 100%;
+    padding-left: 27px;
+
     font-size: 14px;
     font-weight: 300;
     line-height: 22px;
-
-    width: 100%;
-    padding-left: 27px;
 }
 
 
 .contacts_block .phone
 {
-    font-weight: 300;
-    line-height: 24px;
-
     display: flex;
     align-content: center;
     align-items: center;
     flex-wrap: wrap;
     justify-content: flex-start;
+
+    font-weight: 300;
+    line-height: 24px;
 }
 
 .contacts_block .phone .icon
@@ -4794,11 +4794,11 @@ header.no_border .logo img
 
 .contacts_block .messengers .callback_btn
 {
+    margin-left: 12px;
+
     font-size: 12px;
     font-weight: 500;
     line-height: 22px;
-
-    margin-left: 12px;
 
     transition: color .2s linear;
 }
@@ -4818,14 +4818,14 @@ header.no_border .logo img
 
 .contacts_block .email
 {
-    font-weight: 300;
-    line-height: 24px;
-
     display: flex;
     align-content: center;
     align-items: center;
     flex-wrap: wrap;
     justify-content: flex-start;
+
+    font-weight: 300;
+    line-height: 24px;
 }
 
 .contacts_block .email .icon
@@ -4930,13 +4930,13 @@ header.no_border .logo img
 
 .contacts_block .text_block
 {
-    line-height: 22px;
-
     align-self: center;
 
     width: calc(33.333% - 40px);
     margin-bottom: 40px;
     margin-left: 40px;
+
+    line-height: 22px;
 
     color: #000;
 }
@@ -5037,11 +5037,11 @@ header.no_border .logo img
 
 .stocks .stock .desc
 {
+    margin-top: 12px;
+
     font-size: 14px;
     font-weight: 300;
     line-height: 22px;
-
-    margin-top: 12px;
 
     color: #5d5d5d;
 }
@@ -5141,15 +5141,15 @@ header.no_border .logo img
 
 .articles .article .date
 {
-    font-size: 18px;
-    line-height: 24px;
-
     position: absolute;
     z-index: 3;
     top: 0;
     left: 0;
 
     padding: 11px 27px 10px;
+
+    font-size: 18px;
+    line-height: 24px;
 
     white-space: nowrap;
 
@@ -5160,9 +5160,6 @@ header.no_border .logo img
 
 .articles .article .name
 {
-    font-size: 25px;
-    line-height: 34px;
-
     position: absolute;
     z-index: 3;
     bottom: 0;
@@ -5177,6 +5174,9 @@ header.no_border .logo img
     width: 100%;
     min-height: 105px;
     padding: 19px 35px 18px;
+
+    font-size: 25px;
+    line-height: 34px;
 
     transition: .2s linear;
     pointer-events: none;
@@ -5217,12 +5217,12 @@ header.no_border .logo img
 
 .prices table th
 {
+    height: 60px;
+    padding: 10px 19px;
+
     font-size: 14px;
     font-weight: 700;
     line-height: 20px;
-
-    height: 60px;
-    padding: 10px 19px;
 
     text-align: left;
     vertical-align: middle;
@@ -5250,10 +5250,10 @@ header.no_border .logo img
 
 .prices table td
 {
-    line-height: 24px;
-
     height: 60px;
     padding: 10px 19px;
+
+    line-height: 24px;
 
     text-align: left;
     vertical-align: middle;
@@ -5288,12 +5288,12 @@ header.no_border .logo img
 
 .prices .order_btn
 {
+    margin-top: 40px;
+    padding: 19px 24px;
+
     font-size: 18px;
     font-weight: 500;
     line-height: 22px;
-
-    margin-top: 40px;
-    padding: 19px 24px;
 
     transition: background .2s linear;
     text-transform: uppercase;
@@ -5363,9 +5363,6 @@ header.no_border .logo img
 
 .trainer_info .image .info
 {
-    font-size: 18px;
-    line-height: 26px;
-
     position: absolute;
     z-index: 3;
     top: 0;
@@ -5373,6 +5370,9 @@ header.no_border .logo img
 
     width: 100%;
     padding: 48px;
+
+    font-size: 18px;
+    line-height: 26px;
 
     color: #fff;
     border-radius: 0 12px 0 0;
@@ -5421,9 +5421,6 @@ header.no_border .logo img
 
 .trainer_info .data .features > *
 {
-    font-size: 13px;
-    line-height: 27px;
-
     position: relative;
     z-index: 3;
 
@@ -5432,6 +5429,9 @@ header.no_border .logo img
     align-items: flex-start;
     flex-wrap: wrap;
     justify-content: space-between;
+
+    font-size: 13px;
+    line-height: 27px;
 }
 
 .trainer_info .data .features > *:before
@@ -5463,9 +5463,9 @@ header.no_border .logo img
 
 .trainer_info .data .features .val
 {
-    font-weight: 500;
-
     width: calc(100% - 148px);
+
+    font-weight: 500;
 
     color: #1a1a1a;
 }
@@ -5473,13 +5473,13 @@ header.no_border .logo img
 
 .trainer_info .data .description
 {
-    font-weight: 500;
-    line-height: 24px;
-
     position: relative;
 
     margin-top: 24px;
     padding: 24px 29px;
+
+    font-weight: 500;
+    line-height: 24px;
 
     color: #1a1a1a;
     border: 1px solid #e8e8e8;
@@ -5507,10 +5507,10 @@ header.no_border .logo img
 
 .trainer_info .data .details
 {
+    margin-top: 24px;
+
     font-weight: 500;
     line-height: 22px;
-
-    margin-top: 24px;
 
     color: #ec6707;
 }
@@ -5559,12 +5559,12 @@ header.no_border .logo img
 
 .trainer_info .data .order_btn
 {
+    margin-top: 36px;
+    padding: 19px 24px;
+
     font-size: 18px;
     font-weight: 500;
     line-height: 22px;
-
-    margin-top: 36px;
-    padding: 19px 24px;
 
     transition: background .2s linear;
     text-transform: uppercase;
@@ -5649,12 +5649,12 @@ header.no_border .logo img
 
 .groups .category .title
 {
+    margin-bottom: 27px;
+    padding: 3px 0 3px 18px;
+
     font-size: 26px;
     font-weight: 500;
     line-height: 34px;
-
-    margin-bottom: 27px;
-    padding: 3px 0 3px 18px;
 
     color: #1a1a1a;
     border-left: 2px solid #ec6707;
@@ -5698,15 +5698,15 @@ header.no_border .logo img
 
 .groups .group .age
 {
-    font-size: 14px;
-    line-height: 22px;
-
     position: absolute;
     z-index: 3;
     top: 0;
     left: 0;
 
     padding: 9px 15px;
+
+    font-size: 14px;
+    line-height: 22px;
 
     white-space: nowrap;
     text-transform: uppercase;
@@ -5752,10 +5752,10 @@ header.no_border .logo img
 
 .groups .group .info .exp
 {
+    margin: 2px -4px 0;
+
     font-size: 13px;
     line-height: 21px;
-
-    margin: 2px -4px 0;
 
     color: #1a1a1a;
 }
@@ -5769,9 +5769,6 @@ header.no_border .logo img
 
 .groups .group .info .times > *:not(.price_info)
 {
-    font-size: 13px;
-    line-height: 27px;
-
     position: relative;
 
     display: flex;
@@ -5779,6 +5776,9 @@ header.no_border .logo img
     align-items: flex-start;
     flex-wrap: wrap;
     justify-content: space-between;
+
+    font-size: 13px;
+    line-height: 27px;
 }
 
 .groups .group .info .times > *:not(.price_info):before
@@ -5820,15 +5820,15 @@ header.no_border .logo img
 
 .groups .group .info .price_info
 {
-    font-size: 13px;
-    font-weight: 500;
-    line-height: 21px;
-
     display: none;
 
     width: calc(100% + 40px);
     margin: 8px -20px 20px;
     padding: 0 20px 30px;
+
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 21px;
 
     text-align: center;
 
@@ -5859,12 +5859,12 @@ header.no_border .logo img
 
 .groups .group .info .price_info .order_btn
 {
+    margin-top: 20px;
+    padding: 14px 19px;
+
     font-size: 16px;
     font-weight: 500;
     line-height: 22px;
-
-    margin-top: 20px;
-    padding: 14px 19px;
 
     transition: background .2s linear;
     text-transform: uppercase;
@@ -5882,12 +5882,12 @@ header.no_border .logo img
 
 .groups .group .info .price_btn
 {
-    line-height: 22px;
-
     display: block;
 
     width: 100%;
     margin-top: 10px;
+
+    line-height: 22px;
 
     transition: color .2s linear;
     text-transform: uppercase;
@@ -6012,21 +6012,21 @@ header.no_border .logo img
 
 .service .data .desc
 {
+    margin-top: 16px;
+
     font-weight: 500;
     line-height: 24px;
-
-    margin-top: 16px;
 }
 
 
 .service .data .order_btn
 {
+    margin-top: 32px;
+    padding: 19px 24px;
+
     font-size: 18px;
     font-weight: 500;
     line-height: 22px;
-
-    margin-top: 32px;
-    padding: 19px 24px;
 
     transition: background .2s linear;
     text-transform: uppercase;
@@ -6217,23 +6217,23 @@ header.no_border .logo img
 
 .additional_services .item .desc
 {
-    font-size: 14px;
-    line-height: 19px;
-
     width: 276px;
     max-width: 100%;
     margin-top: 16px;
+
+    font-size: 14px;
+    line-height: 19px;
 }
 
 
 .additional_services .item .price
 {
+    margin-top: 22px;
+
     font-family: var(--font_family2);
     font-size: 26px;
     font-weight: 700;
     line-height: 33px;
-
-    margin-top: 22px;
 
     color: #000;
 }
@@ -6328,10 +6328,6 @@ header.no_border .logo img
 
 .cafe_menu .block_title
 {
-    font-family: var(--font_family2);
-    font-size: 55px;
-    font-weight: 700;
-
     display: flex;
     align-content: center;
     align-items: center;
@@ -6339,6 +6335,10 @@ header.no_border .logo img
     justify-content: center;
 
     margin-bottom: 28px;
+
+    font-family: var(--font_family2);
+    font-size: 55px;
+    font-weight: 700;
 
     text-align: center;
     text-transform: uppercase;
@@ -6358,10 +6358,6 @@ header.no_border .logo img
 
 .cafe_menu .anchors
 {
-    font-family: var(--font_family2);
-    font-size: 18px;
-    font-weight: 700;
-
     display: flex;
     align-content: center;
     align-items: center;
@@ -6370,6 +6366,10 @@ header.no_border .logo img
 
     margin-bottom: 48px;
     padding: 13px 16px 10px;
+
+    font-family: var(--font_family2);
+    font-size: 18px;
+    font-weight: 700;
 
     border-top: 1px solid #7e5b41;
     border-bottom: 1px solid #7e5b41;
@@ -6421,10 +6421,10 @@ header.no_border .logo img
 
 .cafe_menu .about .desc
 {
+    margin-top: 28px;
+
     font-size: 18px;
     line-height: 145%;
-
-    margin-top: 28px;
 
     color: #c4afa0;
 }
@@ -6506,10 +6506,6 @@ header.no_border .logo img
 
 .cafe_menu .section .title
 {
-    font-family: var(--font_family2);
-    font-size: 40px;
-    font-weight: 700;
-
     position: relative;
 
     display: flex;
@@ -6519,6 +6515,10 @@ header.no_border .logo img
     justify-content: flex-start;
 
     margin-bottom: 54px;
+
+    font-family: var(--font_family2);
+    font-size: 40px;
+    font-weight: 700;
 
     text-transform: uppercase;
 
@@ -6568,8 +6568,6 @@ header.no_border .logo img
 
 .cafe_menu .section .title .size
 {
-    font-family: var(--font_family2);
-
     position: absolute;
     top: 50%;
     right: 164px;
@@ -6582,6 +6580,8 @@ header.no_border .logo img
 
     width: 90px;
     height: 90px;
+
+    font-family: var(--font_family2);
 
     transform: translateY(-50%);
     text-align: center;
@@ -6604,22 +6604,22 @@ header.no_border .logo img
 
 .cafe_menu .section .title .size .val
 {
+    width: 100%;
+
     font-size: 40px;
     font-weight: 700;
     line-height: 124.946%;
-
-    width: 100%;
 }
 
 
 .cafe_menu .section .title .size .unit
 {
+    width: 100%;
+    margin-top: -13px;
+
     font-size: 27px;
     font-weight: 700;
     line-height: 124.946%;
-
-    width: 100%;
-    margin-top: -13px;
 }
 
 
@@ -6697,11 +6697,11 @@ header.no_border .logo img
 
 .cafe_menu .dish .name
 {
+    padding-top: 4px;
+
     font-family: var(--font_family2);
     font-size: 26px;
     font-weight: 700;
-
-    padding-top: 4px;
 
     white-space: nowrap;
 
@@ -6711,9 +6711,9 @@ header.no_border .logo img
 
 .cafe_menu .dish .name.small
 {
-    font-size: 22px;
-
     padding-top: 9px;
+
+    font-size: 22px;
 }
 
 
@@ -6748,16 +6748,16 @@ header.no_border .logo img
 
 .cafe_menu .dish .price
 {
-    font-family: var(--font_family2);
-    font-size: 33px;
-    font-weight: 700;
-    line-height: 100%;
-
     position: relative;
 
     width: 90px;
     min-width: 90px;
     max-width: 100%;
+
+    font-family: var(--font_family2);
+    font-size: 33px;
+    font-weight: 700;
+    line-height: 100%;
 
     white-space: nowrap;
 
@@ -6781,26 +6781,26 @@ header.no_border .logo img
 
 .cafe_menu .dish .weight
 {
-    font-size: 22px;
-    font-weight: 400;
-    line-height: normal;
-
     position: absolute;
     top: 100%;
     left: 0;
 
     margin-top: 12px;
+
+    font-size: 22px;
+    font-weight: 400;
+    line-height: normal;
 }
 
 
 .cafe_menu .dish .desc
 {
-    font-size: 18px;
-    line-height: 145%;
-
     width: 426px;
     max-width: calc(100% - 182px);
     margin-top: 12px;
+
+    font-size: 18px;
+    line-height: 145%;
 
     color: #c4afa0;
 }
@@ -6846,11 +6846,11 @@ header.no_border .logo img
 
 .cafe_menu .dish .fillers .title
 {
+    margin-bottom: 18px;
+
     font-family: var(--font_family2);
     font-size: 22px;
     font-weight: 700;
-
-    margin-bottom: 18px;
 
     text-transform: none;
 
@@ -7985,14 +7985,14 @@ header.no_border .logo img
 
 .catalog .filter .mob_btn
 {
-    font-size: 15px;
-    font-weight: 500;
-    line-height: 21px;
-
     display: none;
 
     width: 100%;
     padding: 10px;
+
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 21px;
 
     text-transform: uppercase;
 
@@ -8010,11 +8010,11 @@ header.no_border .logo img
 
 .catalog .filter .label
 {
+    margin-bottom: 18px;
+
     font-family: var(--font_family2);
     font-size: 13px;
     line-height: 16px;
-
-    margin-bottom: 18px;
 
     text-transform: uppercase;
 }
@@ -8034,9 +8034,6 @@ header.no_border .logo img
 
 .catalog .filter .checkbox
 {
-    font-size: 13px;
-    line-height: 18px;
-
     position: relative;
 
     display: flex;
@@ -8047,6 +8044,9 @@ header.no_border .logo img
 
     min-height: 17px;
     padding-left: 29px;
+
+    font-size: 13px;
+    line-height: 18px;
 
     cursor: pointer;
 
@@ -8084,13 +8084,13 @@ header.no_border .logo img
 
 .catalog .filter .submit_btn
 {
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 22px;
-
     position: relative;
 
     padding-right: 14px;
+
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
 
     text-transform: uppercase;
 
@@ -8148,10 +8148,6 @@ header.no_border .logo img
 
 .catalog .filter_selected .btn
 {
-    font-size: 12px;
-    font-weight: 500;
-    line-height: 16px;
-
     display: flex;
     align-content: center;
     align-items: center;
@@ -8159,6 +8155,10 @@ header.no_border .logo img
     justify-content: flex-start;
 
     padding: 5px 12px;
+
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
 
     transition: background .2s linear;
     text-transform: uppercase;
@@ -8186,9 +8186,6 @@ header.no_border .logo img
 
 .catalog .sort
 {
-    font-size: 14px;
-    line-height: 19px;
-
     display: flex;
     align-content: center;
     align-items: center;
@@ -8196,6 +8193,9 @@ header.no_border .logo img
     justify-content: flex-start;
 
     margin-left: auto;
+
+    font-size: 14px;
+    line-height: 19px;
 
     color: #1a1a1a;
 }
@@ -8350,16 +8350,16 @@ header.no_border .logo img
 
 .catalog .items .item .sticker
 {
-    font-size: 12px;
-    font-weight: 500;
-    line-height: 16px;
-
     position: absolute;
     z-index: 3;
     top: 19px;
     left: 27px;
 
     padding: 5px 12px;
+
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
 
     white-space: nowrap;
     text-transform: uppercase;
@@ -8471,10 +8471,10 @@ header.no_border .logo img
 
 .catalog .items .item .age
 {
+    margin-top: 1px;
+
     font-size: 14px;
     line-height: 19px;
-
-    margin-top: 1px;
 
     opacity: .5;
 }
@@ -8482,23 +8482,23 @@ header.no_border .logo img
 
 .catalog .items .item .price
 {
+    margin-top: 16px;
+
     font-family: var(--font_family2);
     font-weight: 700;
-
-    margin-top: 16px;
 }
 
 
 .catalog .items .item .btn
 {
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 22px;
-
     display: none;
 
     margin-top: 33px;
     padding: 18px 29px;
+
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
 
     text-transform: uppercase;
 
@@ -8684,12 +8684,12 @@ header.no_border .logo img
 
 .product_info .data .price
 {
+    margin-top: 43px;
+
     font-family: var(--font_family2);
     font-size: 22px;
     font-weight: 700;
     line-height: 28px;
-
-    margin-top: 43px;
 }
 
 .product_info .data .price span
@@ -8701,12 +8701,12 @@ header.no_border .logo img
 
 .product_info .data .btn
 {
+    margin-top: 56px;
+    padding: 18px 29px;
+
     font-size: 16px;
     font-weight: 500;
     line-height: 22px;
-
-    margin-top: 56px;
-    padding: 18px 29px;
 
     text-transform: uppercase;
 
@@ -8746,13 +8746,13 @@ footer .logo img
 
 footer .reserv_btn
 {
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 22px;
-
     width: 163px;
     height: 60px;
     margin-top: 40px;
+
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22px;
 
     transition: background .2s linear;
     text-transform: uppercase;
@@ -8771,11 +8771,11 @@ footer .reserv_btn:hover
 
 footer .links
 {
+    margin-top: 28px;
+
     font-size: 14px;
     font-weight: 300;
     line-height: 24px;
-
-    margin-top: 28px;
 
     color: #5d5d5d;
 }
@@ -8801,11 +8801,11 @@ footer .links a.active
 
 footer .menu
 {
+    padding-left: 25px;
+
     font-family: var(--font_family2);
     font-size: 15px;
     line-height: 25px;
-
-    padding-left: 25px;
 
     letter-spacing: .1em;
     text-transform: uppercase;
@@ -8868,14 +8868,14 @@ footer .contacts
 
 footer .contacts .location
 {
-    font-weight: 300;
-    line-height: 24px;
-
     display: flex;
     align-content: flex-start;
     align-items: flex-start;
     flex-wrap: wrap;
     justify-content: space-between;
+
+    font-weight: 300;
+    line-height: 24px;
 }
 
 footer .contacts .location .icon
@@ -8907,19 +8907,16 @@ footer .contacts .sep
 
 footer .contacts .time
 {
+    margin-left: 20px;
+
     font-size: 14px;
     font-weight: 300;
     line-height: 22px;
-
-    margin-left: 20px;
 }
 
 
 footer .contacts .phone
 {
-    font-weight: 300;
-    line-height: 24px;
-
     display: flex;
     align-content: center;
     align-items: center;
@@ -8927,6 +8924,9 @@ footer .contacts .phone
     justify-content: flex-start;
 
     margin-top: 16px;
+
+    font-weight: 300;
+    line-height: 24px;
 }
 
 footer .contacts .phone .icon
@@ -8999,11 +8999,11 @@ footer .contacts .messengers a + a
 
 footer .contacts .messengers .callback_btn
 {
+    margin-left: 12px;
+
     font-size: 12px;
     font-weight: 500;
     line-height: 22px;
-
-    margin-left: 12px;
 
     transition: color .2s linear;
 }
@@ -9023,9 +9023,6 @@ footer .contacts .messengers:hover
 
 footer .contacts .email
 {
-    font-weight: 300;
-    line-height: 24px;
-
     display: flex;
     align-content: center;
     align-items: center;
@@ -9034,6 +9031,9 @@ footer .contacts .email
 
     width: 100%;
     margin-top: 16px;
+
+    font-weight: 300;
+    line-height: 24px;
 }
 
 footer .contacts .email .icon
@@ -9136,14 +9136,14 @@ footer .socials a:hover
 
 footer .creator
 {
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 24px;
-
     align-self: flex-end;
 
     margin-top: 72px;
     margin-left: auto;
+
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
 
     color: #5d5d5d;
 }
@@ -9171,11 +9171,11 @@ footer .creator a:hover span
 
 footer.no_bg
 {
-    font-size: 13px;
-    line-height: 21px;
-
     margin-top: 76px;
     padding: 32px 0;
+
+    font-size: 13px;
+    line-height: 21px;
 
     text-align: center;
 
@@ -9206,10 +9206,6 @@ footer.no_bg
 
 .modal_title
 {
-    font-family: var(--font_family2);
-    font-size: 30px;
-    line-height: calc(100% + 10px);
-
     display: flex;
     align-content: center;
     align-items: center;
@@ -9217,6 +9213,10 @@ footer.no_bg
     justify-content: flex-start;
 
     margin-bottom: 30px;
+
+    font-family: var(--font_family2);
+    font-size: 30px;
+    line-height: calc(100% + 10px);
 }
 
 .modal_title .icon
