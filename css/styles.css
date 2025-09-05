@@ -8823,9 +8823,7 @@ header.no_border .logo img
     padding: 39px 31px;
 
     transition: border-color .2s linear;
-    text-decoration: none;
 
-    color: currentColor;
     border: 1px solid rgba(188, 188, 188, .14);
     border-radius: 20px;
 }
@@ -8840,7 +8838,6 @@ header.no_border .logo img
 .video_reviews .review .icon
 {
     position: absolute;
-    z-index: 3;
     top: 34px;
     left: 24px;
 
@@ -8854,12 +8851,22 @@ header.no_border .logo img
     height: 108px;
     padding-left: 4px;
 
+    z-index: 3;
+    transition: background .2s linear;
+    text-decoration: none;
+
     color: #fff;
     border-radius: 50%;
     background: rgba(236, 103, 7, .70);
 
             backdrop-filter: blur(5.28px);
     -webkit-backdrop-filter: blur(5.28px);
+}
+
+
+.video_reviews .review .icon:hover
+{
+    background: rgba(236, 103, 7, .90);
 }
 
 

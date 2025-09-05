@@ -467,6 +467,7 @@ $(() => {
 
 	videoReviews.forEach((el, i) => {
 		el.classList.add('video_reviews_s' + i)
+		el.setAttribute('data-slider-index', i)
 
 		let options = {
 			loop: true,
@@ -505,6 +506,11 @@ $(() => {
 					slidesPerView: 3,
 					slidesPerGroup: 3
 				}
+			},
+			on: {
+				init: swiper => setHeight($(swiper.$el).find('.review')),
+				resize: swiper => setHeight($(swiper.$el).find('.review')),
+				changed: swiper => setHeight($(swiper.$el).find('.review'))
 			}
 		}
 
@@ -515,9 +521,17 @@ $(() => {
 	$('.video_reviews .spoler_btn').click(function(e) {
 		e.preventDefault()
 
-		let review = $(this).closest('.review')
+		let review = $(this).closest('.review'),
+			swiperEl = $(this).closest('.swiper'),
+			sliderIndex = swiperEl.data('slider-index')
 
 		$(this).toggleClass('active')
 		review.find('.awards .hide').slideToggle(300)
+
+		setTimeout(() => {
+			swiperEl.find('.review').css('min-height', '0px')
+
+			videoReviewsSliders[sliderIndex].emit('changed')
+		}, 300)
 	})
 })
