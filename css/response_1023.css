@@ -1555,6 +1555,386 @@
 
 
 
+    /*---------------------
+        Ice field table
+    ---------------------*/
+    .ice_field_table
+    {
+        width: 100%;
+    }
+
+
+    .ice_field_table .item .book_btn
+    {
+        opacity: 1;
+    }
+
+
+
+    /*-------------------------
+        Squash tennis table
+    -------------------------*/
+    .squash_tennis_table
+    {
+        width: 100%;
+    }
+
+
+    .squash_tennis_table .item .col
+    {
+        min-height: 60px;
+    }
+
+
+    .squash_tennis_table .col_total_price
+    {
+        width: 115px;
+        min-width: 115px;
+    }
+
+
+    .squash_tennis_table .total_price
+    {
+        margin-top: 8px;
+        padding: 16px;
+
+        font-size: 20px;
+    }
+
+
+    .squash_tennis_table .book_btn
+    {
+        height: 56px;
+
+        font-size: 18px;
+    }
+
+
+
+    /*-----------------------------
+        Membership squash table
+    -----------------------------*/
+    .membership_squash_table
+    {
+        width: 100%;
+    }
+
+
+    .membership_squash_table .item .col_service
+    {
+        flex-wrap: wrap;
+    }
+
+
+    .membership_squash_table .col_time
+    {
+        width: 186px;
+        min-width: 186px;
+    }
+
+
+    .membership_squash_table .col_price
+    {
+        width: 156px;
+        min-width: 156px;
+    }
+
+
+    .membership_squash_table .col_price.big
+    {
+        width: 166px;
+        min-width: 166px;
+    }
+
+
+    .membership_squash_table .item .book_btn
+    {
+        margin: 0;
+
+        opacity: 1;
+    }
+
+
+
+    /*---------------------------
+        One time squash table
+    ---------------------------*/
+    .one_time_squash_table
+    {
+        width: 100%;
+    }
+
+
+    .one_time_squash_table .item .book_btn
+    {
+        opacity: 1;
+    }
+
+
+
+    /*------------------------------
+        Membership fitness table
+    ------------------------------*/
+    .membership_fitness_table
+    {
+        width: 100%;
+    }
+
+
+    .membership_fitness_table .col_time
+    {
+        width: 168px;
+        min-width: 168px;
+    }
+
+
+    .membership_fitness_table .col_price
+    {
+        width: 108px;
+        min-width: 108px;
+    }
+
+
+    .membership_fitness_table .item .book_btn
+    {
+        opacity: 1;
+    }
+
+
+
+    /*----------------------------------
+        Kids membership hockey table
+    ----------------------------------*/
+    .kids_membership_hockey_table
+    {
+        gap: 8px;
+    }
+
+
+    .kids_membership_hockey_table > .item
+    {
+        padding: 0;
+
+        border: none;
+        border-radius: 0;
+    }
+
+
+
+    .kids_membership_hockey_table .head
+    {
+        position: relative;
+
+        flex-wrap: wrap;
+
+        gap: 0;
+    }
+
+
+    .kids_membership_hockey_table .head .col_service
+    {
+        min-height: 44px;
+        padding: 8px 12px;
+
+        font-size: 16px;
+
+        transition: background .2s linear;
+
+        color: #fff;
+        border-radius: 4px;
+        background: #5d5d5d;
+
+        gap: 0;
+    }
+
+
+    .kids_membership_hockey_table .head .col_service b
+    {
+        margin-top: 0;
+
+        font-size: 18px;
+    }
+
+
+    .kids_membership_hockey_table .head .col_service .arr
+    {
+        display: flex;
+    }
+
+
+    .kids_membership_hockey_table .head .col_price
+    {
+        display: none;
+
+        width: 100%;
+        min-width: 0;
+        padding: 8px 12px;
+
+        font-size: 16px;
+
+        background: #f5f5f5;
+    }
+
+
+    .kids_membership_hockey_table .head .col_price:before
+    {
+        display: block;
+
+        width: calc(50% - 8px);
+
+        font-weight: 400;
+
+        content: attr(data-col-name);
+    }
+
+
+    .kids_membership_hockey_table .head .col_action
+    {
+        display: none;
+
+        width: 100%;
+        min-width: 0;
+        margin-top: 12px;
+    }
+
+
+    .kids_membership_hockey_table .head .book_btn
+    {
+        height: 40px;
+
+        font-size: 16px;
+
+        color: #fff;
+        border-color: #ec6707;
+        background: #ec6707;
+    }
+
+
+    .kids_membership_hockey_table .head .col_details
+    {
+        display: none;
+    }
+
+
+
+    .kids_membership_hockey_table .data
+    {
+        margin-top: 20px;
+        padding-block: 0 20px;
+
+        border: none;
+    }
+
+
+    .kids_membership_hockey_table .data .title
+    {
+        margin-bottom: 12px;
+
+        font-size: 20px;
+    }
+
+
+    .kids_membership_hockey_table .table
+    {
+        overflow-x: auto;
+        overflow-y: hidden;
+
+        /* width: calc(100% + 48px);
+        margin-inline: -24px;
+        padding-inline: 24px; */
+    }
+
+
+    .kids_membership_hockey_table .table::-webkit-scrollbar
+    {
+        display: none;
+
+        width: 0;
+        height: 0;
+
+        background-color: transparent;
+    }
+
+
+    .kids_membership_hockey_table .table::-webkit-scrollbar-thumb
+    {
+        background-color: transparent;
+    }
+
+
+    .kids_membership_hockey_table .table .titles,
+    .kids_membership_hockey_table .table .items
+    {
+        width: 960px;
+    }
+
+
+    .kids_membership_hockey_table .table .titles,
+    .kids_membership_hockey_table .table .item
+    {
+        font-size: 16px;
+    }
+
+
+    .kids_membership_hockey_table .table .titles .col,
+    .kids_membership_hockey_table .table .item .col
+    {
+        min-height: 34px;
+    }
+
+
+    .kids_membership_hockey_table .table .titles .col:first-child,
+    .kids_membership_hockey_table .table .item .col:first-child
+    {
+        position: sticky;
+        top: 0;
+        left: 0;
+
+        box-shadow: 4px 0 8px rgba(0,0,0,.2);
+    }
+
+
+    .kids_membership_hockey_table .table .titles .col + .col,
+    .kids_membership_hockey_table .table .item .col + .col
+    {
+        justify-content: center;
+
+        text-align: center;
+    }
+
+
+
+    .kids_membership_hockey_table .data .row
+    {
+        margin-top: 24px;
+
+        gap: 24px;
+    }
+
+
+    .kids_membership_hockey_table .data .coaches,
+    .kids_membership_hockey_table .data .value
+    {
+        width: 100%;
+    }
+
+
+
+    .kids_membership_hockey_table .item.open .head .col_service
+    {
+        color: #fff;
+        background: #ec6707;
+    }
+
+
+    .kids_membership_hockey_table .item.open .head .col_price,
+    .kids_membership_hockey_table .item.open .head .col_action
+    {
+        display: flex;
+    }
+
+
+
     /*------------
         Footer
     ------------*/

@@ -1206,6 +1206,652 @@
 
 
 
+    /*---------------------
+        Ice field table
+    ---------------------*/
+    .ice_field_table .col_amount:before,
+    .ice_field_table .col_price:before
+    {
+        display: block;
+
+        width: calc(50% - 8px);
+
+        content: attr(data-col-name);
+    }
+
+
+    .ice_field_table .col_service
+    {
+        font-weight: 700;
+
+        background: #f5f5f5;
+    }
+
+
+    .ice_field_table .col_price
+    {
+        background: #f5f5f5;
+    }
+
+
+
+    .ice_field_table .titles
+    {
+        display: none;
+    }
+
+
+
+    .ice_field_table .data
+    {
+        gap: 21px;
+    }
+
+
+    .ice_field_table .item
+    {
+        position: relative;
+
+        flex-direction: column;
+        flex-wrap: wrap;
+
+        padding-bottom: 46px;
+
+        gap: 0;
+    }
+
+
+    .ice_field_table .item:nth-child(2n)
+    {
+        background: none;
+    }
+
+
+    .ice_field_table .item .col
+    {
+        justify-content: flex-start;
+
+        width: 100%;
+        padding: 4px 8px;
+
+        font-size: 13px;
+
+        gap: 16px;
+    }
+
+
+    .ice_field_table .item .book_btn
+    {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+
+        margin: 0;
+    }
+
+
+
+    /*-------------------------
+        Squash tennis table
+    -------------------------*/
+    .squash_tennis_table
+    {
+        padding: 8px;
+
+        background: #fbf9f8;
+        box-shadow: -5px 0 10px 0 rgba(101, 101, 101, .14);
+    }
+
+
+    .squash_tennis_table .titles
+    {
+        display: none;
+    }
+
+
+    .squash_tennis_table .mob_title
+    {
+        display: block;
+    }
+
+
+    .squash_tennis_table .data
+    {
+        display: flex;
+        flex-direction: column;
+
+        gap: 2px;
+    }
+
+
+    .squash_tennis_table .item
+    {
+        position: relative;
+
+        flex-wrap: wrap;
+
+        padding: 20px 60px 20px 20px;
+
+        border: none;
+        border-radius: 8px;
+        background: #fff;
+        box-shadow: 0 4px 93.2px -30px rgba(165, 119, 90, .38);
+
+        gap: 2px;
+    }
+
+
+    .squash_tennis_table .item .col
+    {
+        flex-wrap: nowrap;
+        justify-content: space-between;
+
+        width: 100%;
+        min-height: 0;
+        padding: 0;
+    }
+
+
+    .squash_tennis_table .item .col_service
+    {
+        margin-bottom: 8px;
+
+        font-weight: 700;
+    }
+
+
+    .squash_tennis_table .item .col_price
+    {
+        font-weight: 700;
+
+        white-space: nowrap;
+    }
+
+
+    .squash_tennis_table .item .col_date
+    {
+        font-weight: 700;
+
+        text-align: left;
+        white-space: nowrap;
+    }
+
+
+    .squash_tennis_table .item .col_date.mob_full
+    {
+        flex-direction: column;
+    }
+
+
+    .squash_tennis_table .item .col_date br
+    {
+        display: none;
+    }
+
+
+    .squash_tennis_table .item .col_date.mob_full span
+    {
+        width: 100%;
+    }
+
+
+    .squash_tennis_table .item .mob_hide
+    {
+        display: none;
+    }
+
+
+    .squash_tennis_table .item .col.desktop_hide
+    {
+        display: flex;
+    }
+
+
+    .squash_tennis_table .item .dottes
+    {
+        display: block;
+    }
+
+
+    .squash_tennis_table .item .checkbox
+    {
+        position: absolute;
+        top: auto;
+        right: 20px;
+    }
+
+
+    .squash_tennis_table .item .col_total_price
+    {
+        font-size: var(--font_size);
+
+        white-space: nowrap;
+    }
+
+
+    .squash_tennis_table .item .col_price:before,
+    .squash_tennis_table .item .col_date:before,
+    .squash_tennis_table .item .col_total_price:before
+    {
+        font-weight: 400;
+
+        content: attr(data-col-name);
+
+        color: #5d5d5d;
+    }
+
+
+    .squash_tennis_table .item .col_date.mob_full:before
+    {
+        width: 100%;
+        margin-bottom: 2px;
+    }
+
+
+    .squash_tennis_table .item .col_total_price:before
+    {
+        font-weight: 700;
+
+        color: #000;
+    }
+
+
+    .squash_tennis_table .total_price
+    {
+        border: 1px solid #ec6707;
+        border-radius: 8px;
+        background: #fff9f0;
+        box-shadow: 0 4px 93.2px -30px rgba(165, 119, 90, .38);
+    }
+
+
+    .squash_tennis_table .book_btn
+    {
+        height: 52px;
+        margin-top: 8px;
+
+        font-size: 16px;
+    }
+
+
+
+    /*-----------------------------
+        Membership squash table
+    -----------------------------*/
+    .membership_squash_table
+    {
+        width: calc(100% + 40px);
+        max-width: calc(100% + 40px);
+        margin-inline: -20px;
+    }
+
+
+    .membership_squash_table .col_price:before
+    {
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        display: block;
+
+        font-size: 13px;
+        line-height: 21px;
+
+        content: attr(data-col-name);
+
+        color: #5d5d5d;
+    }
+
+
+
+    .membership_squash_table .titles
+    {
+        display: none;
+    }
+
+
+
+    .membership_squash_table .data
+    {
+        gap: 6px;
+    }
+
+
+    .membership_squash_table .item
+    {
+        position: relative;
+
+        flex-wrap: wrap;
+
+        padding: 10px 20px 60px;
+
+        font-size: 16px;
+
+        background: #f5f5f5;
+
+        gap: 12px;
+    }
+
+
+    .membership_squash_table .item .col
+    {
+        width: 100%;
+        padding: 0;
+    }
+
+
+    .membership_squash_table .item .col_service
+    {
+        font-weight: 700;
+    }
+
+
+    .membership_squash_table .item .col_time .icon
+    {
+        display: none;
+    }
+
+
+    .membership_squash_table .item .col_price
+    {
+        position: relative;
+
+        align-content: flex-end;
+        align-items: flex-end;
+    }
+
+
+    .membership_squash_table .item .book_btn
+    {
+        position: absolute;
+        right: 20px;
+        bottom: 10px;
+
+        margin: 0;
+    }
+
+
+
+    /*---------------------------
+        One time squash table
+    ---------------------------*/
+    .one_time_squash_table
+    {
+        width: calc(100% + 40px);
+        max-width: calc(100% + 40px);
+        margin-inline: -20px;
+    }
+
+
+
+    .one_time_squash_table .titles
+    {
+        display: none;
+    }
+
+
+
+    .one_time_squash_table .data
+    {
+        gap: 6px;
+    }
+
+
+    .one_time_squash_table .item
+    {
+        position: relative;
+
+        flex-wrap: wrap;
+
+        padding: 4px 146px 4px 20px;
+
+        font-size: 16px;
+
+        background: #f5f5f5;
+
+        gap: 0;
+    }
+
+
+    .one_time_squash_table .item .col
+    {
+        width: 100%;
+        padding: 0;
+    }
+
+
+    .one_time_squash_table .item .col_service span,
+    .one_time_squash_table .item .col_time .icon
+    {
+        display: none;
+    }
+
+
+    .one_time_squash_table .item .book_btn
+    {
+        position: absolute;
+        top: 50%;
+        right: 20px;
+
+        margin: 0;
+
+        transform: translateY(-50%);
+    }
+
+
+
+    /*------------------------------
+        Membership fitness table
+    ------------------------------*/
+    .membership_fitness_table
+    {
+        width: 100%;
+    }
+
+
+    .membership_fitness_table .col
+    {
+        justify-content: flex-start;
+
+        width: 100%;
+        padding: 4px 10px;
+
+        font-size: 13px;
+
+        gap: 16px;
+    }
+
+
+    .membership_fitness_table .col_time:before,
+    .membership_fitness_table .col_price:before
+    {
+        display: block;
+
+        width: calc(50% - 8px);
+
+        content: attr(data-col-name);
+    }
+
+
+    .membership_fitness_table .col_price
+    {
+        background: #f5f5f5;
+    }
+
+
+
+    .membership_fitness_table .titles
+    {
+        display: none;
+    }
+
+
+
+    .membership_fitness_table .data
+    {
+        gap: 4px;
+    }
+
+
+
+    .membership_fitness_table .item
+    {
+        position: relative;
+
+        flex-wrap: wrap;
+
+        gap: 0;
+    }
+
+
+    .membership_fitness_table .item:nth-child(2n)
+    {
+        background: none;
+    }
+
+
+    .membership_fitness_table .item .col_service
+    {
+        min-height: 44px;
+        padding: 8px 10px;
+
+        font-size: 13px;
+        font-weight: 700;
+
+        transition: background .2s linear;
+
+        color: #fff;
+        border-radius: 4px;
+        background: #5d5d5d;
+    }
+
+
+    .membership_fitness_table .item .col_time
+    {
+        display: none;
+
+        margin-top: 4px;
+    }
+
+
+    .membership_fitness_table .item .col_time .icon
+    {
+        display: none;
+    }
+
+
+    .membership_fitness_table .item .col_time span
+    {
+        width: auto;
+    }
+
+
+    .membership_fitness_table .item .col_price
+    {
+        display: none;
+    }
+
+
+    .membership_fitness_table .item .arr
+    {
+        display: flex;
+    }
+
+
+    .membership_fitness_table .item .tooltip_btn
+    {
+        position: absolute;
+        bottom: 8px;
+        left: 0;
+
+        display: none;
+
+        padding: 3px 15px 3px 3px;
+
+        border: 1px solid rgba(0, 0, 0, .20);
+        border-radius: 4px;
+        background: #fff;
+    }
+
+
+    .membership_fitness_table .item .tooltip_btn .icon + span
+    {
+        display: block;
+    }
+
+
+    .membership_fitness_table .item .book_btn
+    {
+        position: absolute;
+        right: 0;
+        bottom: 8px;
+
+        display: none;
+
+        height: 34px;
+        margin: 0;
+    }
+
+
+    .membership_fitness_table .item:hover
+    {
+        background: none;
+    }
+
+
+    .membership_fitness_table .item.open
+    {
+        padding-bottom: 56px;
+    }
+
+
+    .membership_fitness_table .item.open .col_service
+    {
+        background: #ec6707;
+    }
+
+
+    .membership_fitness_table .item.open .col_time,
+    .membership_fitness_table .item.open .col_price,
+    .membership_fitness_table .item.open .tooltip_btn
+    {
+        display: flex;
+    }
+
+
+    .membership_fitness_table .item.open .book_btn
+    {
+        display: block;
+    }
+
+
+
+    /*----------------------------------
+        Kids membership hockey table
+    ----------------------------------*/
+    .kids_membership_hockey_table .head .col_service,
+    .kids_membership_hockey_table .head .col_service b
+    {
+        font-size: 13px;
+    }
+
+
+    .kids_membership_hockey_table .data .title
+    {
+        margin-bottom: 10px;
+
+        font-size: 18px;
+    }
+
+
+    .kids_membership_hockey_table .table .titles,
+    .kids_membership_hockey_table .table .items
+    {
+        width: 900px;
+    }
+
+
+
     /*------------
         Footer
     ------------*/

@@ -534,4 +534,67 @@ $(() => {
 			videoReviewsSliders[sliderIndex].emit('changed')
 		}, 300)
 	})
+
+
+	// Membership fitness table
+	$('.membership_fitness_table .tooltip_btn').click(function(e) {
+		e.preventDefault()
+		e.stopPropagation()
+
+		const tooltip = $(this).data('tooltip'),
+			parent = $(this).closest('.block')
+
+		parent.find('.membership_fitness_tooltip').hide()
+		parent.find('.membership_fitness_tooltip.tooltip' + tooltip).fadeIn(300)
+	})
+
+
+	$('.membership_fitness_tooltip .close_btn').click(function(e) {
+		e.preventDefault()
+
+		$(this).closest('.membership_fitness_tooltip').hide()
+	})
+
+
+	$('.membership_fitness_table .item .col_service').click(function(e) {
+		e.preventDefault()
+
+		const WW = window.innerWidth || document.clientWidth || document.getElementsByTagName('body')[0].clientWidth
+
+		if (WW < 768) {
+			const parent = $(this).closest('.item'),
+				block = $(this).closest('.block')
+
+			parent.toggleClass('open')
+
+			if (!parent.hasClass('open')) {
+				block.find('.membership_fitness_tooltip').hide()
+			}
+		}
+	})
+
+
+	// Kids membership hockey table
+	$('.kids_membership_hockey_table .head .col_details').click(function(e) {
+		e.preventDefault()
+
+		const parent = $(this).closest('.item')
+
+		parent.toggleClass('open')
+		parent.find('.data').slideToggle(300)
+	})
+
+
+	$('.kids_membership_hockey_table .head .col_service').click(function(e) {
+		e.preventDefault()
+
+		const WW = window.innerWidth || document.clientWidth || document.getElementsByTagName('body')[0].clientWidth
+
+		if (WW < 1024) {
+			const parent = $(this).closest('.item')
+
+			parent.toggleClass('open')
+			parent.find('.data').slideToggle(300)
+		}
+	})
 })

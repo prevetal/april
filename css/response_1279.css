@@ -1931,6 +1931,136 @@
 
 
 
+    /*------------------------------
+        Membership fitness table
+    ------------------------------*/
+    .membership_fitness_tooltip
+    {
+        width: 100%;
+        margin-top: 24px;
+    }
+
+
+    .membership_fitness_tooltip .close_btn
+    {
+        display: flex;
+    }
+
+
+
+    /*----------------------------------
+        Kids membership hockey table
+    ----------------------------------*/
+    .kids_membership_hockey_table > .item
+    {
+        padding: 11px;
+    }
+
+
+    .kids_membership_hockey_table .head .col_service
+    {
+        font-size: 18px;
+        line-height: calc(100% + 4px);
+    }
+
+
+    .kids_membership_hockey_table .head .col_service b
+    {
+        margin-top: 4px;
+
+        font-size: 20px;
+        line-height: calc(100% + 2px);
+    }
+
+
+    .kids_membership_hockey_table .head .col_price
+    {
+        width: 248px;
+        min-width: 248px;
+
+        font-size: 24px;
+    }
+
+
+    .kids_membership_hockey_table .head .col_action
+    {
+        width: 160px;
+        min-width: 160px;
+    }
+
+
+    .kids_membership_hockey_table .head .book_btn
+    {
+        height: 48px;
+
+        font-size: 18px;
+    }
+
+
+    .kids_membership_hockey_table .head .col_details
+    {
+        width: 248px;
+        min-width: 248px;
+
+        font-size: 16px;
+        line-height: calc(100% + 4px);
+
+        gap: 12px;
+    }
+
+
+    .kids_membership_hockey_table .head .arr
+    {
+        width: 48px;
+    }
+
+
+
+    .kids_membership_hockey_table .data
+    {
+        margin-top: 24px;
+        padding-block: 32px 20px;
+    }
+
+
+    .kids_membership_hockey_table .table .titles,
+    .kids_membership_hockey_table .table .item
+    {
+        font-size: 18px;
+    }
+
+
+    .kids_membership_hockey_table .table .titles .col,
+    .kids_membership_hockey_table .table .item .col
+    {
+        min-height: 40px;
+        padding: 8px 12px;
+    }
+
+
+    .kids_membership_hockey_table .table .item .col_time span
+    {
+        width: calc(100% - 27px);
+    }
+
+
+    .kids_membership_hockey_table .data .title
+    {
+        margin-bottom: 16px;
+
+        font-size: 22px;
+        line-height: 1;
+    }
+
+
+    .kids_membership_hockey_table .data .coaches .desc,
+    .kids_membership_hockey_table .data .value .desc
+    {
+        font-size: 16px;
+    }
+
+
+
     /*------------
         Footer
     ------------*/

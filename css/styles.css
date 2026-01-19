@@ -2123,6 +2123,12 @@ header.no_border .logo img
 }
 
 
+.block_head .title span
+{
+    color: #ec6707;
+}
+
+
 .block_head .desc
 {
     width: 100%;
@@ -9035,6 +9041,1566 @@ header.no_border .logo img
 .video_reviews .review .spoler_btn.active span + span
 {
     display: inline;
+}
+
+
+
+/*---------------------
+    Ice field table
+---------------------*/
+.ice_field_table
+{
+    width: 640px;
+    max-width: 100%;
+}
+
+
+.ice_field_table .col
+{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    padding: 10px;
+
+    gap: 10px;
+}
+
+
+.ice_field_table .col_service
+{
+    width: 100%;
+}
+
+
+.ice_field_table .col_amount
+{
+    width: 128px;
+    min-width: 128px;
+}
+
+
+.ice_field_table .col_price
+{
+    width: 115px;
+    min-width: 115px;
+}
+
+
+
+.ice_field_table .titles
+{
+    display: flex;
+    overflow: hidden;
+    align-content: stretch;
+    align-items: stretch;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+
+    margin-bottom: 2px;
+
+    font-weight: 700;
+
+    color: #fff;
+    border-radius: 8px 8px 0 0;
+
+    gap: 2px;
+}
+
+
+.ice_field_table .titles .col
+{
+    background: #5d5d5d;
+}
+
+
+
+.ice_field_table .data
+{
+    display: flex;
+    flex-direction: column;
+
+    gap: 2px;
+}
+
+
+.ice_field_table .item
+{
+    display: flex;
+    align-content: stretch;
+    align-items: stretch;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+
+    gap: 2px;
+}
+
+
+.ice_field_table .item:nth-child(2n)
+{
+    background: #f5f5f5;
+}
+
+
+.ice_field_table .item u
+{
+    cursor: pointer;
+    transition: color .2s linear;
+    text-decoration: none;
+
+    border-bottom: 2px dotted;
+}
+
+
+.ice_field_table .item u:hover
+{
+    color: #ec6707;
+}
+
+
+.ice_field_table .item .col_service
+{
+    flex-wrap: nowrap;
+}
+
+
+.ice_field_table .item .book_btn
+{
+    display: block;
+
+    margin: -6px;
+    padding: 4px 15px 6px;
+
+    font-size: 16px;
+    font-weight: 400;
+
+    transition: .2s linear;
+    white-space: nowrap;
+
+    opacity: 0;
+    color: #fff;
+    border: 1px solid #ec6707;
+    border-radius: 6px;
+    background: #ec6707;
+}
+
+
+.ice_field_table .item .book_btn:hover
+{
+    color: #000;
+    background: #fff;
+}
+
+
+.ice_field_table .item:hover
+{
+    background: #ffe6d4;
+}
+
+
+.ice_field_table .item:hover .book_btn
+{
+    opacity: 1;
+}
+
+
+
+/*-------------------------
+    Squash tennis table
+-------------------------*/
+.squash_tennis_table
+{
+    width: 716px;
+    max-width: 100%;
+    padding: 20px;
+
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0 4px 93.2px -30px rgba(165, 119, 90, .38);
+}
+
+
+
+.squash_tennis_table .col_service,
+.squash_tennis_table .col_additional
+{
+    width: 100%;
+}
+
+
+.squash_tennis_table .col_price
+{
+    width: 170px;
+    min-width: 170px;
+}
+
+
+.squash_tennis_table .col_date
+{
+    width: 135px;
+    min-width: 135px;
+}
+
+
+.squash_tennis_table .col_total_price
+{
+    width: 109px;
+    min-width: 109px;
+}
+
+
+
+.squash_tennis_table .titles
+{
+    display: flex;
+    overflow: hidden;
+    align-content: stretch;
+    align-items: stretch;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+
+    font-family: var(--font_family2);
+    font-size: 14px;
+    font-weight: 700;
+
+    text-transform: uppercase;
+
+    border-radius: 8px 8px 0 0;
+
+    gap: 2px;
+}
+
+
+.squash_tennis_table .titles .col
+{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    min-height: 42px;
+    padding: 5px 10px;
+
+    background: #f5f5f5;
+}
+
+
+.squash_tennis_table .titles .col_date
+{
+    justify-content: center;
+
+    text-align: center;
+}
+
+
+
+.squash_tennis_table .mob_title
+{
+    display: none;
+
+    padding-block: 8px;
+    padding-inline: 20px;
+
+    font-family: var(--font_family2);
+    font-size: 14px;
+    font-weight: 700;
+
+    text-transform: uppercase;
+}
+
+
+
+.squash_tennis_table .item
+{
+    display: flex;
+    align-content: stretch;
+    align-items: stretch;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+
+    border-bottom: 1px solid #bdbdbd;
+
+    gap: 2px;
+}
+
+
+.squash_tennis_table .item:last-child
+{
+    border-color: #ec6707;
+}
+
+
+.squash_tennis_table .item.no_border
+{
+    border-bottom: none;
+}
+
+
+.squash_tennis_table .item .col
+{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    min-height: 64px;
+    padding: 10px;
+}
+
+
+.squash_tennis_table .item .col.desktop_hide
+{
+    display: none;
+}
+
+
+.squash_tennis_table .item .col_price
+{
+    font-size: 15px;
+}
+
+
+.squash_tennis_table .item .dottes
+{
+    display: none;
+    align-self: flex-end;
+
+    width: 100%;
+    height: 1px;
+    margin-bottom: 4px;
+
+    border-bottom: 1px dashed #bdbdbd;
+}
+
+
+.squash_tennis_table .item .checkbox
+{
+    display: block;
+
+    cursor: pointer;
+}
+
+
+.squash_tennis_table .item .checkbox input
+{
+    display: none;
+}
+
+
+.squash_tennis_table .item .checkbox .check
+{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    width: 26px;
+
+    color: #ec6707;
+    border: 1px solid #ec6707;
+    border-radius: 4px;
+    background: #fff;
+
+    aspect-ratio: 1 / 1;
+}
+
+
+.squash_tennis_table .item .checkbox .check .icon
+{
+    display: block;
+
+    width: 100%;
+
+    transition: opacity .2s linear;
+
+    opacity: 0;
+
+    aspect-ratio: 1 / 1;
+}
+
+
+.squash_tennis_table .item .checkbox input:checked + .check
+{
+    border: none;
+}
+
+
+.squash_tennis_table .item .checkbox input:checked + .check .icon
+{
+    opacity: 1;
+}
+
+
+.squash_tennis_table .item .col_date
+{
+    justify-content: flex-end;
+
+    text-align: right;
+}
+
+
+.squash_tennis_table .item .col_total_price
+{
+    justify-content: flex-end;
+
+    font-size: 18px;
+}
+
+
+.squash_tennis_table .total_price
+{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    margin-top: 6px;
+    padding: 16px 13px 17px;
+
+    font-size: 21px;
+    font-weight: 700;
+    line-height: calc(100% + 4px);
+
+    border-radius: 12px;
+    background: #fff9f0;
+}
+
+
+.squash_tennis_table .book_btn
+{
+    width: 100%;
+    height: 58px;
+    margin-top: 20px;
+
+    font-size: 19px;
+    font-weight: 700;
+
+    letter-spacing: .57px;
+    text-transform: uppercase;
+
+    color: #fff;
+    border-radius: 12px;
+    background: #ec6707;
+}
+
+
+
+/*-----------------------------
+    Membership squash table
+-----------------------------*/
+.membership_squash_table
+{
+    width: 986px;
+    max-width: 100%;
+}
+
+
+.membership_squash_table .col
+{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    padding: 10px;
+
+    gap: 10px;
+}
+
+
+.membership_squash_table .col_service
+{
+    width: 100%;
+}
+
+
+.membership_squash_table .col_time
+{
+    width: 295px;
+    min-width: 295px;
+}
+
+
+.membership_squash_table .col_price
+{
+    width: 169px;
+    min-width: 169px;
+}
+
+
+.membership_squash_table .col_price.big
+{
+    width: 183px;
+    min-width: 183px;
+}
+
+
+
+.membership_squash_table .titles
+{
+    display: flex;
+    overflow: hidden;
+    align-content: stretch;
+    align-items: stretch;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+
+    margin-bottom: 2px;
+
+    font-weight: 700;
+
+    color: #fff;
+    border-radius: 8px 8px 0 0;
+
+    gap: 2px;
+}
+
+
+.membership_squash_table .titles .col
+{
+    background: #5d5d5d;
+}
+
+
+.membership_squash_table .titles .col_time,
+.membership_squash_table .titles .col_price
+{
+    justify-content: center;
+
+    text-align: center;
+}
+
+
+
+.membership_squash_table .data
+{
+    display: flex;
+    flex-direction: column;
+
+    gap: 2px;
+}
+
+
+.membership_squash_table .item
+{
+    display: flex;
+    align-content: stretch;
+    align-items: stretch;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+
+    gap: 2px;
+}
+
+
+.membership_squash_table .item:nth-child(2n)
+{
+    background: #f5f5f5;
+}
+
+
+.membership_squash_table .item .col_service
+{
+    flex-wrap: nowrap;
+}
+
+
+.membership_squash_table .item .book_btn
+{
+    display: block;
+
+    margin: -6px;
+    padding: 4px 15px 6px;
+
+    font-size: 16px;
+    font-weight: 400;
+
+    transition: .2s linear;
+    white-space: nowrap;
+
+    opacity: 0;
+    color: #fff;
+    border: 1px solid #ec6707;
+    border-radius: 6px;
+    background: #ec6707;
+}
+
+
+.membership_squash_table .item .book_btn:hover
+{
+    color: #000;
+    background: #fff;
+}
+
+
+.membership_squash_table .item .col_time .icon
+{
+    display: block;
+
+    width: 18px;
+
+    color: #818181;
+
+    aspect-ratio: 1 / 1;
+}
+
+
+.membership_squash_table .item .col_time span
+{
+    width: calc(100% - 28px);
+}
+
+
+.membership_squash_table .item .col_price
+{
+    align-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+
+    gap: 0;
+}
+
+
+.membership_squash_table .item:hover
+{
+    background: #ffe6d4;
+}
+
+
+.membership_squash_table .item:hover .book_btn
+{
+    opacity: 1;
+}
+
+
+
+/*---------------------------
+    One time squash table
+---------------------------*/
+.one_time_squash_table
+{
+    width: 640px;
+    max-width: 100%;
+}
+
+
+.one_time_squash_table .col
+{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    padding: 10px;
+
+    gap: 10px;
+}
+
+
+.one_time_squash_table .col_service
+{
+    width: 100%;
+}
+
+
+.one_time_squash_table .col_time
+{
+    width: 198px;
+    min-width: 198px;
+}
+
+
+.one_time_squash_table .col_price
+{
+    width: 115px;
+    min-width: 115px;
+}
+
+
+
+.one_time_squash_table .titles
+{
+    display: flex;
+    overflow: hidden;
+    align-content: stretch;
+    align-items: stretch;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+
+    margin-bottom: 2px;
+
+    font-weight: 700;
+
+    color: #fff;
+    border-radius: 8px 8px 0 0;
+
+    gap: 2px;
+}
+
+
+.one_time_squash_table .titles .col
+{
+    background: #5d5d5d;
+}
+
+
+
+.one_time_squash_table .data
+{
+    display: flex;
+    flex-direction: column;
+
+    gap: 2px;
+}
+
+
+.one_time_squash_table .item
+{
+    display: flex;
+    align-content: stretch;
+    align-items: stretch;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+
+    gap: 2px;
+}
+
+
+.one_time_squash_table .item:nth-child(2n)
+{
+    background: #f5f5f5;
+}
+
+
+.one_time_squash_table .item .col_service
+{
+    flex-wrap: nowrap;
+}
+
+
+.one_time_squash_table .item .book_btn
+{
+    display: block;
+
+    margin: -6px;
+    padding: 4px 15px 6px;
+
+    font-size: 16px;
+    font-weight: 400;
+
+    transition: .2s linear;
+    white-space: nowrap;
+
+    opacity: 0;
+    color: #fff;
+    border: 1px solid #ec6707;
+    border-radius: 6px;
+    background: #ec6707;
+}
+
+
+.one_time_squash_table .item .book_btn:hover
+{
+    color: #000;
+    background: #fff;
+}
+
+
+.one_time_squash_table .item .col_time .icon
+{
+    display: block;
+
+    width: 18px;
+
+    color: #818181;
+
+    aspect-ratio: 1 / 1;
+}
+
+
+.one_time_squash_table .item .col_time span
+{
+    width: calc(100% - 28px);
+}
+
+
+.one_time_squash_table .item:hover
+{
+    background: #ffe6d4;
+}
+
+
+.one_time_squash_table .item:hover .book_btn
+{
+    opacity: 1;
+}
+
+
+
+/*------------------------------
+    Membership fitness table
+------------------------------*/
+.membership_fitness_table
+{
+    width: 840px;
+    max-width: 100%;
+}
+
+
+.membership_fitness_table .col
+{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    padding: 10px;
+
+    gap: 8px;
+}
+
+
+.membership_fitness_table .col_service
+{
+    width: 100%;
+}
+
+
+.membership_fitness_table .col_time
+{
+    width: 198px;
+    min-width: 198px;
+}
+
+
+.membership_fitness_table .col_price
+{
+    width: 113px;
+    min-width: 113px;
+}
+
+
+
+.membership_fitness_table .titles
+{
+    display: flex;
+    overflow: hidden;
+    align-content: stretch;
+    align-items: stretch;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+
+    margin-bottom: 2px;
+
+    font-weight: 700;
+
+    color: #fff;
+    border-radius: 8px 8px 0 0;
+
+    gap: 2px;
+}
+
+
+.membership_fitness_table .titles .col
+{
+    background: #5d5d5d;
+}
+
+
+.membership_fitness_table .titles .col_time,
+.membership_fitness_table .titles .col_price
+{
+    justify-content: center;
+
+    text-align: center;
+}
+
+
+
+.membership_fitness_table .data
+{
+    display: flex;
+    flex-direction: column;
+
+    gap: 2px;
+}
+
+
+.membership_fitness_table .item
+{
+    display: flex;
+    align-content: stretch;
+    align-items: stretch;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+
+    gap: 2px;
+}
+
+
+.membership_fitness_table .item:nth-child(2n)
+{
+    background: #f5f5f5;
+}
+
+
+.membership_fitness_table .item .col_service
+{
+    flex-wrap: nowrap;
+}
+
+
+.membership_fitness_table .item .tooltip_btn
+{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    min-width: 26px;
+    margin-block: -2px;
+    margin-right: auto;
+
+    font-size: 16px;
+    font-weight: 400;
+
+    color: #000;
+
+    gap: 12px;
+}
+
+
+.membership_fitness_table .item .tooltip_btn .icon
+{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    width: 26px;
+
+    font-size: 17px;
+    font-weight: 700;
+
+    text-align: center;
+
+    color: #ec6707;
+    border: 1px solid #818181;
+    border-radius: 50%;
+    background: #fff;
+
+    aspect-ratio: 1 / 1;
+}
+
+
+.membership_fitness_table .item .tooltip_btn .icon + span
+{
+    display: none;
+}
+
+
+.membership_fitness_table .item .book_btn
+{
+    display: block;
+
+    margin: -6px;
+    padding: 4px 15px 6px;
+
+    font-size: 16px;
+    font-weight: 400;
+
+    transition: .2s linear;
+    white-space: nowrap;
+
+    opacity: 0;
+    color: #fff;
+    border: 1px solid #ec6707;
+    border-radius: 6px;
+    background: #ec6707;
+}
+
+
+.membership_fitness_table .item .book_btn:hover
+{
+    color: #000;
+    background: #fff;
+}
+
+
+.membership_fitness_table .item .arr
+{
+    display: none;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    width: 22px;
+    min-width: 22px;
+    margin-left: auto;
+
+    transition: .2s linear;
+
+    color: #1a1a1a;
+    border-radius: 50%;
+    background: #e3e3e3;
+
+    aspect-ratio: 1 / 1;
+}
+
+
+.membership_fitness_table .item .arr .icon
+{
+    display: block;
+
+    width: 14px;
+
+    transition: transform .2s linear;
+
+    aspect-ratio: 1 / 1;
+}
+
+
+.membership_fitness_table .item.open .arr
+{
+    color: #ec6707;
+    background: #fff;
+}
+
+
+.membership_fitness_table .item.open .arr .icon
+{
+    transform: rotate(180deg);
+}
+
+
+.membership_fitness_table .item .col_time .icon
+{
+    display: block;
+
+    width: 18px;
+
+    color: #818181;
+
+    aspect-ratio: 1 / 1;
+}
+
+
+.membership_fitness_table .item .col_time span
+{
+    width: calc(100% - 28px);
+}
+
+
+.membership_fitness_table .item:hover
+{
+    background: #ffe6d4;
+}
+
+
+.membership_fitness_table .item:hover .book_btn
+{
+    opacity: 1;
+}
+
+
+
+.membership_fitness_tooltip
+{
+    position: relative;
+
+    display: none;
+    align-self: center;
+
+    width: calc(100% - 888px);
+    margin-left: auto;
+    padding: 32px;
+
+    line-height: 130.015%;
+
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0 4px 93.2px -30px rgba(165, 119, 90, .38);
+}
+
+
+.membership_fitness_tooltip .close_btn
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    display: none;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    width: 36px;
+    height: 36px;
+
+    z-index: 3;
+}
+
+
+.membership_fitness_tooltip .close_btn .icon
+{
+    display: block;
+
+    width: 14px;
+
+    aspect-ratio: 1 / 1;
+}
+
+
+.membership_fitness_tooltip > .icon
+{
+    position: absolute;
+    top: 4px;
+    left: 4px;
+
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    width: 26px;
+
+    font-size: 17px;
+    font-weight: 700;
+
+    text-align: center;
+
+    color: #ec6707;
+    border: 1px solid #818181;
+    border-radius: 50%;
+    background: #fff;
+
+    aspect-ratio: 1 / 1;
+}
+
+
+.membership_fitness_tooltip p + p
+{
+    margin-top: 20px;
+}
+
+
+
+/*----------------------------------
+    Kids membership hockey table
+----------------------------------*/
+.kids_membership_hockey_table
+{
+    display: flex;
+    flex-direction: column;
+
+    gap: 12px;
+}
+
+
+
+.kids_membership_hockey_table > .item
+{
+    padding: 13px 18px;
+
+    transition: border-color .2s linear;
+
+    border: 1px solid #bdbdbd;
+    border-radius: 8px;
+    background: #fff;
+}
+
+
+
+.kids_membership_hockey_table .head
+{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+
+    gap: 16px;
+}
+
+
+.kids_membership_hockey_table .head .col
+{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+
+.kids_membership_hockey_table .head .col_service
+{
+    width: 100%;
+
+    font-size: 21px;
+    line-height: calc(100% + 10px);
+
+    transition: color .2s linear;
+}
+
+
+.kids_membership_hockey_table .head .col_service b
+{
+    display: block;
+
+    width: 100%;
+
+    font-size: 26px;
+    line-height: calc(100% + 5px);
+}
+
+
+.kids_membership_hockey_table .head .col_service .arr
+{
+    display: none;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    width: 22px;
+    min-width: 22px;
+    margin-left: auto;
+
+    transition: .2s linear;
+
+    color: #1a1a1a;
+    border-radius: 50%;
+    background: #e3e3e3;
+
+    aspect-ratio: 1 / 1;
+}
+
+
+.kids_membership_hockey_table .head .col_service .arr .icon
+{
+    display: block;
+
+    width: 14px;
+
+    transition: transform .2s linear;
+
+    aspect-ratio: 1 / 1;
+}
+
+
+.kids_membership_hockey_table .head .col_price
+{
+    width: 277px;
+    min-width: 277px;
+
+    font-size: 30px;
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+.kids_membership_hockey_table .head .col_action
+{
+    width: 208px;
+    min-width: 208px;
+}
+
+
+.kids_membership_hockey_table .head .book_btn
+{
+    display: block;
+
+    width: 100%;
+    height: 57px;
+    padding: 4px 15px;
+
+    font-size: 19px;
+    font-weight: 700;
+
+    transition: .2s linear;
+    white-space: nowrap;
+
+    color: #1a1a1a;
+    border: 1px solid #000;
+    border-radius: 6px;
+    background: #fff;
+}
+
+
+.kids_membership_hockey_table .head .book_btn:hover
+{
+    color: #fff;
+    border-color: #ec6707;
+    background: #ec6707;
+}
+
+
+.kids_membership_hockey_table .head .col_details
+{
+    justify-content: flex-end;
+
+    width: 301px;
+    min-width: 301px;
+
+    font-size: 17px;
+    line-height: 20px;
+
+    cursor: pointer;
+    transition: color .2s linear;
+    text-align: right;
+
+    color: #1a1a1a;
+
+    gap: 16px;
+}
+
+
+.kids_membership_hockey_table .head .col_details .arr
+{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    width: 52px;
+
+    transition: .2s linear;
+
+    border-radius: 50%;
+    background: #e3e3e3;
+
+    aspect-ratio: 1 / 1;
+}
+
+
+.kids_membership_hockey_table .head .col_details .arr .icon
+{
+    display: block;
+
+    width: 32px;
+
+    transition: transform .2s linear;
+
+    aspect-ratio: 1 / 1;
+}
+
+
+
+.kids_membership_hockey_table .data
+{
+    display: none;
+
+    margin-top: 23px;
+    padding-block: 40px 20px;
+
+    border-top: 1px solid #bdbdbd;
+}
+
+
+.kids_membership_hockey_table .data .row
+{
+    display: flex;
+    align-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    margin-top: 35px;
+}
+
+
+.kids_membership_hockey_table .data .title
+{
+    margin-bottom: 21px;
+
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 15px;
+
+    color: #1a1a1a;
+}
+
+
+.kids_membership_hockey_table .table
+{
+    overflow: clip;
+
+    border-radius: 8px 8px 0 0;
+}
+
+
+.kids_membership_hockey_table .table .titles
+{
+    display: flex;
+    align-content: stretch;
+    align-items: stretch;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+
+    margin-bottom: 2px;
+
+    font-size: 19px;
+    font-weight: 700;
+    line-height: 1;
+
+    color: #fff;
+
+    gap: 2px;
+}
+
+
+.kids_membership_hockey_table .table .titles .col
+{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    width: 100%;
+    min-height: 42px;
+    padding: 10px 14px;
+
+    background: #5d5d5d;
+}
+
+
+.kids_membership_hockey_table .table .items
+{
+    display: flex;
+    flex-direction: column;
+
+    gap: 2px;
+}
+
+
+.kids_membership_hockey_table .table .item
+{
+    display: flex;
+    align-content: stretch;
+    align-items: stretch;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+
+    font-size: 21px;
+
+    gap: 2px;
+}
+
+
+.kids_membership_hockey_table .table .item .col
+{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    width: 100%;
+    min-height: 52px;
+    padding: 10px 14px;
+
+    background: #fff9f0;
+}
+
+
+.kids_membership_hockey_table .table .item:nth-child(2n) .col
+{
+    background: #f5f5f5;
+}
+
+
+.kids_membership_hockey_table .table .item .col_time
+{
+    justify-content: space-between;
+
+    font-weight: 700;
+}
+
+
+.kids_membership_hockey_table .table .item .col_time .icon
+{
+    display: block;
+
+    width: 18px;
+
+    color: #ec6707;
+
+    aspect-ratio: 1 / 1;
+}
+
+
+.kids_membership_hockey_table .table .item .col_time span
+{
+    width: calc(100% - 32px);
+}
+
+
+.kids_membership_hockey_table .data .coaches .desc,
+.kids_membership_hockey_table .data .value .desc
+{
+    font-size: 20px;
+    line-height: 148.78%;
+}
+
+
+
+.kids_membership_hockey_table > .item:hover,
+.kids_membership_hockey_table > .item.open
+{
+    border-color: #ec6707;
+}
+
+
+.kids_membership_hockey_table .item.open .head .col_service,
+.kids_membership_hockey_table .head .col_details:hover,
+.kids_membership_hockey_table .item.open .head .col_details
+{
+    color: #ec6707;
+}
+
+
+.kids_membership_hockey_table .item.open .head .col_service .arr
+{
+    color: #ec6707;
+    background: #fff;
+}
+
+
+.kids_membership_hockey_table .item.open .head .col_service .arr .icon
+{
+    transform: rotate(180deg);
+}
+
+
+.kids_membership_hockey_table .head .col_details:hover .arr,
+.kids_membership_hockey_table > .item.open .head .col_details .arr
+{
+    color: #fff;
+    background: #ec6707;
+}
+
+
+.kids_membership_hockey_table > .item.open .head .col_details .arr .icon
+{
+    transform: rotate(180deg);
 }
 
 
