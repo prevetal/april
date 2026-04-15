@@ -1280,6 +1280,23 @@
     }
 
 
+    .ice_field_table .item .zone
+    {
+        top: 30px;
+
+        max-width: 100%;
+        padding-top: 40px;
+
+        box-shadow: 0 2px 50px rgba(0, 0, 0, .46);
+    }
+
+
+    .ice_field_table .item .zone .close_btn
+    {
+        display: flex;
+    }
+
+
     .ice_field_table .item .book_btn
     {
         position: absolute;

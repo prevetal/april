@@ -20,6 +20,10 @@
     <path d="M12.75 4.25L4.25 12.75" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" fill="none"></path>
     <path d="M4.25 4.25L12.75 12.75" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" fill="none"></path>
   </symbol>
+  <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 25" id="ic_close3">
+    <line x1="23.4278" y1="0.935585" x2="0.488696" y2="23.8747" stroke="currentColor"></line>
+    <line x1="23.291" y1="23.295" x2="0.351906" y2="0.355884" stroke="currentColor"></line>
+  </symbol>
   <symbol xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 20 14.78" id="ic_email">
     <defs>
       <clipPath id="a" transform="translate(0 0)">

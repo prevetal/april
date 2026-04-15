@@ -1713,6 +1713,8 @@
 
     .kids_membership_hockey_table > .item
     {
+        position: relative;
+
         padding: 0;
 
         border: none;
@@ -1723,8 +1725,6 @@
 
     .kids_membership_hockey_table .head
     {
-        position: relative;
-
         flex-wrap: wrap;
 
         gap: 0;
@@ -1800,6 +1800,11 @@
 
     .kids_membership_hockey_table .head .book_btn
     {
+        position: absolute;
+        bottom: 12px;
+        left: 0;
+
+        width: 100%;
         height: 40px;
 
         font-size: 16px;
@@ -1819,8 +1824,8 @@
 
     .kids_membership_hockey_table .data
     {
-        margin-top: 20px;
-        padding-block: 0 20px;
+        margin-top: 0;
+        padding-block: 8px 72px;
 
         border: none;
     }

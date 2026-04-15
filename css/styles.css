@@ -268,7 +268,7 @@ button
     position: relative;
 
     display: flex;
-    overflow: hidden;
+    overflow: clip;
     flex-direction: column;
 
     min-width: 360px;
@@ -9128,6 +9128,8 @@ header.no_border .logo img
 
 .ice_field_table .item
 {
+    position: relative;
+
     display: flex;
     align-content: stretch;
     align-items: stretch;
@@ -9154,7 +9156,8 @@ header.no_border .logo img
 }
 
 
-.ice_field_table .item u:hover
+.ice_field_table .item u:hover,
+.ice_field_table .item u.active
 {
     color: #ec6707;
 }
@@ -9163,6 +9166,74 @@ header.no_border .logo img
 .ice_field_table .item .col_service
 {
     flex-wrap: nowrap;
+}
+
+
+.ice_field_table .item .zone
+{
+    position: absolute;
+    top: 100%;
+    left: 0;
+
+    display: none;
+
+    width: 690px;
+
+    z-index: 9;
+
+    background: #fff;
+    box-shadow: 0 2px 53px rgba(0, 0, 0, .08);
+}
+
+
+.ice_field_table .item .zone.show
+{
+    display: block;
+}
+
+
+.ice_field_table .item .zone .close_btn
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    display: none;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    padding: 8px;
+
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 15px;
+
+    z-index: 3;
+
+    color: #ec6707;
+
+    gap: 6px;
+}
+
+
+.ice_field_table .item .zone .close_btn .icon
+{
+    display: block;
+
+    width: 23px;
+
+    aspect-ratio: 1 / 1;
+}
+
+
+.ice_field_table .item .zone .image,
+.ice_field_table .item .zone .image img
+{
+    display: block;
+
+    width: 100%;
 }
 
 
@@ -9246,8 +9317,8 @@ header.no_border .logo img
 
 .squash_tennis_table .col_total_price
 {
-    width: 109px;
-    min-width: 109px;
+    width: 115px;
+    min-width: 115px;
 }
 
 
@@ -10601,6 +10672,723 @@ header.no_border .logo img
 .kids_membership_hockey_table > .item.open .head .col_details .arr .icon
 {
     transform: rotate(180deg);
+}
+
+
+
+/*------------------
+    Court rental
+------------------*/
+.court_rental .list
+{
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 4px;
+}
+
+
+.court_rental .item
+{
+    position: relative;
+
+    overflow: hidden;
+
+    border: 1px solid #bdbdbd;
+    border-radius: 8px;
+    background: #fff;
+}
+
+
+.court_rental .item .head
+{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+
+    padding: 10px;
+
+    cursor: pointer;
+
+    gap: 24px;
+}
+
+
+.court_rental .item .head .title
+{
+    width: 100%;
+
+    font-size: 20px;
+    font-weight: 700;
+    line-height: calc(100% + 11px);
+}
+
+
+.court_rental .item .head .toggle_btn
+{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+
+    font-size: 19px;
+
+    transition: color .2s linear;
+    white-space: nowrap;
+
+    color: #1a1a1a;
+
+    gap: 10px;
+}
+
+
+.court_rental .item .head .toggle_btn span + span
+{
+    display: none;
+}
+
+
+.court_rental .item .head .toggle_btn .icon
+{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    width: 36px;
+    min-width: 36px;
+
+    transition: .2s linear;
+
+    color: #1a1a1a;
+    border-radius: 50%;
+    background: #e3e3e3;
+
+    aspect-ratio: 1 / 1;
+}
+
+
+.court_rental .item .head .toggle_btn .icon svg
+{
+    display: block;
+
+    width: 24px;
+
+    transition: transform .2s linear;
+
+    aspect-ratio: 1 / 1;
+}
+
+
+.court_rental .item .data
+{
+    display: none;
+
+    padding-block: 12px 32px;
+    padding-inline: 104px;
+}
+
+
+.court_rental .item .data .row
+{
+    display: flex;
+    align-content: flex-end;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+
+.court_rental .item .time
+{
+    position: relative;
+
+    width: 135px;
+    max-width: 100%;
+    margin-right: -1px;
+
+    z-index: 3;
+}
+
+
+.court_rental .item .time > *
+{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    height: 32px;
+
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 130%;
+
+    transition: background .2s linear;
+    text-align: center;
+
+    border: 1px solid #bdbdbd;
+    background: #fff;
+}
+
+
+.court_rental .item .time > *:first-child
+{
+    border-top-left-radius: 8px;
+}
+
+
+.court_rental .item .time > *:last-child
+{
+    border-bottom-left-radius: 8px;
+}
+
+
+.court_rental .item .time > * + *
+{
+    margin-top: -1px;
+}
+
+
+.court_rental .item .time > *:nth-child(2n)
+{
+    background: #f5f5f5;
+}
+
+
+.court_rental .item .time > *.highlighted
+{
+    background: rgba(255, 211, 180, .38);
+}
+
+
+.court_rental .item .swiper
+{
+    position: relative;
+
+    width: calc(100% - 134px);
+    margin: 0;
+}
+
+
+.court_rental .item .swiper-slide
+{
+    visibility: hidden;
+
+    transition: opacity .2s linear, visibility .2s linear;
+    pointer-events: none;
+
+    opacity: 0;
+}
+
+
+.court_rental .item .swiper-slide.visible
+{
+    visibility: visible;
+
+    pointer-events: auto;
+
+    opacity: 1;
+}
+
+
+.court_rental .item .swiper-button-next,
+.court_rental .item .swiper-button-prev
+{
+    top: 0;
+    bottom: auto;
+
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    width: 60px;
+    height: 41px;
+    margin: 0;
+
+    transition: background .2s linear;
+    transform: none;
+
+    color: #fff;
+    border-radius: 12px;
+    background: rgba(0, 0, 0, .70);
+}
+
+.court_rental .item .swiper-button-prev
+{
+    left: -70px;
+}
+
+.court_rental .item .swiper-button-next
+{
+    right: -70px;
+}
+
+
+.court_rental .item .day .val
+{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    height: 52px;
+    margin-bottom: -1px;
+
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 130%;
+
+    transition: background .2s linear;
+    text-align: center;
+
+    border: 1px solid #bdbdbd;
+    background: #fff9f0;
+}
+
+
+.court_rental .item .day .val.highlighted
+{
+    background: rgba(255, 211, 180, .38);
+}
+
+
+.court_rental .item .day .price
+{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    height: 32px;
+
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 130%;
+
+    cursor: pointer;
+    transition: .2s linear;
+    text-align: center;
+
+    border: 1px solid #bdbdbd;
+    background: #fff;
+}
+
+
+.court_rental .item .day .price + .price
+{
+    margin-top: -1px;
+}
+
+
+.court_rental .item .day .price:nth-child(2n)
+{
+    background: #f5f5f5;
+}
+
+
+.court_rental .item .day .price.disabled
+{
+    pointer-events: none;
+
+    color: #afafaf;
+}
+
+
+.court_rental .item .day .price.green
+{
+    background: #8fe1b7;
+}
+
+
+.court_rental .item .day .price.highlighted
+{
+    background: rgba(255, 211, 180, .38);
+}
+
+
+.court_rental .item .day .price:hover,
+.court_rental .item .day .price.selected
+{
+    color: #fff;
+    background: #51a77a;
+}
+
+
+.court_rental .item .head:hover .toggle_btn,
+.court_rental .item.active .head .toggle_btn
+{
+    color: #ec6707;
+}
+
+
+.court_rental .item.active .head .toggle_btn span
+{
+    display: none;
+}
+
+
+.court_rental .item.active .head .toggle_btn span + span
+{
+    display: block;
+}
+
+
+.court_rental .item .head:hover .toggle_btn .icon,
+.court_rental .item.active .head .toggle_btn .icon
+{
+    color: #fff;
+    background: #ec6707;
+}
+
+
+.court_rental .item.active .head .toggle_btn .icon svg
+{
+    transform: rotate(180deg);
+}
+
+
+
+.court_rental .order
+{
+    position: sticky;
+    bottom: 0;
+
+    margin-top: 24px;
+
+    z-index: 10;
+
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0 4px 93.2px -30px rgba(165, 119, 90, .90);
+}
+
+
+.court_rental .order .empty
+{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+
+    padding: 24px;
+
+    gap: 24px;
+}
+
+
+.court_rental .order .empty.hide
+{
+    display: none;
+}
+
+
+.court_rental .order .empty .title
+{
+    font-size: 16px;
+    font-weight: 700;
+}
+
+
+.court_rental .order .empty .btn
+{
+    width: 245px;
+    min-width: 245px;
+    max-width: 100%;
+    height: 58px;
+
+    font-size: 19px;
+    font-weight: 700;
+
+    letter-spacing: .57px;
+    text-transform: uppercase;
+
+    color: #fff;
+    border-radius: 12px;
+    background: #ec6707;
+}
+
+
+
+.court_rental .order .data
+{
+    display: none;
+    align-content: stretch;
+    align-items: stretch;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+
+    padding: 24px;
+
+    gap: 24px;
+}
+
+
+.court_rental .order .data.show
+{
+    display: flex;
+}
+
+
+.court_rental .order .data .info
+{
+    width: calc(100% - 288px - 24px);
+}
+
+
+.court_rental .order .data table
+{
+    width: 100%;
+
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+
+.court_rental .order .data table th
+{
+    height: 42px;
+    padding: 6px 10px 10px;
+
+    font-size: 16px;
+    font-weight: 700;
+
+    text-align: right;
+    vertical-align: middle;
+
+    color: #fff;
+    background: #5d5d5d;
+}
+
+
+.court_rental .order .data table th:first-child
+{
+    width: 100%;
+
+    text-align: left;
+
+    border-top-left-radius: 8px;
+}
+
+
+.court_rental .order .data table th:last-child
+{
+    border-top-right-radius: 8px;
+}
+
+
+.court_rental .order .data table th + th,
+.court_rental .order .data table td + td
+{
+    border-left: 2px solid #fff;
+}
+
+
+.court_rental .order .data table td
+{
+    min-width: 136px;
+    height: 42px;
+    padding: 6px 10px 10px;
+
+    font-size: 16px;
+
+    text-align: right;
+    vertical-align: middle;
+}
+
+
+.court_rental .order .data table td:first-child
+{
+    width: 100%;
+
+    text-align: left;
+}
+
+
+.court_rental .order .data .additional .title
+{
+    padding: 10px 24px;
+
+    font-family: var(--font_family2);
+    font-size: 14px;
+    font-weight: 700;
+
+    text-transform: uppercase;
+
+    border-radius: 8px;
+    background: #f5f5f5;
+}
+
+
+.court_rental .order .data .additional .label
+{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+
+    padding-block: 6px;
+
+    font-size: 16px;
+
+    cursor: pointer;
+    text-align: right;
+}
+
+
+.court_rental .order .data .additional .label + .label
+{
+    border-top: 1px solid #bdbdbd;
+}
+
+
+.court_rental .order .data .additional .label input
+{
+    display: none;
+}
+
+
+.court_rental .order .data .additional .label div
+{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+
+    min-width: 136px;
+    padding: 0 10px;
+
+    font-size: 16px;
+
+    text-align: right;
+}
+
+
+.court_rental .order .data .additional .label div + div
+{
+    margin-left: 2px;
+}
+
+
+.court_rental .order .data .additional .label .check
+{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    width: 26px;
+    min-width: 26px;
+    height: 26px;
+    padding: 0;
+
+    transition: .2s linear;
+
+    color: #ec6707;
+    border: 1px solid #000;
+    border-radius: 6px;
+}
+
+
+.court_rental .order .data .additional .label .check .icon
+{
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    transition: opacity .2s linear;
+
+    opacity: 0;
+}
+
+
+.court_rental .order .data .additional .label .name
+{
+    justify-content: flex-start;
+
+    width: 100%;
+
+    text-align: left;
+}
+
+
+.court_rental .order .data .additional .label input:checked ~ *
+{
+    font-weight: 700;
+}
+
+
+.court_rental .order .data .additional .label input:checked + .check
+{
+    border-color: #ec6707;
+}
+
+
+.court_rental .order .data .additional .label input:checked + .check .icon
+{
+    opacity: 1;
+}
+
+
+.court_rental .order .data .total
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    width: 288px;
+    max-width: 100%;
+    padding-left: 18px;
+
+    border-left: 2px solid #ec6707;
+
+    gap: 12px;
+}
+
+
+.court_rental .order .data .total_price
+{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    font-size: 21px;
+    font-weight: 700;
+}
+
+
+.court_rental .order .data .btn
+{
+    width: 100%;
+    height: 58px;
+
+    font-size: 19px;
+    font-weight: 700;
+
+    letter-spacing: .57px;
+    text-transform: uppercase;
+
+    color: #fff;
+    border-radius: 12px;
+    background: #ec6707;
 }
 
 

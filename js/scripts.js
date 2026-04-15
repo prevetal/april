@@ -597,4 +597,156 @@ $(() => {
 			parent.find('.data').slideToggle(300)
 		}
 	})
+
+
+	// Ice field table - Zones
+	$('.ice_field_table .item u').click(function(e) {
+		e.preventDefault()
+
+		const parent = $(this).closest('.item')
+
+		$('.ice_field_table .item u').removeClass('active')
+		$('.ice_field_table .item .zone').removeClass('show')
+
+		$(this).toggleClass('active')
+
+		parent.find('.zone').toggleClass('show')
+	})
+
+
+	$('.ice_field_table .item .zone .close_btn').click(function(e) {
+		e.preventDefault()
+
+		const parent = $(this).closest('.item')
+
+		parent.find('u').removeClass('active')
+		parent.find('.zone').removeClass('show')
+	})
+
+
+	$(document).click(e => {
+		if ($(e.target).closest('.ice_field_table .item').length === 0) {
+			$('.ice_field_table .item u').removeClass('active')
+			$('.ice_field_table .zone').removeClass('show')
+		}
+	})
+
+
+	// Court rental slider
+	const courtRentalSliders = [],
+		courtRental = document.querySelectorAll('.court_rental .swiper')
+
+	courtRental.forEach((el, i) => {
+		el.classList.add('court_rental_s' + i)
+
+		let options = {
+			loop: false,
+			speed: 500,
+			watchSlidesProgress: true,
+			slideActiveClass: 'active',
+			slideVisibleClass: 'visible',
+			lazy: true,
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev'
+			},
+			spaceBetween: 0,
+			breakpoints: {
+				0: {
+					spaceBetween: 12,
+					slidesPerView: 'auto'
+				},
+				480: {
+					slidesPerView: 2
+				},
+				768: {
+					slidesPerView: 3
+				},
+				1280: {
+					slidesPerView: 7
+				}
+			},
+		}
+
+		courtRentalSliders.push(new Swiper('.court_rental_s' + i, options))
+	})
+
+
+	$('.court_rental .item .head').click(function(e) {
+		e.preventDefault()
+
+		$(this).closest('.item').toggleClass('active')
+		$(this).next('.data').slideToggle(300)
+	})
+
+
+	$('.court_rental .item .day .price').hover(
+		function () {
+			highlight($(this).closest('.item'), this, false)
+		},
+
+		function () {
+			const $item = $(this).closest('.item')
+
+			if ($item.find('.price.selected').length) return
+
+			$item.find('.price, .time > *').removeClass('highlighted')
+		}
+	)
+
+
+	$('.court_rental .item .day .price').click(function () {
+		const $price = $(this),
+			$item = $price.closest('.item'),
+			isSelected = $price.hasClass('selected')
+
+		$item.find('.price, .time > *').removeClass('selected highlighted')
+
+		if (isSelected) {
+			$('.court_rental .order .empty').removeClass('hide')
+			$('.court_rental .order .data').removeClass('show')
+			return
+		}
+
+		highlight($item, this, true)
+
+		$price
+			.addClass('selected')
+			.prevAll('.price')
+			.addClass('highlighted')
+
+		$('.court_rental .order .empty').addClass('hide')
+		$('.court_rental .order .data').addClass('show')
+	})
 })
+
+
+function highlight(item, priceEl, isClick = false) {
+	const $price = $(priceEl),
+		$slide = $price.closest('.swiper-slide')
+
+	const priceIndex = $price.parent().children('.price').index($price)
+	const slideIndex = $slide.index()
+
+	if (!isClick && item.find('.price.selected').length) return
+
+	item.find('.price, .time > *').removeClass('highlighted')
+
+	$price
+		.addClass('highlighted')
+		.prevAll('.price')
+		.addClass('highlighted')
+
+	item.find('.time > *')
+		.eq(priceIndex)
+		.addClass('highlighted')
+
+	item.find('.swiper-slide').each(function (i) {
+		if (i >= slideIndex) return
+
+		$(this)
+			.find('.day .price')
+			.eq(priceIndex)
+			.addClass('highlighted')
+	})
+}
