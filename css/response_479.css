@@ -959,6 +959,16 @@
 
 
 
+    /*------------------------------
+        Membership fitness table
+    ------------------------------*/
+    .membership_fitness_table .item .tooltip_info
+    {
+        width: 320px;
+    }
+
+
+
     /*------------
         Footer
     ------------*/
