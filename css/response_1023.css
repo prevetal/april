@@ -1940,6 +1940,90 @@
 
 
 
+    /*------------------
+        Court rental
+    ------------------*/
+    .court_rental .item .head .toggle_btn
+    {
+        font-size: 18px;
+    }
+
+
+
+    .court_rental .item .time
+    {
+        width: 108px;
+    }
+
+
+    .court_rental .item .swiper
+    {
+        width: calc(100% - 107px);
+    }
+
+
+    .court_rental .item .swiper-button-next,
+    .court_rental .item .swiper-button-prev
+    {
+        width: 56px;
+        height: 36px;
+    }
+
+
+    .court_rental .item .swiper-button-next .icon,
+    .court_rental .item .swiper-button-prev .icon
+    {
+        width: 12px;
+        height: 16px;
+    }
+
+
+
+    .court_rental .order .empty .btn
+    {
+        width: 200px;
+        min-width: 200px;
+        height: 48px;
+
+        font-size: 16px;
+    }
+
+
+
+    .court_rental .order .data
+    {
+        flex-wrap: wrap;
+    }
+
+
+
+    .court_rental .order .data .info
+    {
+        width: 100%;
+    }
+
+
+
+    .court_rental .order .data .total
+    {
+        width: 100%;
+        padding-top: 18px;
+        padding-left: 0;
+
+        border-top: 2px solid #ec6707;
+        border-left: none;
+    }
+
+
+    .court_rental .order .data .btn
+    {
+        height: 48px;
+
+        font-size: 16px;
+    }
+
+
+
     /*------------
         Footer
     ------------*/

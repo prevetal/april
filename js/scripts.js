@@ -653,16 +653,12 @@ $(() => {
 			spaceBetween: 0,
 			breakpoints: {
 				0: {
-					spaceBetween: 12,
 					slidesPerView: 'auto'
 				},
-				480: {
-					slidesPerView: 2
-				},
 				768: {
-					slidesPerView: 3
+					slidesPerView: 5
 				},
-				1280: {
+				1024: {
 					slidesPerView: 7
 				}
 			},

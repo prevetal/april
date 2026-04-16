@@ -2061,6 +2061,127 @@
 
 
 
+    /*------------------
+        Court rental
+    ------------------*/
+    .court_rental .item .data
+    {
+        padding-block: 12px 24px;
+        padding-inline: 12px;
+    }
+
+
+    .court_rental .item .time
+    {
+        width: 124px;
+    }
+
+
+    .court_rental .item .swiper
+    {
+        width: calc(100% - 123px);
+    }
+
+
+    .court_rental .item .swiper-button-next
+    {
+        right: 0;
+    }
+
+
+    .court_rental .item .day .val
+    {
+        height: 48px;
+
+        font-size: 18px;
+    }
+
+
+
+    .court_rental .order .empty .btn
+    {
+        width: 220px;
+        min-width: 220px;
+        height: 52px;
+
+        font-size: 18px;
+    }
+
+
+
+    .court_rental .order .data .info
+    {
+        width: calc(100% - 240px - 20px);
+    }
+
+
+    .court_rental .order .data table th
+    {
+        height: 36px;
+
+        font-size: 14px;
+    }
+
+
+    .court_rental .order .data table td
+    {
+        min-width: 120px;
+        height: 40px;
+
+        font-size: 14px;
+    }
+
+
+    .court_rental .order .data .additional .title
+    {
+        padding: 8px 20px;
+
+        font-size: 13px;
+    }
+
+
+    .court_rental .order .data .additional .label
+    {
+        font-size: 14px;
+    }
+
+
+    .court_rental .order .data .additional .label .check
+    {
+        width: 24px;
+        min-width: 24px;
+        height: 24px;
+    }
+
+
+    .court_rental .order .data .additional .label div
+    {
+        min-width: 120px;
+    }
+
+
+
+    .court_rental .order .data .total
+    {
+        width: 240px;
+    }
+
+
+    .court_rental .order .data .total_price
+    {
+        font-size: 20px;
+    }
+
+
+    .court_rental .order .data .btn
+    {
+        height: 52px;
+
+        font-size: 18px;
+    }
+
+
+
     /*------------
         Footer
     ------------*/
