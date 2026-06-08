@@ -6369,6 +6369,7 @@ header.no_border .logo img
     align-items: center;
     flex-wrap: wrap;
     justify-content: center;
+    gap: 22px;
 
     margin-bottom: 28px;
 
@@ -6380,8 +6381,6 @@ header.no_border .logo img
     text-transform: uppercase;
 
     color: #ec6707;
-
-    gap: 22px;
 }
 
 
@@ -6551,6 +6550,7 @@ header.no_border .logo img
     align-items: center;
     flex-wrap: wrap;
     justify-content: flex-start;
+    gap: 21px;
 
     margin-bottom: 54px;
 
@@ -6559,8 +6559,6 @@ header.no_border .logo img
     font-weight: 700;
 
     text-transform: uppercase;
-
-    gap: 21px;
 }
 
 
@@ -8978,7 +8976,6 @@ header.no_border .logo img
 .video_reviews .review .awards .hide
 {
     display: none;
-
     gap: 16px;
 }
 
@@ -9062,10 +9059,9 @@ header.no_border .logo img
     align-items: center;
     flex-wrap: wrap;
     justify-content: space-between;
+    gap: 10px;
 
     padding: 10px;
-
-    gap: 10px;
 }
 
 
@@ -9098,6 +9094,7 @@ header.no_border .logo img
     align-items: stretch;
     flex-wrap: nowrap;
     justify-content: flex-start;
+    gap: 2px;
 
     margin-bottom: 2px;
 
@@ -9105,8 +9102,6 @@ header.no_border .logo img
 
     color: #fff;
     border-radius: 8px 8px 0 0;
-
-    gap: 2px;
 }
 
 
@@ -9144,7 +9139,6 @@ header.no_border .logo img
 {
     display: flex;
     flex-direction: column;
-
     gap: 2px;
 }
 
@@ -9158,7 +9152,6 @@ header.no_border .logo img
     align-items: stretch;
     flex-wrap: nowrap;
     justify-content: flex-start;
-
     gap: 2px;
 }
 
@@ -9249,6 +9242,7 @@ header.no_border .logo img
     align-items: center;
     flex-wrap: wrap;
     justify-content: flex-start;
+    gap: 6px;
 
     padding: 8px;
 
@@ -9259,8 +9253,6 @@ header.no_border .logo img
     z-index: 3;
 
     color: #ec6707;
-
-    gap: 6px;
 }
 
 
@@ -9377,6 +9369,7 @@ header.no_border .logo img
     align-items: stretch;
     flex-wrap: nowrap;
     justify-content: flex-start;
+    gap: 2px;
 
     font-family: var(--font_family2);
     font-size: 14px;
@@ -9385,8 +9378,6 @@ header.no_border .logo img
     text-transform: uppercase;
 
     border-radius: 8px 8px 0 0;
-
-    gap: 2px;
 }
 
 
@@ -9437,10 +9428,9 @@ header.no_border .logo img
     align-items: stretch;
     flex-wrap: nowrap;
     justify-content: flex-start;
+    gap: 2px;
 
     border-bottom: 1px solid #bdbdbd;
-
-    gap: 2px;
 }
 
 
@@ -9625,10 +9615,9 @@ header.no_border .logo img
     align-items: center;
     flex-wrap: wrap;
     justify-content: space-between;
+    gap: 10px;
 
     padding: 10px;
-
-    gap: 10px;
 }
 
 
@@ -9668,6 +9657,7 @@ header.no_border .logo img
     align-items: stretch;
     flex-wrap: nowrap;
     justify-content: flex-start;
+    gap: 2px;
 
     margin-bottom: 2px;
 
@@ -9675,8 +9665,6 @@ header.no_border .logo img
 
     color: #fff;
     border-radius: 8px 8px 0 0;
-
-    gap: 2px;
 }
 
 
@@ -9700,7 +9688,6 @@ header.no_border .logo img
 {
     display: flex;
     flex-direction: column;
-
     gap: 2px;
 }
 
@@ -9712,7 +9699,6 @@ header.no_border .logo img
     align-items: stretch;
     flex-wrap: nowrap;
     justify-content: flex-start;
-
     gap: 2px;
 }
 
@@ -9781,7 +9767,6 @@ header.no_border .logo img
     align-items: flex-start;
     flex-direction: column;
     justify-content: center;
-
     gap: 0;
 }
 
@@ -9838,10 +9823,9 @@ header.no_border .logo img
     align-items: center;
     flex-wrap: wrap;
     justify-content: space-between;
+    gap: 10px;
 
     padding: 10px;
-
-    gap: 10px;
 }
 
 
@@ -9874,6 +9858,7 @@ header.no_border .logo img
     align-items: stretch;
     flex-wrap: nowrap;
     justify-content: flex-start;
+    gap: 2px;
 
     margin-bottom: 2px;
 
@@ -9881,8 +9866,6 @@ header.no_border .logo img
 
     color: #fff;
     border-radius: 8px 8px 0 0;
-
-    gap: 2px;
 }
 
 
@@ -9920,7 +9903,6 @@ header.no_border .logo img
 {
     display: flex;
     flex-direction: column;
-
     gap: 2px;
 }
 
@@ -9932,7 +9914,6 @@ header.no_border .logo img
     align-items: stretch;
     flex-wrap: nowrap;
     justify-content: flex-start;
-
     gap: 2px;
 }
 
@@ -10046,10 +10027,9 @@ header.no_border .logo img
     align-items: center;
     flex-wrap: wrap;
     justify-content: space-between;
+    gap: 8px;
 
     padding: 10px;
-
-    gap: 8px;
 }
 
 
@@ -10082,6 +10062,7 @@ header.no_border .logo img
     align-items: stretch;
     flex-wrap: nowrap;
     justify-content: flex-start;
+    gap: 2px;
 
     margin-bottom: 2px;
 
@@ -10089,8 +10070,6 @@ header.no_border .logo img
 
     color: #fff;
     border-radius: 8px 8px 0 0;
-
-    gap: 2px;
 }
 
 
@@ -10128,7 +10107,6 @@ header.no_border .logo img
 {
     display: flex;
     flex-direction: column;
-
     gap: 2px;
 }
 
@@ -10140,7 +10118,6 @@ header.no_border .logo img
     align-items: stretch;
     flex-wrap: nowrap;
     justify-content: flex-start;
-
     gap: 2px;
 }
 
@@ -10194,6 +10171,7 @@ header.no_border .logo img
     align-items: center;
     flex-wrap: wrap;
     justify-content: flex-start;
+    gap: 12px;
 
     min-width: 26px;
 
@@ -10201,8 +10179,6 @@ header.no_border .logo img
     font-weight: 400;
 
     color: #000;
-
-    gap: 12px;
 }
 
 
@@ -10416,7 +10392,6 @@ header.no_border .logo img
 {
     display: flex;
     flex-direction: column;
-
     gap: 12px;
 }
 
@@ -10442,7 +10417,6 @@ header.no_border .logo img
     align-items: center;
     flex-wrap: nowrap;
     justify-content: space-between;
-
     gap: 16px;
 }
 
@@ -10563,6 +10537,7 @@ header.no_border .logo img
 .kids_membership_hockey_table .head .col_details
 {
     justify-content: flex-end;
+    gap: 16px;
 
     width: 301px;
     min-width: 301px;
@@ -10575,8 +10550,6 @@ header.no_border .logo img
     text-align: right;
 
     color: #1a1a1a;
-
-    gap: 16px;
 }
 
 
@@ -10662,6 +10635,7 @@ header.no_border .logo img
     align-items: stretch;
     flex-wrap: nowrap;
     justify-content: flex-start;
+    gap: 2px;
 
     margin-bottom: 2px;
 
@@ -10670,8 +10644,6 @@ header.no_border .logo img
     line-height: 1;
 
     color: #fff;
-
-    gap: 2px;
 }
 
 
@@ -10695,7 +10667,6 @@ header.no_border .logo img
 {
     display: flex;
     flex-direction: column;
-
     gap: 2px;
 }
 
@@ -10707,10 +10678,9 @@ header.no_border .logo img
     align-items: stretch;
     flex-wrap: nowrap;
     justify-content: flex-start;
+    gap: 2px;
 
     font-size: 21px;
-
-    gap: 2px;
 }
 
 
@@ -10823,7 +10793,6 @@ header.no_border .logo img
 
     display: flex;
     flex-direction: column;
-
     gap: 4px;
 }
 
@@ -10847,12 +10816,11 @@ header.no_border .logo img
     align-items: center;
     flex-wrap: nowrap;
     justify-content: space-between;
+    gap: 24px;
 
     padding: 10px;
 
     cursor: pointer;
-
-    gap: 24px;
 }
 
 
@@ -10873,6 +10841,7 @@ header.no_border .logo img
     align-items: center;
     flex-wrap: nowrap;
     justify-content: flex-start;
+    gap: 10px;
 
     font-size: 19px;
 
@@ -10880,8 +10849,6 @@ header.no_border .logo img
     white-space: nowrap;
 
     color: #1a1a1a;
-
-    gap: 10px;
 }
 
 
@@ -10955,6 +10922,25 @@ header.no_border .logo img
 }
 
 
+.court_rental .item .time:before
+{
+    position: absolute;
+    right: 1px;
+    bottom: 0;
+
+    display: block;
+
+    width: calc(100% + 103px);
+    height: calc(100% + 52px);
+
+    content: '';
+    z-index: -1;
+    pointer-events: none;
+
+    background: var(--bg);
+}
+
+
 .court_rental .item .time > *
 {
     display: flex;
@@ -11020,7 +11006,7 @@ header.no_border .logo img
 {
     visibility: hidden;
 
-    transition: opacity .2s linear, visibility .2s linear;
+    transition: opacity .1s linear, visibility .1s linear;
     pointer-events: none;
 
     opacity: 0;
@@ -11163,10 +11149,13 @@ header.no_border .logo img
 }
 
 
-.court_rental .item .day .price:hover
+@media (hover: hover)
 {
-    color: #fff;
-    background: #6bd8a0;
+    .court_rental .item .day .price:hover
+    {
+        color: #fff;
+        background: #6bd8a0;
+    }
 }
 
 
@@ -11210,15 +11199,18 @@ header.no_border .logo img
 }
 
 
-.court_rental .item.active .head .toggle_btn:hover
+@media (hover: hover)
 {
-    color: #ffa361;
-}
+    .court_rental .item.active .head .toggle_btn:hover
+    {
+        color: #ffa361;
+    }
 
 
-.court_rental .item.active .head .toggle_btn:hover .icon
-{
-    background: #ffa361;
+    .court_rental .item.active .head .toggle_btn:hover .icon
+    {
+        background: #ffa361;
+    }
 }
 
 
@@ -11245,10 +11237,9 @@ header.no_border .logo img
     align-items: center;
     flex-wrap: nowrap;
     justify-content: space-between;
+    gap: 24px;
 
     padding: 24px;
-
-    gap: 24px;
 }
 
 
@@ -11286,6 +11277,128 @@ header.no_border .logo img
 
 
 
+.court_rental .order .mob_empty
+{
+    position: relative;
+
+    display: none;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 12px;
+
+    padding: 20px;
+}
+
+
+.court_rental .order .mob_empty .close_btn
+{
+    position: absolute;
+    top: 8px;
+    right: 8px;
+
+    display: none;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    width: 40px;
+
+    transition: color .2s linear;
+
+    aspect-ratio: 1 / 1;
+}
+
+
+.court_rental .order .mob_empty .close_btn.show
+{
+    display: flex;
+}
+
+
+.court_rental .order .mob_empty .close_btn .icon
+{
+    display: block;
+
+    width: 16px;
+
+    aspect-ratio: 1 / 1;
+}
+
+
+.court_rental .order .mob_empty .close_btn:hover
+{
+    color: #ec6707;
+}
+
+
+.court_rental .order .mob_empty .title
+{
+    width: 100%;
+
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 130%;
+}
+
+
+.court_rental .order .mob_empty .title span
+{
+    display: inline-block;
+
+    min-width: 80px;
+
+    vertical-align: top;
+}
+
+
+.court_rental .order .mob_empty .btn
+{
+    width: 176px;
+    max-width: 100%;
+    height: 58px;
+
+    font-size: 19px;
+    font-weight: 700;
+
+    transition: .2s linear;
+    letter-spacing: .57px;
+
+    color: #fff;
+    border-radius: 6px;
+    background: #ec6707;
+}
+
+
+.court_rental .order .mob_empty .btn.disabled
+{
+    pointer-events: none;
+
+    background: #ddd;
+}
+
+
+.court_rental .order .mob_empty .cancel_btn
+{
+    margin-left: 8px;
+    padding-block: 2px;
+
+    font-size: 16px;
+
+    color: #ec6707;
+    border-bottom: 1px dashed #bdbdbd;
+}
+
+
+.court_rental .order .mob_empty .btn.disabled + .cancel_btn
+{
+    display: none;
+}
+
+
+
 .court_rental .order .data
 {
     position: relative;
@@ -11295,10 +11408,9 @@ header.no_border .logo img
     align-items: stretch;
     flex-wrap: nowrap;
     justify-content: space-between;
+    gap: 24px;
 
     padding: 24px;
-
-    gap: 24px;
 }
 
 
@@ -11319,12 +11431,27 @@ header.no_border .logo img
     align-items: center;
     flex-wrap: wrap;
     justify-content: center;
+    gap: 8px;
 
     width: 40px;
 
+    font-size: 12px;
+    line-height: 15px;
+
     transition: color .2s linear;
 
+    color: #ec6707;
+
     aspect-ratio: 1 / 1;
+}
+
+
+.court_rental .order .data .close_btn span
+{
+    position: relative;
+    top: -2px;
+
+    display: none;
 }
 
 
@@ -11347,6 +11474,19 @@ header.no_border .logo img
 .court_rental .order .data .info
 {
     width: calc(100% - 288px - 24px);
+}
+
+
+.court_rental .order .data .info .title.mob
+{
+    margin-bottom: 12px;
+    padding-inline: 20px;
+
+    font-family: var(--font_family2);
+    font-size: 14px;
+    font-weight: 700;
+
+    text-transform: uppercase;
 }
 
 
@@ -11440,6 +11580,29 @@ header.no_border .logo img
     width: 100%;
 
     text-align: left;
+}
+
+
+.court_rental .order .data table td .remove_btn
+{
+    display: none;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    margin-left: auto;
+
+    color: #ea6708;
+}
+
+
+.court_rental .order .data table td .remove_btn .icon
+{
+    display: block;
+
+    width: 14px;
+    height: 18px;
 }
 
 
@@ -11605,14 +11768,13 @@ header.no_border .logo img
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    gap: 12px;
 
     width: 288px;
     max-width: 100%;
     padding-left: 18px;
 
     border-left: 2px solid #ec6707;
-
-    gap: 12px;
 }
 
 
@@ -11621,11 +11783,27 @@ header.no_border .logo img
     display: flex;
     align-content: center;
     align-items: center;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: space-between;
 
     font-size: 21px;
     font-weight: 700;
+
+    white-space: nowrap;
+}
+
+
+.court_rental .order .data .total_price .points
+{
+    display: none;
+    align-self: flex-end;
+
+    width: 100%;
+    height: 1px;
+    margin-inline: 6px;
+    margin-bottom: 6px;
+
+    border-bottom: 1px dotted #bdbdbd;
 }
 
 

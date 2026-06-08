@@ -1254,10 +1254,9 @@
 
         flex-direction: column;
         flex-wrap: wrap;
+        gap: 0;
 
         padding-bottom: 46px;
-
-        gap: 0;
     }
 
 
@@ -1270,13 +1269,12 @@
     .ice_field_table .item .col
     {
         justify-content: flex-start;
+        gap: 16px;
 
         width: 100%;
         padding: 4px 8px;
 
         font-size: 13px;
-
-        gap: 16px;
     }
 
 
@@ -1352,7 +1350,6 @@
     {
         display: flex;
         flex-direction: column;
-
         gap: 2px;
     }
 
@@ -1362,6 +1359,7 @@
         position: relative;
 
         flex-wrap: wrap;
+        gap: 2px;
 
         padding: 20px 60px 20px 20px;
 
@@ -1369,8 +1367,6 @@
         border-radius: 8px;
         background: #fff;
         box-shadow: 0 4px 93.2px -30px rgba(165, 119, 90, .38);
-
-        gap: 2px;
     }
 
 
@@ -1555,14 +1551,13 @@
         position: relative;
 
         flex-wrap: wrap;
+        gap: 12px;
 
         padding: 10px 20px 60px;
 
         font-size: 16px;
 
         background: #f5f5f5;
-
-        gap: 12px;
     }
 
 
@@ -1635,14 +1630,13 @@
         position: relative;
 
         flex-wrap: wrap;
+        gap: 0;
 
         padding: 4px 146px 4px 20px;
 
         font-size: 16px;
 
         background: #f5f5f5;
-
-        gap: 0;
     }
 
 
@@ -1705,13 +1699,12 @@
     .membership_fitness_table .col
     {
         justify-content: flex-start;
+        gap: 16px;
 
         width: 100%;
         padding: 4px 10px;
 
         font-size: 13px;
-
-        gap: 16px;
     }
 
 
@@ -1752,7 +1745,6 @@
         position: relative;
 
         flex-wrap: wrap;
-
         gap: 0;
     }
 
@@ -1964,9 +1956,15 @@
     }
 
 
+    .court_rental .item .time:before
+    {
+        height: calc(100% + 40px);
+    }
+
+
     .court_rental .item .time > *
     {
-        height: 30px;
+        height: 48px;
 
         font-size: 14px;
     }
@@ -1988,7 +1986,7 @@
     .court_rental .item .swiper-button-prev
     {
         width: 52px;
-        height: 32px;
+        height: 48px;
     }
 
 
@@ -2000,7 +1998,7 @@
 
     .court_rental .item .day .val
     {
-        height: 40px;
+        height: 48px;
 
         font-size: 16px;
     }
@@ -2008,7 +2006,7 @@
 
     .court_rental .item .day .price
     {
-        height: 30px;
+        height: 48px;
 
         font-size: 14px;
     }
@@ -2017,19 +2015,35 @@
 
     .court_rental .order
     {
-        position: relative;
-
+        margin-inline: -24px;
         margin-top: 16px;
+        padding-inline: 24px;
+
+        border-radius: 0;
+    }
+
+
+    .court_rental .order.full_size
+    {
+        position: fixed;
+        left: 0;
+
+        width: 100%;
+        height: 100%;
+        min-height: -moz-available;
+        min-height: -webkit-fill-available;
+        min-height:         fill-available;
+        margin: 0;
     }
 
 
     .court_rental .order .empty
     {
+        display: none;
         flex-wrap: wrap;
+        gap: 12px;
 
         padding: 16px;
-
-        gap: 12px;
     }
 
 
@@ -2051,12 +2065,26 @@
     }
 
 
+    .court_rental .order .mob_empty
+    {
+        display: flex;
+    }
+
 
     .court_rental .order .data
     {
-        padding: 40px 16px 16px;
-
+        overflow-x: clip;
+        overflow-y: auto;
         gap: 16px;
+
+        height: 100%;
+        padding: 20px 16px 16px;
+
+        border-radius: 16px;
+        background: #fbf9f8;
+        box-shadow: -5px 0 10px 0 rgba(101, 101, 101, .14);
+
+        overscroll-behavior-y: contain;
     }
 
 
@@ -2073,6 +2101,12 @@
     }
 
 
+    .court_rental .order .data .info .title.mob
+    {
+        display: block;
+    }
+
+
     .court_rental .order .data table thead
     {
         display: none;
@@ -2083,8 +2117,19 @@
     {
         display: flex;
         flex-direction: column;
-
         gap: 4px;
+
+        padding: 20px;
+
+        border-radius: 8px;
+        background: #fff;
+        box-shadow: 0 4px 93.2px -30px rgba(165, 119, 90, .38);
+    }
+
+
+    .court_rental .order .data table tr + tr
+    {
+        margin-top: 2px;
     }
 
 
@@ -2106,6 +2151,23 @@
     }
 
 
+    .court_rental .order .data table td b
+    {
+        display: block;
+
+        width: calc(100% - 30px);
+        margin-bottom: 5px;
+    }
+
+
+    .court_rental .order .data table td .remove_btn
+    {
+        display: flex;
+
+        margin-bottom: 5px;
+    }
+
+
     .court_rental .order .data table td .col_name,
     .court_rental .order .data table td .dottes
     {
@@ -2122,7 +2184,10 @@
     .court_rental .order .data .additional .title
     {
         margin-bottom: 12px;
-        padding: 8px 16px;
+        padding: 0 20px;
+
+        border-radius: 0;
+        background: none;
     }
 
 
@@ -2132,16 +2197,23 @@
 
         flex-wrap: wrap;
 
-        padding-block: 0 12px;
-        padding-inline: 0 40px;
+        padding-block: 20px 12px;
+        padding-inline: 20px 57px;
 
         text-align: left;
+
+        border-radius: 8px;
+        background: #fff;
+        box-shadow: 0 4px 93.2px -30px rgba(165, 119, 90, .38);
     }
 
 
     .court_rental .order .data .additional .label + .label
     {
+        margin-top: 2px;
         padding-top: 12px;
+
+        border: none;
     }
 
 
@@ -2149,7 +2221,7 @@
     {
         position: absolute;
         top: 0;
-        right: 0;
+        right: 16px;
         bottom: 0;
 
         margin-block: auto;
@@ -2207,17 +2279,32 @@
 
     .court_rental .order .data .total
     {
-        padding-top: 15px;
-
-        border-width: 1px;
+        position: sticky;
+        bottom: -16px;
 
         gap: 8px;
+
+        width: calc(100% + 32px);
+        max-width: calc(100% + 32px);
+        margin: 0 -16px -16px;
+        padding: 20px;
+
+        border: 1px solid #ec6707;
+        border-radius: 8px;
+        background: #fff9f0;
+        box-shadow: 0 -5px 8.3px -1px rgba(165, 119, 90, .32);
     }
 
 
     .court_rental .order .data .total_price
     {
         font-size: 18px;
+    }
+
+
+    .court_rental .order .data .total_price .points
+    {
+        display: block;
     }
 
 
