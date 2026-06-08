@@ -1273,11 +1273,11 @@
 
     .cafe_menu .section .title
     {
+        gap: 20px;
+
         margin-bottom: 40px;
 
         font-size: 32px;
-
-        gap: 20px;
     }
 
     .cafe_menu .section .title.small_w
@@ -1999,13 +1999,13 @@
 
     .kids_membership_hockey_table .head .col_details
     {
+        gap: 12px;
+
         width: 248px;
         min-width: 248px;
 
         font-size: 16px;
         line-height: calc(100% + 4px);
-
-        gap: 12px;
     }
 
 
@@ -2085,6 +2085,13 @@
     .court_rental .item .time
     {
         width: 124px;
+    }
+
+
+    .court_rental .item .time:before
+    {
+        width: calc(100% + 11px);
+        height: calc(100% + 48px);
     }
 
 

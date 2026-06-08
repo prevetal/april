@@ -542,11 +542,11 @@
     .cafe_menu .section .title.small_m,
     .cafe_menu .section .title.big_m
     {
+        gap: 16px;
+
         margin-bottom: 28px;
 
         font-size: 22px;
-
-        gap: 16px;
     }
 
 

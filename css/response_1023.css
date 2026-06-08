@@ -1726,13 +1726,14 @@
     .kids_membership_hockey_table .head
     {
         flex-wrap: wrap;
-
         gap: 0;
     }
 
 
     .kids_membership_hockey_table .head .col_service
     {
+        gap: 0;
+
         min-height: 44px;
         padding: 8px 12px;
 
@@ -1743,8 +1744,6 @@
         color: #fff;
         border-radius: 4px;
         background: #5d5d5d;
-
-        gap: 0;
     }
 
 
@@ -1911,9 +1910,9 @@
 
     .kids_membership_hockey_table .data .row
     {
-        margin-top: 24px;
-
         gap: 24px;
+
+        margin-top: 24px;
     }
 
 
