@@ -728,18 +728,40 @@ $(() => {
 			.prevAll('.price')
 			.addClass('highlighted')
 
-		$('.court_rental .order .empty').addClass('hide')
+		const WW = window.innerWidth || document.clientWidth || document.getElementsByTagName('body')[0].clientWidth
+
+		if (WW > 767) {
+			$('.court_rental .order .empty').addClass('hide')
+			$('.court_rental .order .data').addClass('show')
+		} else {
+			$('.court_rental .order .mob_empty').show()
+			$('.court_rental .order .mob_empty .title').html('<span>Вт 29.07</span> 10:00-10:30')
+			$('.court_rental .order .mob_empty .btn').removeClass('disabled')
+			$('.court_rental .order .mob_empty .close_btn').addClass('show')
+		}
+	})
+
+
+	$('.court_rental .order .mob_empty .btn').click(function(e) {
+		e.preventDefault()
+
+		$('.court_rental .order .mob_empty').hide()
 		$('.court_rental .order .data').addClass('show')
 	})
 
 
-	$('.court_rental .order .data .close_btn').click(function(e) {
+	$('.court_rental .order .data .close_btn, .court_rental .order .mob_empty .close_btn, .court_rental .order .mob_empty .cancel_btn').click(function(e) {
 		e.preventDefault()
 
 		$('.court_rental .item .price, .court_rental .item .time > *').removeClass('selected highlighted')
 
 		$('.court_rental .order .empty').removeClass('hide')
 		$('.court_rental .order .data').removeClass('show')
+
+		$('.court_rental .order .mob_empty').show()
+		$('.court_rental .order .mob_empty .title').html('Выберите дату и время')
+		$('.court_rental .order .mob_empty .btn').addClass('disabled')
+		$('.court_rental .order .mob_empty .close_btn').removeClass('show')
 	})
 })
 

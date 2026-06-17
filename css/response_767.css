@@ -2021,6 +2021,7 @@
 
     .court_rental .order .empty
     {
+        display: none;
         flex-wrap: wrap;
         gap: 12px;
 
@@ -2045,6 +2046,11 @@
         font-size: 15px;
     }
 
+
+    .court_rental .order .mob_empty
+    {
+        display: flex;
+    }
 
 
     .court_rental .order .data
