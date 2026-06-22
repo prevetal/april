@@ -713,22 +713,23 @@ $(() => {
 		if (isSelected) {
 			$price.removeClass('selected highlighted')
 
-			const hasSelected = $('.court_rental .item .price.selected').length > 0
+			$item.find('.price, .time > *').removeClass('highlighted')
 
-			$('.court_rental .order .empty').toggleClass('hide', hasSelected)
-			$('.court_rental .order .data').toggleClass('show', hasSelected)
-
-			return
-		}
-
-		if (isSelected) {
-			$price.removeClass('selected highlighted')
+			$item.find('.price.selected').each(function () {
+				highlight($item, this, true)
+			})
 
 			const hasSelected = $('.court_rental .item .price.selected').length > 0
 
 			if (!hasSelected) {
 				$('.court_rental .order .empty').removeClass('hide')
 				$('.court_rental .order .data').removeClass('show')
+
+				$('.court_rental .order').removeClass('full_size')
+				$('.court_rental .order .mob_empty').show()
+				$('.court_rental .order .mob_empty .title').html('Выберите дату и время')
+				$('.court_rental .order .mob_empty .btn').addClass('disabled')
+				$('.court_rental .order .mob_empty .close_btn').removeClass('show')
 			}
 
 			return

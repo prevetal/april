@@ -969,6 +969,17 @@
 
 
 
+    /*------------------
+        Court rental
+    ------------------*/
+    .court_rental .order
+    {
+        margin-inline: -20px;
+        padding-inline: 0;
+    }
+
+
+
     /*------------
         Footer
     ------------*/
