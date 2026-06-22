@@ -721,6 +721,19 @@ $(() => {
 			return
 		}
 
+		if (isSelected) {
+			$price.removeClass('selected highlighted')
+
+			const hasSelected = $('.court_rental .item .price.selected').length > 0
+
+			if (!hasSelected) {
+				$('.court_rental .order .empty').removeClass('hide')
+				$('.court_rental .order .data').removeClass('show')
+			}
+
+			return
+		}
+
 		highlight($item, this, true)
 
 		$price
@@ -745,6 +758,7 @@ $(() => {
 	$('.court_rental .order .mob_empty .btn').click(function(e) {
 		e.preventDefault()
 
+		$('.court_rental .order').addClass('full_size')
 		$('.court_rental .order .mob_empty').hide()
 		$('.court_rental .order .data').addClass('show')
 	})
@@ -755,13 +769,19 @@ $(() => {
 
 		$('.court_rental .item .price, .court_rental .item .time > *').removeClass('selected highlighted')
 
-		$('.court_rental .order .empty').removeClass('hide')
-		$('.court_rental .order .data').removeClass('show')
+		const WW = window.innerWidth || document.clientWidth || document.getElementsByTagName('body')[0].clientWidth
 
-		$('.court_rental .order .mob_empty').show()
-		$('.court_rental .order .mob_empty .title').html('Выберите дату и время')
-		$('.court_rental .order .mob_empty .btn').addClass('disabled')
-		$('.court_rental .order .mob_empty .close_btn').removeClass('show')
+		if (WW > 767) {
+			$('.court_rental .order .empty').removeClass('hide')
+			$('.court_rental .order .data').removeClass('show')
+		} else {
+			$('.court_rental .order').removeClass('full_size')
+			$('.court_rental .order .data').removeClass('show')
+			$('.court_rental .order .mob_empty').show()
+			$('.court_rental .order .mob_empty .title').html('Выберите дату и время')
+			$('.court_rental .order .mob_empty .btn').addClass('disabled')
+			$('.court_rental .order .mob_empty .close_btn').removeClass('show')
+		}
 	})
 })
 
