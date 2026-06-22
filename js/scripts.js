@@ -764,24 +764,35 @@ $(() => {
 	})
 
 
-	$('.court_rental .order .data .close_btn, .court_rental .order .data table td .remove_btn, .court_rental .order .mob_empty .close_btn, .court_rental .order .mob_empty .cancel_btn').click(function(e) {
+	$('.court_rental .order .data .close_btn').click(function(e) {
 		e.preventDefault()
-
-		$('.court_rental .item .price, .court_rental .item .time > *').removeClass('selected highlighted')
 
 		const WW = window.innerWidth || document.clientWidth || document.getElementsByTagName('body')[0].clientWidth
 
 		if (WW > 767) {
 			$('.court_rental .order .empty').removeClass('hide')
 			$('.court_rental .order .data').removeClass('show')
+
+			$('.court_rental .item .price, .court_rental .item .time > *').removeClass('selected highlighted')
 		} else {
 			$('.court_rental .order').removeClass('full_size')
 			$('.court_rental .order .data').removeClass('show')
 			$('.court_rental .order .mob_empty').show()
-			$('.court_rental .order .mob_empty .title').html('Выберите дату и время')
-			$('.court_rental .order .mob_empty .btn').addClass('disabled')
-			$('.court_rental .order .mob_empty .close_btn').removeClass('show')
 		}
+	})
+
+
+	$('.court_rental .order .data table td .remove_btn, .court_rental .order .mob_empty .close_btn, .court_rental .order .mob_empty .cancel_btn').click(function(e) {
+		e.preventDefault()
+
+		$('.court_rental .item .price, .court_rental .item .time > *').removeClass('selected highlighted')
+
+		$('.court_rental .order').removeClass('full_size')
+		$('.court_rental .order .data').removeClass('show')
+		$('.court_rental .order .mob_empty').show()
+		$('.court_rental .order .mob_empty .title').html('Выберите дату и время')
+		$('.court_rental .order .mob_empty .btn').addClass('disabled')
+		$('.court_rental .order .mob_empty .close_btn').removeClass('show')
 	})
 })
 
