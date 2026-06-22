@@ -2001,6 +2001,17 @@
     {
         top: 12px;
         right: 12px;
+
+        width: auto;
+        height: 40px;
+
+        aspect-ratio: auto;
+    }
+
+
+    .court_rental .order .data .close_btn span
+    {
+        display: block;
     }
 
 

@@ -78,6 +78,13 @@
       <path d="M8.46,4.67a1.66,1.66,0,0,1,1.66,1.66.34.34,0,1,0,.67,0A2.33,2.33,0,0,0,8.46,4a.34.34,0,0,0,0,.67" transform="translate(0 0)" fill="currentColor"></path>
     </g>
   </symbol>
+  <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 18" id="ic_remove">
+    <path d="M2.08008 5.5H11.9199C12.2111 5.5 12.4411 5.74781 12.4189 6.03809L11.5723 17.0381C11.5522 17.2985 11.3354 17.4999 11.0742 17.5H2.92578C2.66462 17.4999 2.44777 17.2985 2.42773 17.0381L1.58105 6.03809C1.55889 5.74781 1.78892 5.5 2.08008 5.5Z" stroke="currentColor"></path>
+    <rect x="0.5" y="2.5" width="13" height="3" rx="0.5" stroke="currentColor"></rect>
+    <rect x="0.5" y="-0.5" width="3" height="2" rx="0.5" transform="matrix(1 0 0 -1 5 2)" stroke="currentColor"></rect>
+    <line x1="5.5" y1="8" x2="5.5" y2="15" stroke="currentColor"></line>
+    <line x1="8.5" y1="8" x2="8.5" y2="15" stroke="currentColor"></line>
+  </symbol>
   <symbol xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 25.48 25.48" id="ic_search">
     <defs>
       <clipPath id="a" transform="translate(0 0)">

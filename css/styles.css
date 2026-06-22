@@ -11431,12 +11431,27 @@ header.no_border .logo img
     align-items: center;
     flex-wrap: wrap;
     justify-content: center;
+    gap: 8px;
 
     width: 40px;
 
+    font-size: 12px;
+    line-height: 15px;
+
     transition: color .2s linear;
 
+    color: #ec6707;
+
     aspect-ratio: 1 / 1;
+}
+
+
+.court_rental .order .data .close_btn span
+{
+    position: relative;
+    top: -2px;
+
+    display: none;
 }
 
 
@@ -11459,6 +11474,19 @@ header.no_border .logo img
 .court_rental .order .data .info
 {
     width: calc(100% - 288px - 24px);
+}
+
+
+.court_rental .order .data .info .title.mob
+{
+    margin-bottom: 12px;
+    padding-inline: 20px;
+
+    font-family: var(--font_family2);
+    font-size: 14px;
+    font-weight: 700;
+
+    text-transform: uppercase;
 }
 
 
@@ -11552,6 +11580,29 @@ header.no_border .logo img
     width: 100%;
 
     text-align: left;
+}
+
+
+.court_rental .order .data table td .remove_btn
+{
+    display: none;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    margin-left: auto;
+
+    color: #ea6708;
+}
+
+
+.court_rental .order .data table td .remove_btn .icon
+{
+    display: block;
+
+    width: 14px;
+    height: 18px;
 }
 
 

@@ -2057,7 +2057,11 @@
     {
         gap: 16px;
 
-        padding: 40px 16px 16px;
+        padding: 20px 16px 16px;
+
+        border-radius: 16px;
+        background: #fbf9f8;
+        box-shadow: -5px 0 10px 0 rgba(101, 101, 101, .14);
     }
 
 
@@ -2066,7 +2070,7 @@
         overflow-x: clip;
         overflow-y: auto;
 
-        max-height: 500px;
+        max-height: 92svh;
 
         overscroll-behavior-y: contain;
     }
@@ -2085,6 +2089,12 @@
     }
 
 
+    .court_rental .order .data .info .title.mob
+    {
+        display: block;
+    }
+
+
     .court_rental .order .data table thead
     {
         display: none;
@@ -2096,12 +2106,18 @@
         display: flex;
         flex-direction: column;
         gap: 4px;
+
+        padding: 20px;
+
+        border-radius: 8px;
+        background: #fff;
+        box-shadow: 0 4px 93.2px -30px rgba(165, 119, 90, .38);
     }
 
 
     .court_rental .order .data table tr + tr
     {
-        margin-top: 20px;
+        margin-top: 2px;
     }
 
 
@@ -2123,6 +2139,23 @@
     }
 
 
+    .court_rental .order .data table td b
+    {
+        display: block;
+
+        width: calc(100% - 30px);
+        margin-bottom: 5px;
+    }
+
+
+    .court_rental .order .data table td .remove_btn
+    {
+        display: flex;
+
+        margin-bottom: 5px;
+    }
+
+
     .court_rental .order .data table td .col_name,
     .court_rental .order .data table td .dottes
     {
@@ -2139,7 +2172,10 @@
     .court_rental .order .data .additional .title
     {
         margin-bottom: 12px;
-        padding: 8px 16px;
+        padding: 0 20px;
+
+        border-radius: 0;
+        background: none;
     }
 
 
@@ -2149,16 +2185,23 @@
 
         flex-wrap: wrap;
 
-        padding-block: 0 12px;
-        padding-inline: 0 40px;
+        padding-block: 20px 12px;
+        padding-inline: 20px 57px;
 
         text-align: left;
+
+        border-radius: 8px;
+        background: #fff;
+        box-shadow: 0 4px 93.2px -30px rgba(165, 119, 90, .38);
     }
 
 
     .court_rental .order .data .additional .label + .label
     {
+        margin-top: 2px;
         padding-top: 12px;
+
+        border: none;
     }
 
 
@@ -2166,7 +2209,7 @@
     {
         position: absolute;
         top: 0;
-        right: 0;
+        right: 16px;
         bottom: 0;
 
         margin-block: auto;
@@ -2235,10 +2278,9 @@
         padding: 20px;
 
         border: 1px solid #ec6707;
-        border-width: 1px;
         border-radius: 8px;
         background: #fff9f0;
-        box-shadow: 0 4px 93.2px -30px rgba(165, 119, 90, .38);
+        box-shadow: 0 -5px 8.3px -1px rgba(165, 119, 90, .32);
     }
 
 

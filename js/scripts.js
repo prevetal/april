@@ -750,7 +750,7 @@ $(() => {
 	})
 
 
-	$('.court_rental .order .data .close_btn, .court_rental .order .mob_empty .close_btn, .court_rental .order .mob_empty .cancel_btn').click(function(e) {
+	$('.court_rental .order .data .close_btn, .court_rental .order .data table td .remove_btn, .court_rental .order .mob_empty .close_btn, .court_rental .order .mob_empty .cancel_btn').click(function(e) {
 		e.preventDefault()
 
 		$('.court_rental .item .price, .court_rental .item .time > *').removeClass('selected highlighted')
